@@ -1,40 +1,47 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: ChemVault Docs
+description: Chemistry notes, lab guides, reagent references and project documentation.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: Chemistry notes, lab guides, reagent passports and project documentation for the ChemVault ecosystem.
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Start Reading
+      link: /getting-started/what-is-chemvault/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: View GitHub
+      link: https://github.com/Mu-Eddy
       icon: external
-      variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## ChemVault Knowledge System
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+ChemVault Docs is the documentation and knowledge base for the ChemVault ecosystem.
+
+It connects chemistry learning, laboratory preparation, project documentation, reagent references and future research tools into one structured archive.
+
+<CardGrid>
+  <Card title="Chemistry Notes" icon="seti:folder">
+    Organic, physical, analytical and inorganic chemistry notes.
+  </Card>
+
+  <Card title="Reagent Library" icon="seti:test-js">
+    Reagent passports with uses, mechanisms, conditions and exam traps.
+  </Card>
+
+  <Card title="Lab Guides" icon="seti:config">
+    Structured undergraduate chemistry lab guides and report preparation notes.
+  </Card>
+
+  <Card title="Project Docs" icon="seti:github">
+    Documentation for ChemVault Core, ChemVault Mail and future ChemVault tools.
+  </Card>
 </CardGrid>
+
+## Current Modules
+
+- **ChemVault Core** — the main chemistry research platform.
+- **ChemVault Mail** — the email system for the ChemVault domain.
+- **ChemVault Docs** — the documentation and knowledge base.
+- **ChemVault Files** — a future resource and download centre.
