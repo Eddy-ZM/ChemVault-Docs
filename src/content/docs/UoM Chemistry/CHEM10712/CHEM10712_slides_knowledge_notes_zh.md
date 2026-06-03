@@ -1,3 +1,7 @@
+---
+title: 'CHEM10712 slides 知识点整理与讲解'
+---
+
 # CHEM10712 slides 知识点整理与讲解
 
 来源范围：本讲义基于 `slides/` 文件夹中实际存在的 PPTX/PDF/DOCX 课件与 workshop 文件整理。`PP_CHEM10712/` 中的 mock exam/past paper 文件未作为主要知识来源。文件夹中没有单独的 Lecture 6、18、20、24 课件；这些内容只按已有 overview/workshop 中出现的部分整理。
@@ -222,34 +226,34 @@ Charged/reactive 带电/活性：
 
 考试重点不是背所有分类表，而是知道哪些 side chains 能做化学：
 
-- ==acid-base chemistry：Asp/Glu, His, Cys, Lys，有时 Tyr/Arg。==
-- ==nucleophiles：Cys, Lys, Tyr, His, Asp/Glu。==
-- ==redox：天然氨基酸中主要是 Cys。==
-- ==electrophiles 和强 redox chemistry 通常需要 cofactors 或 metal ions。==
+- acid-base chemistry：Asp/Glu, His, Cys, Lys，有时 Tyr/Arg。
+- nucleophiles：Cys, Lys, Tyr, His, Asp/Glu。
+- redox：天然氨基酸中主要是 Cys。
+- electrophiles 和强 redox chemistry 通常需要 cofactors 或 metal ions。
 
 ### [[03-04 Lys, Cys, Trp 的代表性反应|3.4 Lys, Cys, Trp 的代表性反应]]
 
-==Lysine 赖氨酸：==
+Lysine：
 
 - epsilon-amino group 可与 aldehydes 形成 imine/Schiff base。
 - formaldehyde 可通过 Lys-Lys crosslink 固定生物组织。
 - 在酶中，Lys 与 carbonyl 形成 Schiff base 后，可降低 alpha C-H 的 pKa，帮助形成 carbanion/enamine/enol 类中间体。
 
-==Cysteine 半胱氨酸：==
+Cysteine：
 
 - Cys-SH 可氧化形成 disulfide bond，两个 Cys 形成 cystine。
 - Cys thiolate 在 pH 7 附近可存在，反应性强。
 - iodoacetamide 等 alkylating agents 常优先修饰 Cys。
 - 修饰后的 Cys 不能再形成 cystine/disulfide bridge。
 
-==Tryptophan 色氨酸：==
+Tryptophan：
 
 - Trp 有 intrinsic fluorescence。
 - fluorescence 对局部环境敏感，可报告 protein folding、ligand binding、conformational change。
 
 ### [[03-05 Post-translational modification 与非蛋白氨基酸|3.5 Post-translational modification 与非蛋白氨基酸]]
 
-蛋白质的化学能力可通过 post-translational modifications 翻译后修饰扩展，例如：
+蛋白质的化学能力可通过 post-translational modifications 扩展，例如：
 
 - phosphorylation。
 - methylation。
@@ -257,34 +261,33 @@ Charged/reactive 带电/活性：
 - hydroxylation。
 - carboxylation。
 
-课件也提醒有 non-proteinogenic amino acids 非蛋白质氨基酸，它们可作为 signaling molecules、metabolic intermediates 代谢中间产物或 cofactors 辅因子的组成部分。
+课件也提醒有 non-proteinogenic amino acids，它们可作为 signaling molecules、metabolic intermediates 或 cofactors 的组成部分。
 
 ## [[04 蛋白质折叠、稳定性、动力学与工程化|4. 蛋白质折叠、稳定性、动力学与工程化]]
 
-### [[04-01 Anfinsen experiment|4.1 Anfinsen experiment 安芬森实验]]
+### [[04-01 Anfinsen experiment|4.1 Anfinsen experiment]]
 
-RNase A 变性/还原后，如果在去除 urea 尿素的同时允许氧化形成 disulfide bonds二硫键，可以恢复活性。这说明 native state 信息编码在 amino acid sequence 中。
+RNase A 变性/还原后，如果在去除 urea 的同时允许氧化形成 disulfide bonds，可以恢复活性。这说明 native state 信息编码在 amino acid sequence 中。
 
-如果先在 denatured state 变性状态下随机氧化形成 disulfides，再去除 urea，活性只恢复很少，因为 disulfide pairing 被打乱。
+如果先在 denatured state 下随机氧化形成 disulfides，再去除 urea，活性只恢复很少，因为 disulfide pairing 被打乱。
 
-加入少量 thiol （还原剂）后能重新交换 disulfides 并恢复活性，说明正确 native state 在这些条件下是最稳定构象。
+加入少量 thiol 后能重新交换 disulfides 并恢复活性，说明正确 native state 在这些条件下是最稳定构象。
 
 核心结论：
 
-- ==sequence contains folding information。==
-- ==disulfide pairing 必须与 folding pathway 配合。==
-- ==native state 常是热力学稳定态，但细胞环境中也可能是 kinetic/metastable state。==
+- sequence contains folding information。
+- disulfide pairing 必须与 folding pathway 配合。
+- native state 常是热力学稳定态，但细胞环境中也可能是 kinetic/metastable state。
 
-### [[04-02 Levinthal paradox 与 folding landscape|4.2 Levinthal paradox 莱文塔尔悖论与 folding landscape]]
+### [[04-02 Levinthal paradox 与 folding landscape|4.2 Levinthal paradox 与 folding landscape]]
 
 如果蛋白随机搜索所有 backbone 构象，折叠时间会极长。但真实蛋白可在秒或更快尺度折叠。
 
 解决思路：
 
-- ==folding 不是完全随机搜索。==
-- ==高能量 unfolded state，会自然往低能量 folded/native folded 移动。这就是 energy landscape的意思。==
-- ==protein folding 沿着 energy landscape 发生。==
-- ==可能有多个 folding pathways、intermediates 和 favored routes。==
+- folding 不是完全随机搜索。
+- protein folding 沿着 energy landscape 发生。
+- 可能有多个 folding pathways、intermediates 和 favored routes。
 
 ### [[04-03 Misfolding 与 aggregation|4.3 Misfolding 与 aggregation]]
 

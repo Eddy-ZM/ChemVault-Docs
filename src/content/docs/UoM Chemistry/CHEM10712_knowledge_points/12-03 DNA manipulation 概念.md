@@ -1,3 +1,7 @@
+---
+title: '12.3 DNA manipulation 概念'
+---
+
 # 12.3 DNA manipulation 概念
 
 - 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
@@ -18,3 +22,41 @@ Lecture overview 中出现的 tools：
 
 这些是 recombinant DNA 和 protein expression 的基础。
 
+<!-- BEGIN_DETAILED_EXPLANATION -->
+
+## 深入讲解
+
+DNA manipulation tools 构成 recombinant DNA workflow。restriction enzymes 产生可连接 ends，ligase 形成 phosphodiester bond，plasmids 提供 replication/selection/expression context，electrophoresis 用大小分离和检查 DNA fragments。
+
+PCR、cloning、sequencing 和 synthesis 合在一起，使 DNA 可以被 read、copy、cut、paste、write。这是后面 recombinant protein、CRISPR 和 metabolic engineering 的技术基础。
+
+## 原文小点逐条解释
+
+- **原文小点：** restriction enzymes。
+  - **讲解：** 这个小点是 DNA manipulation workflow 的一个工具或步骤；复习时要说明它在 cut/copy/paste/read/write DNA 中具体承担什么功能。
+- **原文小点：** ligases。
+  - **讲解：** 这个小点是 DNA manipulation workflow 的一个工具或步骤；复习时要说明它在 cut/copy/paste/read/write DNA 中具体承担什么功能。
+- **原文小点：** plasmids。
+  - **讲解：** 这个小点是 DNA manipulation workflow 的一个工具或步骤；复习时要说明它在 cut/copy/paste/read/write DNA 中具体承担什么功能。
+- **原文小点：** PCR/qPCR。
+  - **讲解：** 这个小点是 DNA manipulation workflow 的一个工具或步骤；复习时要说明它在 cut/copy/paste/read/write DNA 中具体承担什么功能。
+- **原文小点：** electrophoresis。
+  - **讲解：** 这个小点是 DNA manipulation workflow 的一个工具或步骤；复习时要说明它在 cut/copy/paste/read/write DNA 中具体承担什么功能。
+- **原文小点：** DNA reading/writing。
+  - **讲解：** 这个小点是 DNA manipulation workflow 的一个工具或步骤；复习时要说明它在 cut/copy/paste/read/write DNA 中具体承担什么功能。
+
+## 做题和复习时怎么用
+
+若问 molecular biology tools 的作用，按“产生片段 -> 连接载体 -> 转入 host -> 筛选验证”的流程组织答案。
+
+## 常见误区
+
+- 忘记 nucleic acid 和 primer 都按 5->3 方向书写。
+- 只列工具名称，不说明每个 DNA element 或 enzyme 的功能。
+
+## 关联知识点
+
+- [[11-05 Gene features|gene features]]
+- [[13-03 E. coli transformation|transformation]]
+
+<!-- END_DETAILED_EXPLANATION -->

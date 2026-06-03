@@ -1,3 +1,7 @@
+---
+title: '11. Nucleic acids、central dogma 与 genetic regulation'
+---
+
 # 11. Nucleic acids、central dogma 与 genetic regulation
 
 - 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]

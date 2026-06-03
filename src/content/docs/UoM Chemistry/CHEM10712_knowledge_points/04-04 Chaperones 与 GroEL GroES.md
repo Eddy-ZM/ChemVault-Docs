@@ -1,3 +1,7 @@
+---
+title: '4.4 Chaperones 与 GroEL/GroES'
+---
+
 # 4.4 Chaperones 与 GroEL/GroES
 
 - 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
@@ -16,3 +20,37 @@ GroEL/GroES 的基本机制：
 - ATP hydrolysis 驱动 conformational change，使内壁更 hydrophilic。
 - 隔离其他蛋白，减少 aggregation，促进 folding。
 
+<!-- BEGIN_DETAILED_EXPLANATION -->
+
+## 深入讲解
+
+chaperones 不是把最终结构“硬塞”给蛋白，而是改变 folding pathway 的动力学环境。GroEL/GroES 提供隔离腔，减少 unfolded protein 与其他分子的错误接触，从而降低 aggregation 概率。
+
+GroEL/GroES 的内腔性质会随 ATP-driven conformational change 改变：先能结合 hydrophobic unfolded regions，随后变得更 hydrophilic，促使底物蛋白把疏水面埋入内部并尝试形成 native fold。ATP 在这里提供的是方向性和循环，而不只是能量数值。
+
+## 原文小点逐条解释
+
+- **原文小点：** 提供 folding chamber。
+  - **讲解：** 这个小点是在说明 chaperone 如何改变 folding pathway：隔离 substrate、避免 aggregation，并用 ATP-driven cycle 促进正确折叠。
+- **原文小点：** 初始内壁偏 hydrophobic，可结合 unfolded/non-native protein。
+  - **讲解：** 这个小点是在说明 chaperone 如何改变 folding pathway：隔离 substrate、避免 aggregation，并用 ATP-driven cycle 促进正确折叠。
+- **原文小点：** ATP hydrolysis 驱动 conformational change，使内壁更 hydrophilic。
+  - **讲解：** 这个小点是在说明 chaperone 如何改变 folding pathway：隔离 substrate、避免 aggregation，并用 ATP-driven cycle 促进正确折叠。
+- **原文小点：** 隔离其他蛋白，减少 aggregation，促进 folding。
+  - **讲解：** 这个小点是在说明 chaperone 如何改变 folding pathway：隔离 substrate、避免 aggregation，并用 ATP-driven cycle 促进正确折叠。
+
+## 做题和复习时怎么用
+
+答 chaperone 功能时写三点：prevents aggregation, provides isolated folding chamber, ATP-driven conformational cycle promotes folding.
+
+## 常见误区
+
+- 把 protein structure 当成静态不动的模型。
+- 只说“形成更多键所以稳定”，不讨论 unfolded state entropy 或 dynamics。
+
+## 关联知识点
+
+- [[03-02 Peptide bond 肽键与方向性|蛋白一级结构]]
+- [[15-03 Directed evolution, DE|directed evolution]]
+
+<!-- END_DETAILED_EXPLANATION -->

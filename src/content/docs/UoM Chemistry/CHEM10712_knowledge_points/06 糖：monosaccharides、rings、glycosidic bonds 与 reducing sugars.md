@@ -1,3 +1,7 @@
+---
+title: '6. 糖：monosaccharides、rings、glycosidic bonds 与 reducing sugars'
+---
+
 # 6. 糖：monosaccharides、rings、glycosidic bonds 与 reducing sugars
 
 - 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]

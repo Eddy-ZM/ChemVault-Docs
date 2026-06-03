@@ -1,3 +1,7 @@
+---
+title: '16.7 Recombinant protein production 题'
+---
+
 # 16.7 Recombinant protein production 题
 
 - 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
@@ -18,3 +22,25 @@
 7. purify protein。
 8. verify identity/activity。
 
+<!-- BEGIN_DETAILED_EXPLANATION -->
+
+## 深入讲解
+
+recombinant protein production 是一个从 DNA 到 purified protein 的完整 workflow。任何一步失败都会没有 protein：GOI 设计、vector elements、host transformation、selection、expression induction、folding/solubility、lysis/purification、activity assay。
+
+因此题目问“from gene sequence to protein production”时，要体现流程和每个 component 的功能，而不是只写“insert gene into plasmid”。
+
+## 做题和复习时怎么用
+
+流程模板：design/amplify GOI -> clone into expression plasmid -> transform host -> antibiotic selection -> express/induce -> harvest/lyse -> purify -> verify size/activity.
+
+## 常见误区
+
+- 只背定义，不解释结构如何导致功能。
+- 答题时缺少“因为...所以...”的因果链。
+
+## 关联知识点
+
+- [[00 CHEM10712 知识点索引|知识点索引]]
+
+<!-- END_DETAILED_EXPLANATION -->

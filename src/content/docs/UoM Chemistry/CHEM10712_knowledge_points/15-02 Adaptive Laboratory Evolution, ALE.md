@@ -1,3 +1,7 @@
+---
+title: '15.2 Adaptive Laboratory Evolution, ALE'
+---
+
 # 15.2 Adaptive Laboratory Evolution, ALE
 
 - 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
@@ -26,3 +30,39 @@ ALE 模拟自然选择，但在实验室中控制环境。
 
 ALE 常用于 microbial metabolic engineering，因为可把目标功能与 growth benefit 连接。
 
+<!-- BEGIN_DETAILED_EXPLANATION -->
+
+## 深入讲解
+
+ALE 选择的是 whole-cell phenotype，而不一定知道具体目标 mutation。把 microbes 放在压力或新营养环境中，能生长更快/更耐受/更会利用 substrate 的 variants 会逐渐占优势。
+
+ALE 的优点是能发现非直觉突变和多基因适应；缺点是结果可能难预测，且 improved phenotype 不一定直接对应单一 enzyme 改良。sequencing evolved strains 是理解机制的重要步骤。
+
+## 原文小点逐条解释
+
+- **原文小点：** growth rate optimization。
+  - **讲解：** 这个小点属于 ALE workflow；要联系 controlled environment、serial selection、phenotype improvement 和 genome sequencing。
+- **原文小点：** stress tolerance，例如 pH、antibiotics、temperature。
+  - **讲解：** 这个小点属于 ALE workflow；要联系 controlled environment、serial selection、phenotype improvement 和 genome sequencing。
+- **原文小点：** alternative substrate utilization。
+  - **讲解：** 这个小点属于 ALE workflow；要联系 controlled environment、serial selection、phenotype improvement 和 genome sequencing。
+- **原文小点：** increased product yield/titer。
+  - **讲解：** 这个小点属于 ALE workflow；要联系 controlled environment、serial selection、phenotype improvement 和 genome sequencing。
+- **原文小点：** general discovery of genetic/system-level mechanisms。
+  - **讲解：** 这个小点属于 ALE workflow；要联系 controlled environment、serial selection、phenotype improvement 和 genome sequencing。
+
+## 做题和复习时怎么用
+
+答 ALE workflow：culture under selective condition -> serial passage/selection -> measure improved phenotype -> sequence genome -> identify adaptive mutations.
+
+## 常见误区
+
+- 把工程化写成单一步骤，忽略 selection/screening、flux 和 host fitness。
+- 混淆 ALE 的 whole-cell selection 与 directed evolution 的 protein-function screening。
+
+## 关联知识点
+
+- [[01-02 生命需要什么|variation-selection-replication]]
+- [[08-08 Enzyme catalysis 的本质|enzyme function]]
+
+<!-- END_DETAILED_EXPLANATION -->

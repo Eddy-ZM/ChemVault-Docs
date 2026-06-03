@@ -1,3 +1,7 @@
+---
+title: '1. 生命的分子基础与细胞作为 building block'
+---
+
 # 1. 生命的分子基础与细胞作为 building block
 
 - 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]

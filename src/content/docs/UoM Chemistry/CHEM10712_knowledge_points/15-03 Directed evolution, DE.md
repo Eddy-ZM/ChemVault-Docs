@@ -1,3 +1,7 @@
+---
+title: '15.3 Directed evolution, DE'
+---
+
 # 15.3 Directed evolution, DE
 
 - 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
@@ -31,3 +35,45 @@ Screening methods：
 - chromatography, mass spectrometry, NMR。
 - FACS 可按 fluorescence 分选 individual cells。
 
+<!-- BEGIN_DETAILED_EXPLANATION -->
+
+## 深入讲解
+
+directed evolution 针对 gene/protein function 做人工 Darwinian cycle。library generation 提供 variation；screening/selection 提供 selection；保留 hit 并再次 mutagenesis 提供 iteration。
+
+关键技术难点是 genotype-phenotype linkage。如果你筛到一个高活性蛋白，却无法知道对应 DNA sequence，就不能进入下一轮。phage display、cell display、microplate screening 等方法都在维护这个 linkage。
+
+## 原文小点逐条解释
+
+- **原文小点：** 有 local maxima 和 global maxima。
+  - **讲解：** 这个小点属于 directed evolution cycle；要联系 library generation、genotype-phenotype linkage、screen/selection 和 iterative improvement。
+- **原文小点：** 小范围 mutagenesis 可能困在 local maximum。
+  - **讲解：** 这个小点属于 directed evolution cycle；要联系 library generation、genotype-phenotype linkage、screen/selection 和 iterative improvement。
+- **原文小点：** 需要足够 diversity 或 recombination 才能跨过 fitness valleys。
+  - **讲解：** 这个小点属于 directed evolution cycle；要联系 library generation、genotype-phenotype linkage、screen/selection 和 iterative improvement。
+- **原文小点：** colonies on solid media。
+  - **讲解：** 这个小点属于 directed evolution cycle；要联系 library generation、genotype-phenotype linkage、screen/selection 和 iterative improvement。
+- **原文小点：** wells in liquid culture。
+  - **讲解：** 这个小点属于 directed evolution cycle；要联系 library generation、genotype-phenotype linkage、screen/selection 和 iterative improvement。
+- **原文小点：** fluorescence/colorimetric reporters。
+  - **讲解：** 这个小点属于 directed evolution cycle；要联系 library generation、genotype-phenotype linkage、screen/selection 和 iterative improvement。
+- **原文小点：** chromatography, mass spectrometry, NMR。
+  - **讲解：** 这个小点属于 directed evolution cycle；要联系 library generation、genotype-phenotype linkage、screen/selection 和 iterative improvement。
+- **原文小点：** FACS 可按 fluorescence 分选 individual cells。
+  - **讲解：** 这个小点属于 directed evolution cycle；要联系 library generation、genotype-phenotype linkage、screen/selection 和 iterative improvement。
+
+## 做题和复习时怎么用
+
+比较 ALE 和 DE：ALE selects organism fitness in environment; DE mutates genes/proteins and screens/selects desired molecular function.
+
+## 常见误区
+
+- 把工程化写成单一步骤，忽略 selection/screening、flux 和 host fitness。
+- 混淆 ALE 的 whole-cell selection 与 directed evolution 的 protein-function screening。
+
+## 关联知识点
+
+- [[01-02 生命需要什么|variation-selection-replication]]
+- [[08-08 Enzyme catalysis 的本质|enzyme function]]
+
+<!-- END_DETAILED_EXPLANATION -->
