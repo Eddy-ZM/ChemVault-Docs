@@ -1,47 +1,201 @@
 ---
-title: ChemVault Docs
-description: Chemistry notes, lab guides, reagent references and project documentation.
+title: Documentation Library
+description: Knowledge base, manuals and documentation library for the ChemVault ecosystem.
 template: splash
-hero:
-  tagline: Chemistry notes, lab guides, reagent passports and project documentation for the ChemVault ecosystem.
-  actions:
-    - text: Start Reading
-      link: /getting-started/what-is-chemvault/
-      icon: right-arrow
-    - text: View GitHub
-      link: https://github.com/Mu-Eddy
-      icon: external
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+<section className="cv-docs-hero">
+  <div className="cv-hero-copy">
+    <p className="cv-eyebrow">public documentation library · chemistry notes · project manuals</p>
+    <h1>ChemVault Docs</h1>
+    <p className="cv-lead">
+      The structured knowledge base for ChemVault: chemistry notes, reagent passports, lab guides, project documentation,
+      UoM course knowledge points and future file manuals.
+    </p>
+    <button className="cv-search-prompt" type="button" data-cv-open-search>
+      <span className="cv-search-icon" aria-hidden="true"></span>
+      <span>Search docs, reagents, methods, notes...</span>
+      <kbd>Ctrl K</kbd>
+    </button>
+    <div className="cv-action-row">
+      <a className="cv-button cv-button-primary" href="/getting-started/what-is-chemvault/">
+        <span className="cv-button-icon cv-button-icon-book" aria-hidden="true"></span>
+        Start reading
+      </a>
+      <a className="cv-button cv-button-secondary" href="#library">
+        <span className="cv-button-icon cv-button-icon-folder" aria-hidden="true"></span>
+        Browse library
+      </a>
+    </div>
+  </div>
 
-## ChemVault Knowledge System
+  <aside className="cv-library-panel" aria-label="Library overview">
+    <div className="cv-panel-toolbar">
+      <span className="cv-status-dot" aria-hidden="true"></span>
+      <span>Docs index</span>
+      <code>Starlight</code>
+    </div>
+    <div className="cv-metric-grid">
+      <div><strong>100+</strong><span>UoM notes</span></div>
+      <div><strong>6</strong><span>workspaces</span></div>
+      <div><strong>4</strong><span>doc types</span></div>
+      <div><strong>2</strong><span>project manuals</span></div>
+    </div>
+    <div className="cv-health-list">
+      <div><span>Chemistry Notes</span><strong>Indexed</strong></div>
+      <div><span>Reagent Library</span><strong>Ready</strong></div>
+      <div><span>Lab Guides</span><strong>Planned</strong></div>
+      <div><span>Project Docs</span><strong>Live</strong></div>
+      <div><span>File Manuals</span><strong>Expanding</strong></div>
+    </div>
+  </aside>
+</section>
 
-ChemVault Docs is the documentation and knowledge base for the ChemVault ecosystem.
+<section className="cv-section cv-section-tight" id="library">
+  <div className="cv-section-heading">
+    <div>
+      <p className="cv-eyebrow">explore by workspace</p>
+      <h2>One library for notes, manuals and research operations</h2>
+    </div>
+    <p>
+      ChemVault Docs now behaves like a documentation hub: each workspace has a clear purpose, route and reading path.
+    </p>
+  </div>
 
-It connects chemistry learning, laboratory preparation, project documentation, reagent references and future research tools into one structured archive.
+  <div className="cv-workspace-grid">
+    <a className="cv-workspace-card" href="/chemistry/sn1/">
+      <span className="cv-card-icon cv-card-icon-notes" aria-hidden="true"></span>
+      <strong>Chemistry Notes</strong>
+      <small>Reaction notes, mechanisms, calculations and study summaries.</small>
+      <em>Open</em>
+    </a>
+    <a className="cv-workspace-card" href="/reagents/nabh4/">
+      <span className="cv-card-icon cv-card-icon-reagent" aria-hidden="true"></span>
+      <strong>Reagent Library</strong>
+      <small>Reagent passports with uses, conditions, traps and safety context.</small>
+      <em>Open</em>
+    </a>
+    <a className="cv-workspace-card" href="/guides/example/">
+      <span className="cv-card-icon cv-card-icon-lab" aria-hidden="true"></span>
+      <strong>Lab Guides</strong>
+      <small>Procedure notes, report preparation and experiment checklists.</small>
+      <em>Open</em>
+    </a>
+    <a className="cv-workspace-card" href="/projects/chemvault-core/">
+      <span className="cv-card-icon cv-card-icon-project" aria-hidden="true"></span>
+      <strong>Project Docs</strong>
+      <small>ChemVault Core, Cloud Mail and future platform manuals.</small>
+      <em>Open</em>
+    </a>
+    <a className="cv-workspace-card cv-workspace-card-featured" href="/uom-chemistry/chem10712/">
+      <span className="cv-card-icon cv-card-icon-course" aria-hidden="true"></span>
+      <strong>UoM Chemistry</strong>
+      <small>CHEM10712 knowledge points, lecture summaries and exam patterns.</small>
+      <em>Open</em>
+    </a>
+    <a className="cv-workspace-card" href="/reference/example/">
+      <span className="cv-card-icon cv-card-icon-file" aria-hidden="true"></span>
+      <strong>File Manuals</strong>
+      <small>Future instrument, software, dataset and attachment documentation.</small>
+      <em>Open</em>
+    </a>
+  </div>
+</section>
 
-<CardGrid>
-  <Card title="Chemistry Notes" icon="seti:folder">
-    Organic, physical, analytical and inorganic chemistry notes.
-  </Card>
+<script src="/cv-docs.js"></script>
 
-  <Card title="Reagent Library" icon="seti:test-js">
-    Reagent passports with uses, mechanisms, conditions and exam traps.
-  </Card>
+<section className="cv-section cv-section-band">
+  <div className="cv-section-heading">
+    <div>
+      <p className="cv-eyebrow">suggested reading paths</p>
+      <h2>Start from the task, not the folder tree</h2>
+    </div>
+    <p>
+      The library is organized for repeated use: learn a concept, check a reagent, prepare a lab, or document a project.
+    </p>
+  </div>
 
-  <Card title="Lab Guides" icon="seti:config">
-    Structured undergraduate chemistry lab guides and report preparation notes.
-  </Card>
+  <div className="cv-path-grid">
+    <a className="cv-path-card" href="/getting-started/what-is-chemvault/"><strong>New to ChemVault</strong><span>4 steps</span></a>
+    <a className="cv-path-card" href="/reagents/nabh4/"><strong>Reagent onboarding</strong><span>6 steps</span></a>
+    <a className="cv-path-card" href="/chemistry/sn1/"><strong>Study a reaction</strong><span>5 steps</span></a>
+    <a className="cv-path-card" href="/projects/chemvault-core/"><strong>Document a product</strong><span>7 steps</span></a>
+    <a className="cv-path-card" href="/uom-chemistry/chem10712/"><strong>Review CHEM10712</strong><span>100 notes</span></a>
+  </div>
+</section>
 
-  <Card title="Project Docs" icon="seti:github">
-    Documentation for ChemVault Core, ChemVault Mail and future ChemVault tools.
-  </Card>
-</CardGrid>
+<section className="cv-section cv-library-table-section">
+  <div className="cv-table-header">
+    <div>
+      <p className="cv-eyebrow">recently indexed</p>
+      <h2>Active library records</h2>
+    </div>
+    <a href="https://chemvault.science" target="_blank" rel="noreferrer">Open research portal</a>
+  </div>
 
-## Current Modules
+  <div className="cv-table-shell">
+    <table className="cv-record-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Workspace</th>
+          <th>Status</th>
+          <th>Route</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="/uom-chemistry/chem10712/">CHEM10712 slides knowledge notes</a></td>
+          <td>UoM Chemistry</td>
+          <td><span className="cv-status-pill">Indexed</span></td>
+          <td>Course notes</td>
+        </tr>
+        <tr>
+          <td><a href="/reagents/nabh4/">Sodium borohydride passport</a></td>
+          <td>Reagent Library</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Reference</td>
+        </tr>
+        <tr>
+          <td><a href="/chemistry/sn1/">SN1 reaction note</a></td>
+          <td>Chemistry Notes</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Concept</td>
+        </tr>
+        <tr>
+          <td><a href="/projects/chemvault-core/">ChemVault Core manual</a></td>
+          <td>Project Docs</td>
+          <td><span className="cv-status-pill">Live</span></td>
+          <td>Project</td>
+        </tr>
+        <tr>
+          <td><a href="/projects/chemvault-mail/">ChemVault Mail manual</a></td>
+          <td>Project Docs</td>
+          <td><span className="cv-status-pill">Live</span></td>
+          <td>Service</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
-- **ChemVault Core** — the main chemistry research platform.
-- **ChemVault Mail** — the email system for the ChemVault domain.
-- **ChemVault Docs** — the documentation and knowledge base.
-- **ChemVault Files** — a future resource and download centre.
+<section className="cv-section cv-topic-section">
+  <div className="cv-section-heading">
+    <div>
+      <p className="cv-eyebrow">popular topics</p>
+      <h2>Tags that should become first-class docs</h2>
+    </div>
+    <p>
+      These topic lanes keep the site ready for manuals, lab resources and larger file-library documentation.
+    </p>
+  </div>
+
+  <div className="cv-topic-grid">
+    <span>Mechanisms</span>
+    <span>Reagent safety</span>
+    <span>Lab reports</span>
+    <span>Biochemistry</span>
+    <span>Project operations</span>
+    <span>File manuals</span>
+  </div>
+</section>
