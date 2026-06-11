@@ -1,13 +1,10 @@
 ---
 title: '13.2 Plasmids'
 ---
-
-# 13.2 Plasmids
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[13 Recombinant proteins 与 genome editing|13. Recombinant proteins 与 genome editing]]
-- 导航：上一节：[[13-01 Applications|13.1 Applications]]；下一节：[[13-03 E. coli transformation|13.3 E. coli transformation]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[13. Recombinant proteins 与 genome editing](/uom-chemistry/chem10712_knowledge_points/13-recombinant-proteins-与-genome-editing/)
+- 导航：上一节：[13.1 Applications](/uom-chemistry/chem10712_knowledge_points/13-01-applications/)；下一节：[13.3 E. coli transformation](/uom-chemistry/chem10712_knowledge_points/13-03-e-coli-transformation/)
 
 ## 详细内容
 
@@ -66,7 +63,7 @@ expression plasmid 与 cloning plasmid 的重点不同。cloning 更强调复制
 
 ## 关联知识点
 
-- [[12-03 DNA manipulation 概念|DNA manipulation]]
-- [[14-01 Metabolic engineering 策略|metabolic engineering]]
+- [DNA manipulation](/uom-chemistry/chem10712_knowledge_points/12-03-dna-manipulation-概念/)
+- [metabolic engineering](/uom-chemistry/chem10712_knowledge_points/14-01-metabolic-engineering-策略/)
 
 <!-- END_DETAILED_EXPLANATION -->

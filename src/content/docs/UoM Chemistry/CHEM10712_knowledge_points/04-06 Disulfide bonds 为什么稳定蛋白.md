@@ -1,13 +1,10 @@
 ---
 title: '4.6 Disulfide bonds 为什么稳定蛋白'
 ---
-
-# 4.6 Disulfide bonds 为什么稳定蛋白
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[04 蛋白质折叠、稳定性、动力学与工程化|4. 蛋白质折叠、稳定性、动力学与工程化]]
-- 导航：上一节：[[04-05 Tm、稳定性与溶液条件|4.5 Tm、稳定性与溶液条件]]；下一节：[[04-07 稳定性与活性的 trade-off|4.7 稳定性与活性的 trade-off]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[4. 蛋白质折叠、稳定性、动力学与工程化](/uom-chemistry/chem10712_knowledge_points/04-蛋白质折叠稳定性动力学与工程化/)
+- 导航：上一节：[4.5 Tm、稳定性与溶液条件](/uom-chemistry/chem10712_knowledge_points/04-05-tm稳定性与溶液条件/)；下一节：[4.7 稳定性与活性的 trade-off](/uom-chemistry/chem10712_knowledge_points/04-07-稳定性与活性的-trade-off/)
 
 ## 详细内容
 
@@ -47,7 +44,7 @@ disulfide bond 稳定蛋白的主要热力学原因是降低 unfolded state 的 
 
 ## 关联知识点
 
-- [[03-02 Peptide bond 肽键与方向性|蛋白一级结构]]
-- [[15-03 Directed evolution, DE|directed evolution]]
+- [蛋白一级结构](/uom-chemistry/chem10712_knowledge_points/03-02-peptide-bond-肽键与方向性/)
+- [directed evolution](/uom-chemistry/chem10712_knowledge_points/15-03-directed-evolution-de/)
 
 <!-- END_DETAILED_EXPLANATION -->

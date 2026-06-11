@@ -1,13 +1,10 @@
 ---
 title: '14.4 Artemisinin production'
 ---
-
-# 14.4 Artemisinin production
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[14 Microbial metabolic engineering 与 case studies|14. Microbial metabolic engineering 与 case studies]]
-- 导航：上一节：[[14-03 Nanobodies|14.3 Nanobodies]]；下一节：[[15-01 DNA variation 如何影响 function|15.1 DNA variation 如何影响 function]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[14. Microbial metabolic engineering 与 case studies](/uom-chemistry/chem10712_knowledge_points/14-microbial-metabolic-engineering-与-case-studies/)
+- 导航：上一节：[14.3 Nanobodies](/uom-chemistry/chem10712_knowledge_points/14-03-nanobodies/)；下一节：[15.1 DNA variation 如何影响 function](/uom-chemistry/chem10712_knowledge_points/15-01-dna-variation-如何影响-function/)
 
 ## 详细内容
 
@@ -62,7 +59,7 @@ artemisinin case study 展示 metabolic engineering 和 semi-synthesis 的结合
 
 ## 关联知识点
 
-- [[09-01 Metabolism 的核心理解|metabolism]]
-- [[15-02 Adaptive Laboratory Evolution, ALE|ALE]]
+- [metabolism](/uom-chemistry/chem10712_knowledge_points/09-01-metabolism-的核心理解/)
+- [ALE](/uom-chemistry/chem10712_knowledge_points/15-02-adaptive-laboratory-evolution-ale/)
 
 <!-- END_DETAILED_EXPLANATION -->

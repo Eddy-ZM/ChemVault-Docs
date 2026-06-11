@@ -1,13 +1,10 @@
 ---
 title: '4.7 稳定性与活性的 trade-off'
 ---
-
-# 4.7 稳定性与活性的 trade-off
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[04 蛋白质折叠、稳定性、动力学与工程化|4. 蛋白质折叠、稳定性、动力学与工程化]]
-- 导航：上一节：[[04-06 Disulfide bonds 为什么稳定蛋白|4.6 Disulfide bonds 为什么稳定蛋白]]；下一节：[[05-01 Coiled-coil 的 heptad repeat|5.1 Coiled-coil 的 heptad repeat]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[4. 蛋白质折叠、稳定性、动力学与工程化](/uom-chemistry/chem10712_knowledge_points/04-蛋白质折叠稳定性动力学与工程化/)
+- 导航：上一节：[4.6 Disulfide bonds 为什么稳定蛋白](/uom-chemistry/chem10712_knowledge_points/04-06-disulfide-bonds-为什么稳定蛋白/)；下一节：[5.1 Coiled-coil 的 heptad repeat](/uom-chemistry/chem10712_knowledge_points/05-01-coiled-coil-的-heptad-repeat/)
 
 ## 详细内容
 
@@ -47,7 +44,7 @@ title: '4.7 稳定性与活性的 trade-off'
 
 ## 关联知识点
 
-- [[03-02 Peptide bond 肽键与方向性|蛋白一级结构]]
-- [[15-03 Directed evolution, DE|directed evolution]]
+- [蛋白一级结构](/uom-chemistry/chem10712_knowledge_points/03-02-peptide-bond-肽键与方向性/)
+- [directed evolution](/uom-chemistry/chem10712_knowledge_points/15-03-directed-evolution-de/)
 
 <!-- END_DETAILED_EXPLANATION -->

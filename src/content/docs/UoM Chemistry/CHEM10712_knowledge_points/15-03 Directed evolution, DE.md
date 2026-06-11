@@ -1,13 +1,10 @@
 ---
 title: '15.3 Directed evolution, DE'
 ---
-
-# 15.3 Directed evolution, DE
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[15 Molecular evolution、ALE 与 directed evolution|15. Molecular evolution、ALE 与 directed evolution]]
-- 导航：上一节：[[15-02 Adaptive Laboratory Evolution, ALE|15.2 Adaptive Laboratory Evolution, ALE]]；下一节：[[15-04 Directed evolution case sitagliptin transaminase|15.4 Directed evolution case: sitagliptin transaminase]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[15. Molecular evolution、ALE 与 directed evolution](/uom-chemistry/chem10712_knowledge_points/15-molecular-evolutionale-与-directed-evolution/)
+- 导航：上一节：[15.2 Adaptive Laboratory Evolution, ALE](/uom-chemistry/chem10712_knowledge_points/15-02-adaptive-laboratory-evolution-ale/)；下一节：[15.4 Directed evolution case: sitagliptin transaminase](/uom-chemistry/chem10712_knowledge_points/15-04-directed-evolution-case-sitagliptin-transaminase/)
 
 ## 详细内容
 
@@ -73,7 +70,7 @@ directed evolution 针对 gene/protein function 做人工 Darwinian cycle。libr
 
 ## 关联知识点
 
-- [[01-02 生命需要什么|variation-selection-replication]]
-- [[08-08 Enzyme catalysis 的本质|enzyme function]]
+- [variation-selection-replication](/uom-chemistry/chem10712_knowledge_points/01-02-生命需要什么/)
+- [enzyme function](/uom-chemistry/chem10712_knowledge_points/08-08-enzyme-catalysis-的本质/)
 
 <!-- END_DETAILED_EXPLANATION -->

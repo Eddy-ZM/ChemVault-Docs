@@ -1,13 +1,10 @@
 ---
 title: '8.6 如何从 MM plot 读参数'
 ---
-
-# 8.6 如何从 MM plot 读参数
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[08 酶：specificity、cofactors、allostery 与 kinetics|8. 酶：specificity、cofactors、allostery 与 kinetics]]
-- 导航：上一节：[[08-05 Michaelis-Menten kinetics|8.5 Michaelis-Menten kinetics]]；下一节：[[08-07 Competitive inhibition 与 TSAs|8.7 Competitive inhibition 与 TSAs]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[8. 酶：specificity、cofactors、allostery 与 kinetics](/uom-chemistry/chem10712_knowledge_points/08-酶specificitycofactorsallostery-与-kinetics/)
+- 导航：上一节：[8.5 Michaelis-Menten kinetics](/uom-chemistry/chem10712_knowledge_points/08-05-michaelis-menten-kinetics/)；下一节：[8.7 Competitive inhibition 与 TSAs](/uom-chemistry/chem10712_knowledge_points/08-07-competitive-inhibition-与-tsas/)
 
 ## 详细内容
 
@@ -69,7 +66,7 @@ Workshop 例子：
 
 ## 关联知识点
 
-- [[03-03 20 种氨基酸的功能分组|active-site residues]]
-- [[15-04 Directed evolution case sitagliptin transaminase|sitagliptin transaminase]]
+- [active-site residues](/uom-chemistry/chem10712_knowledge_points/03-03-20-种氨基酸的功能分组/)
+- [sitagliptin transaminase](/uom-chemistry/chem10712_knowledge_points/15-04-directed-evolution-case-sitagliptin-transaminase/)
 
 <!-- END_DETAILED_EXPLANATION -->

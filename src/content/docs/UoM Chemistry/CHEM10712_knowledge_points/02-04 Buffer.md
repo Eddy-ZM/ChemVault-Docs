@@ -1,13 +1,10 @@
 ---
 title: '2.4 Buffer'
 ---
-
-# 2.4 Buffer
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[02 水、pH、pKa 与生物分子的电荷状态|2. 水、pH、pKa 与生物分子的电荷状态]]
-- 导航：上一节：[[02-03 pH、pKa 与 Henderson-Hasselbalch|2.3 pH、pKa 与 Henderson-Hasselbalch]]；下一节：[[02-05 Protein environment 会改变 pKa|2.5 Protein environment 会改变 pKa]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[2. 水、pH、pKa 与生物分子的电荷状态](/uom-chemistry/chem10712_knowledge_points/02-水phpka-与生物分子的电荷状态/)
+- 导航：上一节：[2.3 pH、pKa 与 Henderson-Hasselbalch](/uom-chemistry/chem10712_knowledge_points/02-03-phpka-与-henderson-hasselbalch/)；下一节：[2.5 Protein environment 会改变 pKa](/uom-chemistry/chem10712_knowledge_points/02-05-protein-environment-会改变-pka/)
 
 ## 详细内容
 
@@ -52,7 +49,7 @@ buffer 计算一定写 mass balance：[acid]+[base]=total concentration。只写
 
 ## 关联知识点
 
-- [[03-03 20 种氨基酸的功能分组|氨基酸反应性]]
-- [[08-08 Enzyme catalysis 的本质|酶催化]]
+- [氨基酸反应性](/uom-chemistry/chem10712_knowledge_points/03-03-20-种氨基酸的功能分组/)
+- [酶催化](/uom-chemistry/chem10712_knowledge_points/08-08-enzyme-catalysis-的本质/)
 
 <!-- END_DETAILED_EXPLANATION -->

@@ -1,13 +1,10 @@
 ---
 title: '16.4 Kd/MM kinetics 题'
 ---
-
-# 16.4 Kd/MM kinetics 题
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[16 常见考试 答题模式|16. 常见考试/答题模式]]
-- 导航：上一节：[[16-03 脂质性质题|16.3 脂质性质题]]；下一节：[[16-05 Enzyme mechanism 题|16.5 Enzyme mechanism 题]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[16. 常见考试/答题模式](/uom-chemistry/chem10712_knowledge_points/16-常见考试-答题模式/)
+- 导航：上一节：[16.3 脂质性质题](/uom-chemistry/chem10712_knowledge_points/16-03-脂质性质题/)；下一节：[16.5 Enzyme mechanism 题](/uom-chemistry/chem10712_knowledge_points/16-05-enzyme-mechanism-题/)
 
 ## 详细内容
 
@@ -60,6 +57,6 @@ binding: Kd=[P][L]/[PL]，90% bound 需 [L]free=9Kd。enzyme: v=kcat[E]T[S]/(Km+
 
 ## 关联知识点
 
-- [[00 CHEM10712 知识点索引|知识点索引]]
+- [知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
 
 <!-- END_DETAILED_EXPLANATION -->

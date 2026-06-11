@@ -1,13 +1,10 @@
 ---
 title: '15.5 Laboratory evolution 的应用清单'
 ---
-
-# 15.5 Laboratory evolution 的应用清单
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[15 Molecular evolution、ALE 与 directed evolution|15. Molecular evolution、ALE 与 directed evolution]]
-- 导航：上一节：[[15-04 Directed evolution case sitagliptin transaminase|15.4 Directed evolution case: sitagliptin transaminase]]；下一节：[[16-01 pKa charge state 题|16.1 pKa/charge state 题]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[15. Molecular evolution、ALE 与 directed evolution](/uom-chemistry/chem10712_knowledge_points/15-molecular-evolutionale-与-directed-evolution/)
+- 导航：上一节：[15.4 Directed evolution case: sitagliptin transaminase](/uom-chemistry/chem10712_knowledge_points/15-04-directed-evolution-case-sitagliptin-transaminase/)；下一节：[16.1 pKa/charge state 题](/uom-chemistry/chem10712_knowledge_points/16-01-pka-charge-state-题/)
 
 ## 详细内容
 
@@ -69,7 +66,7 @@ laboratory evolution 的应用可以按目标分组：改 enzyme chemistry、改
 
 ## 关联知识点
 
-- [[01-02 生命需要什么|variation-selection-replication]]
-- [[08-08 Enzyme catalysis 的本质|enzyme function]]
+- [variation-selection-replication](/uom-chemistry/chem10712_knowledge_points/01-02-生命需要什么/)
+- [enzyme function](/uom-chemistry/chem10712_knowledge_points/08-08-enzyme-catalysis-的本质/)
 
 <!-- END_DETAILED_EXPLANATION -->

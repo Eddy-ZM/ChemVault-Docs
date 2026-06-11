@@ -1,13 +1,10 @@
 ---
 title: '10.3 LUCA 与 common biochemistry'
 ---
-
-# 10.3 LUCA 与 common biochemistry
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[10 Origins of life 与 evolutionary principles|10. Origins of life 与 evolutionary principles]]
-- 导航：上一节：[[10-02 RNA world hypothesis|10.2 RNA world hypothesis]]；下一节：[[10-04 Evolution mechanisms|10.4 Evolution mechanisms]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[10. Origins of life 与 evolutionary principles](/uom-chemistry/chem10712_knowledge_points/10-origins-of-life-与-evolutionary-principles/)
+- 导航：上一节：[10.2 RNA world hypothesis](/uom-chemistry/chem10712_knowledge_points/10-02-rna-world-hypothesis/)；下一节：[10.4 Evolution mechanisms](/uom-chemistry/chem10712_knowledge_points/10-04-evolution-mechanisms/)
 
 ## 详细内容
 
@@ -69,7 +66,7 @@ LUCA 不是第一个生命，而是现存生命最后的共同祖先。我们推
 
 ## 关联知识点
 
-- [[01-02 生命需要什么|生命需要什么]]
-- [[11-03 Central dogma|central dogma]]
+- [生命需要什么](/uom-chemistry/chem10712_knowledge_points/01-02-生命需要什么/)
+- [central dogma](/uom-chemistry/chem10712_knowledge_points/11-03-central-dogma/)
 
 <!-- END_DETAILED_EXPLANATION -->

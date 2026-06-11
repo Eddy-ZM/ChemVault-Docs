@@ -1,13 +1,10 @@
 ---
 title: '10.2 RNA world hypothesis'
 ---
-
-# 10.2 RNA world hypothesis
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[10 Origins of life 与 evolutionary principles|10. Origins of life 与 evolutionary principles]]
-- 导航：上一节：[[10-01 Prebiotic chemistry|10.1 Prebiotic chemistry]]；下一节：[[10-03 LUCA 与 common biochemistry|10.3 LUCA 与 common biochemistry]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[10. Origins of life 与 evolutionary principles](/uom-chemistry/chem10712_knowledge_points/10-origins-of-life-与-evolutionary-principles/)
+- 导航：上一节：[10.1 Prebiotic chemistry](/uom-chemistry/chem10712_knowledge_points/10-01-prebiotic-chemistry/)；下一节：[10.3 LUCA 与 common biochemistry](/uom-chemistry/chem10712_knowledge_points/10-03-luca-与-common-biochemistry/)
 
 ## 详细内容
 
@@ -47,7 +44,7 @@ RNA world hypothesis 的吸引力在于 RNA 同时能储存序列信息和折叠
 
 ## 关联知识点
 
-- [[01-02 生命需要什么|生命需要什么]]
-- [[11-03 Central dogma|central dogma]]
+- [生命需要什么](/uom-chemistry/chem10712_knowledge_points/01-02-生命需要什么/)
+- [central dogma](/uom-chemistry/chem10712_knowledge_points/11-03-central-dogma/)
 
 <!-- END_DETAILED_EXPLANATION -->

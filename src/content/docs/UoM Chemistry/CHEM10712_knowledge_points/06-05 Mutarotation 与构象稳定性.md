@@ -1,13 +1,10 @@
 ---
 title: '6.5 Mutarotation 与构象稳定性'
 ---
-
-# 6.5 Mutarotation 与构象稳定性
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[06 糖：monosaccharides、rings、glycosidic bonds 与 reducing sugars|6. 糖：monosaccharides、rings、glycosidic bonds 与 reducing sugars]]
-- 导航：上一节：[[06-04 Ring formation, Haworth, anomers|6.4 Ring formation, Haworth, anomers]]；下一节：[[06-06 Glycosidic bonds 与 reducing sugars|6.6 Glycosidic bonds 与 reducing sugars]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[6. 糖：monosaccharides、rings、glycosidic bonds 与 reducing sugars](/uom-chemistry/chem10712_knowledge_points/06-糖monosaccharidesringsglycosidic-bonds-与-reducing-sugars/)
+- 导航：上一节：[6.4 Ring formation, Haworth, anomers](/uom-chemistry/chem10712_knowledge_points/06-04-ring-formation-haworth-anomers/)；下一节：[6.6 Glycosidic bonds 与 reducing sugars](/uom-chemistry/chem10712_knowledge_points/06-06-glycosidic-bonds-与-reducing-sugars/)
 
 ## 详细内容
 
@@ -53,7 +50,7 @@ mutarotation 是 alpha 和 beta anomers 通过短暂 linear form 互相转化，
 
 ## 关联知识点
 
-- [[07-04 Membrane lipids|glycolipids]]
-- [[12-03 DNA manipulation 概念|N-glycosidic bonds 与核酸]]
+- [glycolipids](/uom-chemistry/chem10712_knowledge_points/07-04-membrane-lipids/)
+- [N-glycosidic bonds 与核酸](/uom-chemistry/chem10712_knowledge_points/12-03-dna-manipulation-概念/)
 
 <!-- END_DETAILED_EXPLANATION -->

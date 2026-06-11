@@ -1,13 +1,10 @@
 ---
 title: '6.6 Glycosidic bonds 与 reducing sugars'
 ---
-
-# 6.6 Glycosidic bonds 与 reducing sugars
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[06 糖：monosaccharides、rings、glycosidic bonds 与 reducing sugars|6. 糖：monosaccharides、rings、glycosidic bonds 与 reducing sugars]]
-- 导航：上一节：[[06-05 Mutarotation 与构象稳定性|6.5 Mutarotation 与构象稳定性]]；下一节：[[07-01 Lipid 的定义|7.1 Lipid 的定义]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[6. 糖：monosaccharides、rings、glycosidic bonds 与 reducing sugars](/uom-chemistry/chem10712_knowledge_points/06-糖monosaccharidesringsglycosidic-bonds-与-reducing-sugars/)
+- 导航：上一节：[6.5 Mutarotation 与构象稳定性](/uom-chemistry/chem10712_knowledge_points/06-05-mutarotation-与构象稳定性/)；下一节：[7.1 Lipid 的定义](/uom-chemistry/chem10712_knowledge_points/07-01-lipid-的定义/)
 
 ## 详细内容
 
@@ -84,7 +81,7 @@ reducing sugar 的判断只看是否还有 free anomeric carbon 能打开成 lin
 
 ## 关联知识点
 
-- [[07-04 Membrane lipids|glycolipids]]
-- [[12-03 DNA manipulation 概念|N-glycosidic bonds 与核酸]]
+- [glycolipids](/uom-chemistry/chem10712_knowledge_points/07-04-membrane-lipids/)
+- [N-glycosidic bonds 与核酸](/uom-chemistry/chem10712_knowledge_points/12-03-dna-manipulation-概念/)
 
 <!-- END_DETAILED_EXPLANATION -->

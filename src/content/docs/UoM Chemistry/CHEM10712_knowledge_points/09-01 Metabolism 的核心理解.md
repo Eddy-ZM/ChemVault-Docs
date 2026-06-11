@@ -1,13 +1,10 @@
 ---
 title: '9.1 Metabolism 的核心理解'
 ---
-
-# 9.1 Metabolism 的核心理解
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[09 Metabolism 与 biocatalysis 在课件中的定位|9. Metabolism 与 biocatalysis 在课件中的定位]]
-- 导航：上一节：[[08-08 Enzyme catalysis 的本质|8.8 Enzyme catalysis 的本质]]；下一节：[[09-02 Biocatalysis 与 green chemistry|9.2 Biocatalysis 与 green chemistry]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[9. Metabolism 与 biocatalysis 在课件中的定位](/uom-chemistry/chem10712_knowledge_points/09-metabolism-与-biocatalysis-在课件中的定位/)
+- 导航：上一节：[8.8 Enzyme catalysis 的本质](/uom-chemistry/chem10712_knowledge_points/08-08-enzyme-catalysis-的本质/)；下一节：[9.2 Biocatalysis 与 green chemistry](/uom-chemistry/chem10712_knowledge_points/09-02-biocatalysis-与-green-chemistry/)
 
 ## 详细内容
 
@@ -60,7 +57,7 @@ metabolism 是 enzyme network，不是一堆孤立反应。pathway flux 由 subs
 
 ## 关联知识点
 
-- [[08-04 Enzyme control 与 ATCase|enzyme regulation]]
-- [[14-01 Metabolic engineering 策略|metabolic engineering]]
+- [enzyme regulation](/uom-chemistry/chem10712_knowledge_points/08-04-enzyme-control-与-atcase/)
+- [metabolic engineering](/uom-chemistry/chem10712_knowledge_points/14-01-metabolic-engineering-策略/)
 
 <!-- END_DETAILED_EXPLANATION -->

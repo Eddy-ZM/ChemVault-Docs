@@ -165,6 +165,44 @@ site-search button[data-open-modal]:focus-visible {
   transform: translateY(-1px);
 }
 
+site-search dialog {
+  border: 1px solid var(--cv-line);
+  border-radius: var(--cv-radius);
+  background: var(--cv-surface);
+  color: var(--cv-text);
+  box-shadow: var(--cv-shadow);
+}
+
+site-search dialog input,
+site-search dialog .pagefind-ui__search-input {
+  border: 1px solid var(--cv-line) !important;
+  border-radius: var(--cv-radius) !important;
+  background: var(--cv-bg-soft) !important;
+  color: var(--cv-text) !important;
+  box-shadow: none !important;
+}
+
+site-search dialog .pagefind-ui__search-clear {
+  color: var(--cv-blue) !important;
+}
+
+site-search dialog .pagefind-ui__result {
+  overflow: hidden;
+  border: 1px solid var(--cv-line);
+  border-radius: var(--cv-radius);
+  background: var(--cv-surface);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+site-search dialog .pagefind-ui__result-link {
+  color: var(--cv-blue) !important;
+}
+
+site-search dialog .pagefind-ui__result-excerpt {
+  color: var(--cv-muted) !important;
+  opacity: 1 !important;
+}
+
 .sidebar {
   border-right: 1px solid var(--cv-line);
   background: var(--cv-surface);
@@ -238,6 +276,12 @@ main > .content-panel:first-child:has(+ .content-panel .cv-docs-hero) {
 .sl-markdown-content h3,
 .sl-markdown-content h4 {
   color: var(--cv-text);
+  letter-spacing: 0;
+}
+
+main > .content-panel:first-child h1 {
+  color: var(--cv-text);
+  font-weight: 900;
   letter-spacing: 0;
 }
 
@@ -1038,6 +1082,98 @@ main > .content-panel:first-child:has(+ .content-panel .cv-docs-hero) {
   font-weight: 780;
 }
 
+.cv-course-overview,
+.cv-route-grid,
+.cv-exam-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.cv-course-overview {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1.25rem 0 2rem;
+}
+
+.cv-course-stat,
+.cv-route-card,
+.cv-exam-grid a {
+  border: 1px solid var(--cv-line);
+  border-radius: var(--cv-radius);
+  background: var(--cv-surface);
+  color: var(--cv-text);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition:
+    transform var(--cv-motion-fast) var(--cv-ease-spring),
+    border-color var(--cv-motion-fast) ease,
+    box-shadow var(--cv-motion-fast) ease;
+}
+
+.cv-course-stat:hover,
+.cv-course-stat:focus-visible,
+.cv-route-card:hover,
+.cv-route-card:focus-visible,
+.cv-exam-grid a:hover,
+.cv-exam-grid a:focus-visible {
+  border-color: rgba(0, 113, 227, 0.3);
+  color: var(--cv-text);
+  box-shadow: var(--cv-shadow-blue);
+  transform: translateY(-2px);
+}
+
+.cv-course-stat {
+  display: grid;
+  gap: 6px;
+  min-height: 94px;
+  align-content: center;
+  padding: 16px;
+}
+
+.cv-course-stat strong {
+  color: var(--cv-text);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.cv-course-stat span,
+.cv-route-card span {
+  color: var(--cv-muted);
+  line-height: 1.45;
+}
+
+.cv-route-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 2rem;
+}
+
+.cv-route-card {
+  display: grid;
+  gap: 8px;
+  min-height: 132px;
+  align-content: start;
+  padding: 18px;
+}
+
+.cv-route-card strong {
+  color: var(--cv-text);
+  font-size: 1.02rem;
+  font-weight: 850;
+}
+
+.cv-exam-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 2rem;
+}
+
+.cv-exam-grid a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 13px;
+  color: var(--cv-blue);
+  font-weight: 800;
+}
+
 :root[data-theme='dark'] .site-title img,
 :root[data-theme='dark'] site-search button[data-open-modal],
 :root[data-theme='dark'] .cv-search-prompt,
@@ -1054,7 +1190,12 @@ main > .content-panel:first-child:has(+ .content-panel .cv-docs-hero) {
 
 :root[data-theme='dark'] .cv-workspace-card,
 :root[data-theme='dark'] .cv-path-card,
-:root[data-theme='dark'] .cv-table-shell {
+:root[data-theme='dark'] .cv-table-shell,
+:root[data-theme='dark'] .cv-course-stat,
+:root[data-theme='dark'] .cv-route-card,
+:root[data-theme='dark'] .cv-exam-grid a,
+:root[data-theme='dark'] site-search dialog,
+:root[data-theme='dark'] site-search dialog .pagefind-ui__result {
   background-color: var(--cv-surface);
 }
 
@@ -1123,8 +1264,15 @@ main > .content-panel:first-child:has(+ .content-panel .cv-docs-hero) {
   }
 
   .cv-workspace-grid,
-  .cv-path-grid {
+  .cv-path-grid,
+  .cv-course-overview,
+  .cv-route-grid,
+  .cv-exam-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cv-library-panel {
+    display: none;
   }
 
   .cv-metric-grid {

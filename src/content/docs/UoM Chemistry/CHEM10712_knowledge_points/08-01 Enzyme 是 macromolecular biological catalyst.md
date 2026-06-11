@@ -1,13 +1,10 @@
 ---
 title: '8.1 Enzyme 是 macromolecular biological catalyst'
 ---
-
-# 8.1 Enzyme 是 macromolecular biological catalyst
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[08 酶：specificity、cofactors、allostery 与 kinetics|8. 酶：specificity、cofactors、allostery 与 kinetics]]
-- 导航：上一节：[[07-06 Membrane permeability|7.6 Membrane permeability]]；下一节：[[08-02 Active site interactions 与 stereospecificity|8.2 Active site interactions 与 stereospecificity]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[8. 酶：specificity、cofactors、allostery 与 kinetics](/uom-chemistry/chem10712_knowledge_points/08-酶specificitycofactorsallostery-与-kinetics/)
+- 导航：上一节：[7.6 Membrane permeability](/uom-chemistry/chem10712_knowledge_points/07-06-membrane-permeability/)；下一节：[8.2 Active site interactions 与 stereospecificity](/uom-chemistry/chem10712_knowledge_points/08-02-active-site-interactions-与-stereospecificity/)
 
 ## 详细内容
 
@@ -56,7 +53,7 @@ enzyme 是 catalyst，所以它不改变反应总体 ΔG 或 equilibrium positio
 
 ## 关联知识点
 
-- [[03-03 20 种氨基酸的功能分组|active-site residues]]
-- [[15-04 Directed evolution case sitagliptin transaminase|sitagliptin transaminase]]
+- [active-site residues](/uom-chemistry/chem10712_knowledge_points/03-03-20-种氨基酸的功能分组/)
+- [sitagliptin transaminase](/uom-chemistry/chem10712_knowledge_points/15-04-directed-evolution-case-sitagliptin-transaminase/)
 
 <!-- END_DETAILED_EXPLANATION -->

@@ -1,13 +1,10 @@
 ---
 title: '15.1 DNA variation 如何影响 function'
 ---
-
-# 15.1 DNA variation 如何影响 function
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[15 Molecular evolution、ALE 与 directed evolution|15. Molecular evolution、ALE 与 directed evolution]]
-- 导航：上一节：[[14-04 Artemisinin production|14.4 Artemisinin production]]；下一节：[[15-02 Adaptive Laboratory Evolution, ALE|15.2 Adaptive Laboratory Evolution, ALE]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[15. Molecular evolution、ALE 与 directed evolution](/uom-chemistry/chem10712_knowledge_points/15-molecular-evolutionale-与-directed-evolution/)
+- 导航：上一节：[14.4 Artemisinin production](/uom-chemistry/chem10712_knowledge_points/14-04-artemisinin-production/)；下一节：[15.2 Adaptive Laboratory Evolution, ALE](/uom-chemistry/chem10712_knowledge_points/15-02-adaptive-laboratory-evolution-ale/)
 
 ## 详细内容
 
@@ -56,7 +53,7 @@ DNA variation 到 function 的路径不是一步完成。突变先改变 nucleot
 
 ## 关联知识点
 
-- [[01-02 生命需要什么|variation-selection-replication]]
-- [[08-08 Enzyme catalysis 的本质|enzyme function]]
+- [variation-selection-replication](/uom-chemistry/chem10712_knowledge_points/01-02-生命需要什么/)
+- [enzyme function](/uom-chemistry/chem10712_knowledge_points/08-08-enzyme-catalysis-的本质/)
 
 <!-- END_DETAILED_EXPLANATION -->

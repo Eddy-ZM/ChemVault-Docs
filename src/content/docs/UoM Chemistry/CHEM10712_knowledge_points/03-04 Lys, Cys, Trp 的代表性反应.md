@@ -1,13 +1,10 @@
 ---
 title: '3.4 Lys, Cys, Trp 的代表性反应'
 ---
-
-# 3.4 Lys, Cys, Trp 的代表性反应
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[03 氨基酸、肽与蛋白质化学|3. 氨基酸、肽与蛋白质化学]]
-- 导航：上一节：[[03-03 20 种氨基酸的功能分组|3.3 20 种氨基酸的功能分组]]；下一节：[[03-05 Post-translational modification 与非蛋白氨基酸|3.5 Post-translational modification 与非蛋白氨基酸]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[3. 氨基酸、肽与蛋白质化学](/uom-chemistry/chem10712_knowledge_points/03-氨基酸肽与蛋白质化学/)
+- 导航：上一节：[3.3 20 种氨基酸的功能分组](/uom-chemistry/chem10712_knowledge_points/03-03-20-种氨基酸的功能分组/)；下一节：[3.5 Post-translational modification 与非蛋白氨基酸](/uom-chemistry/chem10712_knowledge_points/03-05-post-translational-modification-与非蛋白氨基酸/)
 
 ## 详细内容
 
@@ -69,7 +66,7 @@ Lys、Cys、Trp 展示了 side chain 功能的三种典型角色。Lys 的 amine
 
 ## 关联知识点
 
-- [[04-05 Tm、稳定性与溶液条件|蛋白稳定性]]
-- [[08-03 Cofactors coenzymes 为什么重要|cofactors]]
+- [蛋白稳定性](/uom-chemistry/chem10712_knowledge_points/04-05-tm稳定性与溶液条件/)
+- [cofactors](/uom-chemistry/chem10712_knowledge_points/08-03-cofactors-coenzymes-为什么重要/)
 
 <!-- END_DETAILED_EXPLANATION -->

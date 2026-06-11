@@ -1,13 +1,10 @@
 ---
 title: '12.2 Primer design 基本法'
 ---
-
-# 12.2 Primer design 基本法
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[12 PCR、primer design 与 DNA manipulation|12. PCR、primer design 与 DNA manipulation]]
-- 导航：上一节：[[12-01 PCR 原理|12.1 PCR 原理]]；下一节：[[12-03 DNA manipulation 概念|12.3 DNA manipulation 概念]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[12. PCR、primer design 与 DNA manipulation](/uom-chemistry/chem10712_knowledge_points/12-pcrprimer-design-与-dna-manipulation/)
+- 导航：上一节：[12.1 PCR 原理](/uom-chemistry/chem10712_knowledge_points/12-01-pcr-原理/)；下一节：[12.3 DNA manipulation 概念](/uom-chemistry/chem10712_knowledge_points/12-03-dna-manipulation-概念/)
 
 ## 详细内容
 
@@ -74,7 +71,7 @@ primer 设计的核心是方向性。forward primer 与 coding/top strand 5' 端
 
 ## 关联知识点
 
-- [[11-05 Gene features|gene features]]
-- [[13-03 E. coli transformation|transformation]]
+- [gene features](/uom-chemistry/chem10712_knowledge_points/11-05-gene-features/)
+- [transformation](/uom-chemistry/chem10712_knowledge_points/13-03-e-coli-transformation/)
 
 <!-- END_DETAILED_EXPLANATION -->

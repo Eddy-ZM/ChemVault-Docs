@@ -1,13 +1,10 @@
 ---
 title: '16.1 pKa/charge state 题'
 ---
-
-# 16.1 pKa/charge state 题
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[16 常见考试 答题模式|16. 常见考试/答题模式]]
-- 导航：上一节：[[15-05 Laboratory evolution 的应用清单|15.5 Laboratory evolution 的应用清单]]；下一节：[[16-02 糖结构题|16.2 糖结构题]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[16. 常见考试/答题模式](/uom-chemistry/chem10712_knowledge_points/16-常见考试-答题模式/)
+- 导航：上一节：[15.5 Laboratory evolution 的应用清单](/uom-chemistry/chem10712_knowledge_points/15-05-laboratory-evolution-的应用清单/)；下一节：[16.2 糖结构题](/uom-chemistry/chem10712_knowledge_points/16-02-糖结构题/)
 
 ## 详细内容
 
@@ -53,6 +50,6 @@ pKa/charge state 题的核心是状态比较。每个 ionisable group 都有 pro
 
 ## 关联知识点
 
-- [[00 CHEM10712 知识点索引|知识点索引]]
+- [知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
 
 <!-- END_DETAILED_EXPLANATION -->

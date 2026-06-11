@@ -1,13 +1,10 @@
 ---
 title: '11.4 Genetic code 与 mutations'
 ---
-
-# 11.4 Genetic code 与 mutations
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[11 Nucleic acids、central dogma 与 genetic regulation|11. Nucleic acids、central dogma 与 genetic regulation]]
-- 导航：上一节：[[11-03 Central dogma|11.3 Central dogma]]；下一节：[[11-05 Gene features|11.5 Gene features]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[11. Nucleic acids、central dogma 与 genetic regulation](/uom-chemistry/chem10712_knowledge_points/11-nucleic-acidscentral-dogma-与-genetic-regulation/)
+- 导航：上一节：[11.3 Central dogma](/uom-chemistry/chem10712_knowledge_points/11-03-central-dogma/)；下一节：[11.5 Gene features](/uom-chemistry/chem10712_knowledge_points/11-05-gene-features/)
 
 ## 详细内容
 
@@ -50,7 +47,7 @@ mutation 的功能后果取决于位置和性质。active site residue 的 misse
 
 ## 关联知识点
 
-- [[12-02 Primer design 基本法|primer design]]
-- [[13-02 Plasmids|plasmids]]
+- [primer design](/uom-chemistry/chem10712_knowledge_points/12-02-primer-design-基本法/)
+- [plasmids](/uom-chemistry/chem10712_knowledge_points/13-02-plasmids/)
 
 <!-- END_DETAILED_EXPLANATION -->

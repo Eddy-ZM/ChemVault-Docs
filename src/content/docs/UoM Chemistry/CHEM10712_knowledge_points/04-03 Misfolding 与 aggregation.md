@@ -1,13 +1,10 @@
 ---
 title: '4.3 Misfolding 与 aggregation'
 ---
-
-# 4.3 Misfolding 与 aggregation
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[04 蛋白质折叠、稳定性、动力学与工程化|4. 蛋白质折叠、稳定性、动力学与工程化]]
-- 导航：上一节：[[04-02 Levinthal paradox 与 folding landscape|4.2 Levinthal paradox 与 folding landscape]]；下一节：[[04-04 Chaperones 与 GroEL GroES|4.4 Chaperones 与 GroEL/GroES]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[4. 蛋白质折叠、稳定性、动力学与工程化](/uom-chemistry/chem10712_knowledge_points/04-蛋白质折叠稳定性动力学与工程化/)
+- 导航：上一节：[4.2 Levinthal paradox 与 folding landscape](/uom-chemistry/chem10712_knowledge_points/04-02-levinthal-paradox-与-folding-landscape/)；下一节：[4.4 Chaperones 与 GroEL/GroES](/uom-chemistry/chem10712_knowledge_points/04-04-chaperones-与-groel-groes/)
 
 ## 详细内容
 
@@ -47,7 +44,7 @@ aggregation 也解释了为什么 denaturation 常不可逆。加热或改变 pH
 
 ## 关联知识点
 
-- [[03-02 Peptide bond 肽键与方向性|蛋白一级结构]]
-- [[15-03 Directed evolution, DE|directed evolution]]
+- [蛋白一级结构](/uom-chemistry/chem10712_knowledge_points/03-02-peptide-bond-肽键与方向性/)
+- [directed evolution](/uom-chemistry/chem10712_knowledge_points/15-03-directed-evolution-de/)
 
 <!-- END_DETAILED_EXPLANATION -->

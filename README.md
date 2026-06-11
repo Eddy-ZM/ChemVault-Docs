@@ -1,49 +1,34 @@
-# Starlight Starter Kit: Basics
+# ChemVault Docs
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+ChemVault Docs is the public documentation and knowledge library for the ChemVault ecosystem. It is built with Astro and Starlight and currently hosts chemistry notes, reagent references, project manuals, and CHEM10712 course knowledge points.
 
-```
-npm create astro@latest -- --template starlight
-```
+## Local Development
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+```sh
+npm install
+npm run dev
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+The dev server defaults to `http://localhost:4321/`.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+## Production Checks
 
-Static assets, like favicons, can be placed in the `public/` directory.
+```sh
+npm run build
+npm run preview
+```
 
-## 🧞 Commands
+`npm run build` generates the static site in `dist/` and builds the Pagefind search index used by Starlight.
 
-All commands are run from the root of the project, from a terminal:
+## Content Layout
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- `src/content/docs/index.mdx` - custom Docs homepage.
+- `src/content/docs/getting-started/` - ChemVault ecosystem overview.
+- `src/content/docs/chemistry/` - chemistry concept notes.
+- `src/content/docs/reagents/` - reagent passports.
+- `src/content/docs/projects/` - ChemVault project manuals.
+- `src/content/docs/UoM Chemistry/` - course notes imported into Starlight routes.
 
-## 👀 Want to learn more?
+## Theme
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+The ChemVault visual layer lives in `src/styles/custom.css` and is loaded through `astro.config.mjs`.

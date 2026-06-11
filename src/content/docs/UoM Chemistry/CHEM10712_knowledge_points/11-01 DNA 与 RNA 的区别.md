@@ -1,13 +1,10 @@
 ---
 title: '11.1 DNA 与 RNA 的区别'
 ---
-
-# 11.1 DNA 与 RNA 的区别
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[11 Nucleic acids、central dogma 与 genetic regulation|11. Nucleic acids、central dogma 与 genetic regulation]]
-- 导航：上一节：[[10-04 Evolution mechanisms|10.4 Evolution mechanisms]]；下一节：[[11-02 Base pairing|11.2 Base pairing]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[11. Nucleic acids、central dogma 与 genetic regulation](/uom-chemistry/chem10712_knowledge_points/11-nucleic-acidscentral-dogma-与-genetic-regulation/)
+- 导航：上一节：[10.4 Evolution mechanisms](/uom-chemistry/chem10712_knowledge_points/10-04-evolution-mechanisms/)；下一节：[11.2 Base pairing](/uom-chemistry/chem10712_knowledge_points/11-02-base-pairing/)
 
 ## 详细内容
 
@@ -84,7 +81,7 @@ T vs U 的区别也服务于信息稳定性。DNA 使用 thymine 有助于识别
 
 ## 关联知识点
 
-- [[12-02 Primer design 基本法|primer design]]
-- [[13-02 Plasmids|plasmids]]
+- [primer design](/uom-chemistry/chem10712_knowledge_points/12-02-primer-design-基本法/)
+- [plasmids](/uom-chemistry/chem10712_knowledge_points/13-02-plasmids/)
 
 <!-- END_DETAILED_EXPLANATION -->

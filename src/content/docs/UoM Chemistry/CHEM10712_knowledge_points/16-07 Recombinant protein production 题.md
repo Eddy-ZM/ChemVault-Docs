@@ -1,13 +1,10 @@
 ---
 title: '16.7 Recombinant protein production 题'
 ---
-
-# 16.7 Recombinant protein production 题
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[16 常见考试 答题模式|16. 常见考试/答题模式]]
-- 导航：上一节：[[16-06 PCR primer 题|16.6 PCR/primer 题]]；下一节：[[16-08 Evolution engineering 题|16.8 Evolution/engineering 题]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[16. 常见考试/答题模式](/uom-chemistry/chem10712_knowledge_points/16-常见考试-答题模式/)
+- 导航：上一节：[16.6 PCR/primer 题](/uom-chemistry/chem10712_knowledge_points/16-06-pcr-primer-题/)；下一节：[16.8 Evolution/engineering 题](/uom-chemistry/chem10712_knowledge_points/16-08-evolution-engineering-题/)
 
 ## 详细内容
 
@@ -41,6 +38,6 @@ recombinant protein production 是一个从 DNA 到 purified protein 的完整 w
 
 ## 关联知识点
 
-- [[00 CHEM10712 知识点索引|知识点索引]]
+- [知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
 
 <!-- END_DETAILED_EXPLANATION -->

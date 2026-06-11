@@ -1,13 +1,10 @@
 ---
 title: '1.3 Prokaryotes原核生物 与 eukaryotes真核生物'
 ---
-
-# 1.3 Prokaryotes原核生物 与 eukaryotes真核生物
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[01 生命的分子基础与细胞作为 building block|1. 生命的分子基础与细胞作为 building block]]
-- 导航：上一节：[[01-02 生命需要什么|1.2 生命需要什么]]；下一节：[[02-01 为什么“biochemistry is aqueous chemistry”|2.1 为什么“biochemistry is aqueous chemistry”]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[1. 生命的分子基础与细胞作为 building block](/uom-chemistry/chem10712_knowledge_points/01-生命的分子基础与细胞作为-building-block/)
+- 导航：上一节：[1.2 生命需要什么](/uom-chemistry/chem10712_knowledge_points/01-02-生命需要什么/)；下一节：[2.1 为什么“biochemistry is aqueous chemistry”](/uom-chemistry/chem10712_knowledge_points/02-01-为什么biochemistry-is-aqueous-chemistry/)
 
 ## 详细内容
 
@@ -72,7 +69,7 @@ Endosymbiosis 把 eukaryotic complexity 和 evolution 连起来：mitochondria/c
 
 ## 关联知识点
 
-- [[10-03 LUCA 与 common biochemistry|LUCA]]
-- [[15-03 Directed evolution, DE|directed evolution]]
+- [LUCA](/uom-chemistry/chem10712_knowledge_points/10-03-luca-与-common-biochemistry/)
+- [directed evolution](/uom-chemistry/chem10712_knowledge_points/15-03-directed-evolution-de/)
 
 <!-- END_DETAILED_EXPLANATION -->

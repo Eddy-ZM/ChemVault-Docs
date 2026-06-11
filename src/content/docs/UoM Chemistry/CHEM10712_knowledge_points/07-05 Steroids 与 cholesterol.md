@@ -1,13 +1,10 @@
 ---
 title: '7.5 Steroids 与 cholesterol'
 ---
-
-# 7.5 Steroids 与 cholesterol
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[07 Lipids 与 membranes|7. Lipids 与 membranes]]
-- 导航：上一节：[[07-04 Membrane lipids|7.4 Membrane lipids]]；下一节：[[07-06 Membrane permeability|7.6 Membrane permeability]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[7. Lipids 与 membranes](/uom-chemistry/chem10712_knowledge_points/07-lipids-与-membranes/)
+- 导航：上一节：[7.4 Membrane lipids](/uom-chemistry/chem10712_knowledge_points/07-04-membrane-lipids/)；下一节：[7.6 Membrane permeability](/uom-chemistry/chem10712_knowledge_points/07-06-membrane-permeability/)
 
 ## 详细内容
 
@@ -62,7 +59,7 @@ cholesterol 调节 membrane fluidity 和 permeability。它还能作为 steroid 
 
 ## 关联知识点
 
-- [[02-01 为什么“biochemistry is aqueous chemistry”|疏水效应]]
-- [[13-04 Expression hosts 比较|membrane/protein expression]]
+- [疏水效应](/uom-chemistry/chem10712_knowledge_points/02-01-为什么biochemistry-is-aqueous-chemistry/)
+- [membrane/protein expression](/uom-chemistry/chem10712_knowledge_points/13-04-expression-hosts-比较/)
 
 <!-- END_DETAILED_EXPLANATION -->

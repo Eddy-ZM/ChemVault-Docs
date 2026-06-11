@@ -101,36 +101,6 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Resource Types',
-          collapsed: true,
-          items: [
-            {
-              label: 'Guides',
-              collapsed: true,
-              items: [
-                {
-                  autogenerate: {
-                    directory: 'guides',
-                    collapsed: true,
-                  },
-                },
-              ],
-            },
-            {
-              label: 'Reference',
-              collapsed: true,
-              items: [
-                {
-                  autogenerate: {
-                    directory: 'reference',
-                    collapsed: true,
-                  },
-                },
-              ],
-            },
-          ],
-        },
-        {
           label: 'ChemVault Portal',
           link: 'https://chemvault.science',
           attrs: {

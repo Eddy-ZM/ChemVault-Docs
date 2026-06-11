@@ -1,13 +1,10 @@
 ---
 title: '8.4 Enzyme control 与 ATCase'
 ---
-
-# 8.4 Enzyme control 与 ATCase
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[08 酶：specificity、cofactors、allostery 与 kinetics|8. 酶：specificity、cofactors、allostery 与 kinetics]]
-- 导航：上一节：[[08-03 Cofactors coenzymes 为什么重要|8.3 Cofactors/coenzymes 为什么重要]]；下一节：[[08-05 Michaelis-Menten kinetics|8.5 Michaelis-Menten kinetics]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[8. 酶：specificity、cofactors、allostery 与 kinetics](/uom-chemistry/chem10712_knowledge_points/08-酶specificitycofactorsallostery-与-kinetics/)
+- 导航：上一节：[8.3 Cofactors/coenzymes 为什么重要](/uom-chemistry/chem10712_knowledge_points/08-03-cofactors-coenzymes-为什么重要/)；下一节：[8.5 Michaelis-Menten kinetics](/uom-chemistry/chem10712_knowledge_points/08-05-michaelis-menten-kinetics/)
 
 ## 详细内容
 
@@ -84,7 +81,7 @@ ATCase 是 allostery 的经典例子。它位于 pyrimidine biosynthesis 的 com
 
 ## 关联知识点
 
-- [[03-03 20 种氨基酸的功能分组|active-site residues]]
-- [[15-04 Directed evolution case sitagliptin transaminase|sitagliptin transaminase]]
+- [active-site residues](/uom-chemistry/chem10712_knowledge_points/03-03-20-种氨基酸的功能分组/)
+- [sitagliptin transaminase](/uom-chemistry/chem10712_knowledge_points/15-04-directed-evolution-case-sitagliptin-transaminase/)
 
 <!-- END_DETAILED_EXPLANATION -->

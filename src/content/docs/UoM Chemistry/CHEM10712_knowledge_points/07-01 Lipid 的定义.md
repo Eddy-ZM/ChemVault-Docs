@@ -1,13 +1,10 @@
 ---
 title: '7.1 Lipid 的定义'
 ---
-
-# 7.1 Lipid 的定义
-
-- 返回总讲义：[[CHEM10712_slides_knowledge_notes_zh|CHEM10712 slides 知识点整理与讲解]]
-- 知识点索引：[[00 CHEM10712 知识点索引|CHEM10712 知识点索引]]
-- 上级章节：[[07 Lipids 与 membranes|7. Lipids 与 membranes]]
-- 导航：上一节：[[06-06 Glycosidic bonds 与 reducing sugars|6.6 Glycosidic bonds 与 reducing sugars]]；下一节：[[07-02 Fatty acids|7.2 Fatty acids]]
+- 返回总讲义：[CHEM10712 slides 知识点整理与讲解](/uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh/)
+- 知识点索引：[CHEM10712 知识点索引](/uom-chemistry/chem10712_knowledge_points/00-chem10712-知识点索引/)
+- 上级章节：[7. Lipids 与 membranes](/uom-chemistry/chem10712_knowledge_points/07-lipids-与-membranes/)
+- 导航：上一节：[6.6 Glycosidic bonds 与 reducing sugars](/uom-chemistry/chem10712_knowledge_points/06-06-glycosidic-bonds-与-reducing-sugars/)；下一节：[7.2 Fatty acids](/uom-chemistry/chem10712_knowledge_points/07-02-fatty-acids/)
 
 ## 详细内容
 
@@ -62,7 +59,7 @@ lipids 的核心功能来自 hydrophobicity 和 amphiphilicity：纯疏水部分
 
 ## 关联知识点
 
-- [[02-01 为什么“biochemistry is aqueous chemistry”|疏水效应]]
-- [[13-04 Expression hosts 比较|membrane/protein expression]]
+- [疏水效应](/uom-chemistry/chem10712_knowledge_points/02-01-为什么biochemistry-is-aqueous-chemistry/)
+- [membrane/protein expression](/uom-chemistry/chem10712_knowledge_points/13-04-expression-hosts-比较/)
 
 <!-- END_DETAILED_EXPLANATION -->
