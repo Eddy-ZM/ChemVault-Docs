@@ -10,7 +10,7 @@ export default defineConfig({
     starlight({
       title: 'ChemVault Docs',
       description:
-        'The ChemVault documentation library for chemistry notes, reagent passports, lab guides, project docs and file manuals.',
+        'The ChemVault documentation library for chemistry notes, reagent passports, lab guides, project docs and file resources.',
       logo: {
         src: './src/assets/chemvault-logo-mark.png',
         alt: 'ChemVault',
@@ -53,11 +53,79 @@ export default defineConfig({
           items: [
             {
               label: 'Chemistry Notes',
-              slug: 'chemistry/sn1',
+              items: [
+                {
+                  label: 'Overview',
+                  slug: 'chemistry',
+                },
+                {
+                  label: 'Substitution and Elimination Map',
+                  slug: 'chemistry/substitution-elimination-map',
+                },
+                {
+                  label: 'SN1 Reaction',
+                  slug: 'chemistry/sn1',
+                },
+                {
+                  label: 'SN2 Reaction',
+                  slug: 'chemistry/sn2',
+                },
+                {
+                  label: 'E1 and E2 Elimination',
+                  slug: 'chemistry/e1-e2',
+                },
+                {
+                  label: 'Carbonyl Reductions',
+                  slug: 'chemistry/carbonyl-reductions',
+                },
+              ],
             },
             {
-              label: 'Sodium Borohydride',
-              slug: 'reagents/nabh4',
+              label: 'Reagent Passports',
+              items: [
+                {
+                  label: 'Overview',
+                  slug: 'reagents',
+                },
+                {
+                  label: 'Sodium Borohydride',
+                  slug: 'reagents/nabh4',
+                },
+                {
+                  label: 'Lithium Aluminium Hydride',
+                  slug: 'reagents/lialh4',
+                },
+                {
+                  label: 'PCC',
+                  slug: 'reagents/pcc',
+                },
+              ],
+            },
+            {
+              label: 'Lab Guides',
+              items: [
+                {
+                  label: 'Overview',
+                  slug: 'lab-guides',
+                },
+                {
+                  label: 'TLC Reaction Monitoring',
+                  slug: 'lab-guides/tlc-monitoring',
+                },
+              ],
+            },
+            {
+              label: 'File Library',
+              items: [
+                {
+                  label: 'Overview',
+                  slug: 'downloads',
+                },
+                {
+                  label: 'File Library Plan',
+                  slug: 'downloads/file-library-plan',
+                },
+              ],
             },
           ],
         },
@@ -65,12 +133,20 @@ export default defineConfig({
           label: 'Project Manuals',
           items: [
             {
+              label: 'Overview',
+              slug: 'projects',
+            },
+            {
               label: 'ChemVault Core',
               slug: 'projects/chemvault-core',
             },
             {
               label: 'ChemVault Mail',
               slug: 'projects/chemvault-mail',
+            },
+            {
+              label: 'Docs Maintenance',
+              slug: 'projects/chemvault-docs-maintenance',
             },
           ],
         },

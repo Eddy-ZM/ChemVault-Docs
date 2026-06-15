@@ -1,6 +1,6 @@
 ---
 title: ChemVault Docs
-description: Searchable chemistry notes, reagent passports, project manuals and CHEM10712 study paths for the ChemVault ecosystem.
+description: Searchable chemistry notes, reagent passports, lab guides, project manuals and CHEM10712 study paths for the ChemVault ecosystem.
 template: splash
 ---
 
@@ -8,10 +8,7 @@ template: splash
   <div className="cv-hero-copy">
     <p className="cv-eyebrow">public documentation library · chemistry notes · project manuals</p>
     <h1>ChemVault Docs</h1>
-    <p className="cv-lead">
-      The structured knowledge base for ChemVault: chemistry notes, reagent passports, lab guides, project documentation,
-      UoM course knowledge points and future file manuals.
-    </p>
+    <p className="cv-lead">The structured knowledge base for ChemVault: reaction mechanisms, reagent passports, lab workflows, project documentation, UoM course knowledge points and file-library planning.</p>
     <button className="cv-search-prompt" type="button" data-cv-open-search>
       <span className="cv-search-icon" aria-hidden="true"></span>
       <span>Search docs, reagents, methods, notes...</span>
@@ -20,11 +17,11 @@ template: splash
     <div className="cv-action-row">
       <a className="cv-button cv-button-primary" href="/getting-started/what-is-chemvault/">
         <span className="cv-button-icon cv-button-icon-book" aria-hidden="true"></span>
-        Start reading
+        <span className="cv-button-label">Start reading</span>
       </a>
       <a className="cv-button cv-button-secondary" href="#library">
         <span className="cv-button-icon cv-button-icon-folder" aria-hidden="true"></span>
-        Browse library
+        <span className="cv-button-label">Browse library</span>
       </a>
     </div>
   </div>
@@ -37,16 +34,16 @@ template: splash
     </div>
     <div className="cv-metric-grid">
       <div><strong>100+</strong><span>UoM notes</span></div>
-      <div><strong>6</strong><span>entry points</span></div>
-      <div><strong>5</strong><span>study paths</span></div>
-      <div><strong>2</strong><span>project manuals</span></div>
+      <div><strong>12</strong><span>entry points</span></div>
+      <div><strong>8</strong><span>study paths</span></div>
+      <div><strong>3</strong><span>project manuals</span></div>
     </div>
     <div className="cv-health-list">
       <div><span>Chemistry Notes</span><strong>Indexed</strong></div>
       <div><span>Reagent Library</span><strong>Ready</strong></div>
+      <div><span>Lab Guides</span><strong>Ready</strong></div>
       <div><span>Exam Practice</span><strong>Indexed</strong></div>
-      <div><span>Project Docs</span><strong>Live</strong></div>
-      <div><span>Course Map</span><strong>Live</strong></div>
+      <div><span>File Library</span><strong>Planned</strong></div>
     </div>
   </aside>
 </section>
@@ -57,22 +54,32 @@ template: splash
       <p className="cv-eyebrow">explore by entry point</p>
       <h2>One library for notes, manuals and research operations</h2>
     </div>
-    <p>
-      ChemVault Docs now behaves like a documentation hub: each entry point has a clear purpose, route and reading path.
-    </p>
+    <p>ChemVault Docs now behaves like a documentation hub: each entry point has a clear route, maintenance owner and reading path.</p>
   </div>
 
   <div className="cv-workspace-grid">
-    <a className="cv-workspace-card" href="/chemistry/sn1/">
+    <a className="cv-workspace-card" href="/chemistry/">
       <span className="cv-card-icon cv-card-icon-notes" aria-hidden="true"></span>
       <strong>Chemistry Notes</strong>
-      <small>Reaction notes, mechanisms, calculations and study summaries.</small>
+      <small>Mechanism hub for SN1, SN2, E1/E2 and carbonyl reduction decisions.</small>
       <em>Open</em>
     </a>
-    <a className="cv-workspace-card" href="/reagents/nabh4/">
+    <a className="cv-workspace-card" href="/reagents/">
       <span className="cv-card-icon cv-card-icon-reagent" aria-hidden="true"></span>
       <strong>Reagent Library</strong>
-      <small>Reagent passports with uses, conditions, traps and safety context.</small>
+      <small>NaBH4, LiAlH4 and PCC passports with scope and traps.</small>
+      <em>Open</em>
+    </a>
+    <a className="cv-workspace-card" href="/lab-guides/">
+      <span className="cv-card-icon cv-card-icon-lab" aria-hidden="true"></span>
+      <strong>Lab Guides</strong>
+      <small>TLC monitoring workflow, Rf interpretation and record templates.</small>
+      <em>Open</em>
+    </a>
+    <a className="cv-workspace-card" href="/downloads/">
+      <span className="cv-card-icon cv-card-icon-file" aria-hidden="true"></span>
+      <strong>File Library</strong>
+      <small>Download naming, metadata and release-state rules.</small>
       <em>Open</em>
     </a>
     <a className="cv-workspace-card" href="/uom-chemistry/chem10712_knowledge_points/16-常见考试-答题模式/">
@@ -81,10 +88,10 @@ template: splash
       <small>Charge-state, sugar, lipid, PCR and enzyme mechanism answer patterns.</small>
       <em>Open</em>
     </a>
-    <a className="cv-workspace-card" href="/projects/chemvault-core/">
+    <a className="cv-workspace-card" href="/projects/">
       <span className="cv-card-icon cv-card-icon-project" aria-hidden="true"></span>
       <strong>Project Docs</strong>
-      <small>ChemVault Core, Cloud Mail and future platform manuals.</small>
+      <small>ChemVault Core, Mail and Docs maintenance manuals.</small>
       <em>Open</em>
     </a>
     <a className="cv-workspace-card cv-workspace-card-featured" href="/uom-chemistry/chem10712/">
@@ -110,16 +117,16 @@ template: splash
       <p className="cv-eyebrow">suggested reading paths</p>
       <h2>Start from the task, not the folder tree</h2>
     </div>
-    <p>
-      The library is organized for repeated use: learn a concept, check a reagent, prepare a lab, or document a project.
-    </p>
+    <p>The library is organized for repeated use: learn a concept, check a reagent, prepare a lab, or document a project.</p>
   </div>
 
   <div className="cv-path-grid">
     <a className="cv-path-card" href="/getting-started/what-is-chemvault/"><strong>New to ChemVault</strong><span>4 steps</span></a>
-    <a className="cv-path-card" href="/reagents/nabh4/"><strong>Reagent onboarding</strong><span>6 steps</span></a>
-    <a className="cv-path-card" href="/chemistry/sn1/"><strong>Study a reaction</strong><span>5 steps</span></a>
-    <a className="cv-path-card" href="/projects/chemvault-core/"><strong>Document a product</strong><span>7 steps</span></a>
+    <a className="cv-path-card" href="/chemistry/substitution-elimination-map/"><strong>Choose SN/E pathway</strong><span>decision map</span></a>
+    <a className="cv-path-card" href="/chemistry/carbonyl-reductions/"><strong>Choose a reducing agent</strong><span>4 reagents</span></a>
+    <a className="cv-path-card" href="/lab-guides/tlc-monitoring/"><strong>Monitor a reaction</strong><span>TLC guide</span></a>
+    <a className="cv-path-card" href="/chemistry/e1-e2/"><strong>Decide SN/E pathways</strong><span>SN1/SN2/E1/E2</span></a>
+    <a className="cv-path-card" href="/projects/chemvault-docs-maintenance/"><strong>Maintain the docs</strong><span>checklist</span></a>
     <a className="cv-path-card" href="/uom-chemistry/chem10712/"><strong>Review CHEM10712</strong><span>100 notes</span></a>
   </div>
 </section>
@@ -151,6 +158,48 @@ template: splash
           <td>Course notes</td>
         </tr>
         <tr>
+          <td><a href="/chemistry/substitution-elimination-map/">Substitution and elimination map</a></td>
+          <td>Chemistry Notes</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Decision guide</td>
+        </tr>
+        <tr>
+          <td><a href="/chemistry/sn2/">SN2 reaction note</a></td>
+          <td>Chemistry Notes</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Mechanism</td>
+        </tr>
+        <tr>
+          <td><a href="/chemistry/e1-e2/">E1 and E2 elimination guide</a></td>
+          <td>Chemistry Notes</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Decision guide</td>
+        </tr>
+        <tr>
+          <td><a href="/reagents/lialh4/">Lithium aluminium hydride passport</a></td>
+          <td>Reagent Library</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Reference</td>
+        </tr>
+        <tr>
+          <td><a href="/reagents/pcc/">PCC oxidation passport</a></td>
+          <td>Reagent Library</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Reference</td>
+        </tr>
+        <tr>
+          <td><a href="/lab-guides/tlc-monitoring/">TLC reaction monitoring</a></td>
+          <td>Lab Guides</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Workflow</td>
+        </tr>
+        <tr>
+          <td><a href="/downloads/file-library-plan/">File library release plan</a></td>
+          <td>File Library</td>
+          <td><span className="cv-status-pill">Planned</span></td>
+          <td>Download system</td>
+        </tr>
+        <tr>
           <td><a href="/reagents/nabh4/">Sodium borohydride passport</a></td>
           <td>Reagent Library</td>
           <td><span className="cv-status-pill">Ready</span></td>
@@ -169,10 +218,10 @@ template: splash
           <td>Project</td>
         </tr>
         <tr>
-          <td><a href="/projects/chemvault-mail/">ChemVault Mail manual</a></td>
+          <td><a href="/projects/chemvault-docs-maintenance/">ChemVault Docs maintenance</a></td>
           <td>Project Docs</td>
           <td><span className="cv-status-pill">Live</span></td>
-          <td>Service</td>
+          <td>Operations</td>
         </tr>
       </tbody>
     </table>
@@ -185,17 +234,15 @@ template: splash
       <p className="cv-eyebrow">popular topics</p>
       <h2>Tags that should become first-class docs</h2>
     </div>
-    <p>
-      These topic lanes keep the site ready for manuals, lab resources and larger file-library documentation.
-    </p>
+    <p>These topic lanes now point to live pages that can grow into larger manuals and downloadable resources.</p>
   </div>
 
   <div className="cv-topic-grid">
-    <span>Mechanisms</span>
-    <span>Reagent safety</span>
-    <span>Lab reports</span>
-    <span>Biochemistry</span>
-    <span>Project operations</span>
-    <span>File manuals</span>
+    <a href="/chemistry/">Mechanisms</a>
+    <a href="/reagents/">Reagent safety</a>
+    <a href="/lab-guides/">Lab workflows</a>
+    <a href="/uom-chemistry/chem10712/">Biochemistry</a>
+    <a href="/projects/">Project operations</a>
+    <a href="/downloads/file-library-plan/">File manuals</a>
   </div>
 </section>

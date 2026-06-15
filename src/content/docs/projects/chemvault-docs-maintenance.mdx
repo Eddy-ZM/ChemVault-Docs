@@ -1,0 +1,67 @@
+---
+title: ChemVault Docs Maintenance
+description: Operating notes for keeping ChemVault Docs searchable, navigable and build-safe.
+---
+
+ChemVault Docs is an Astro Starlight documentation site.
+
+Its maintenance goal is simple: every note should be searchable, linked, readable and safe to build.
+
+## Content rules
+
+Use these rules when adding or importing notes:
+
+- include frontmatter with `title` and `description`
+- use one page-level title only
+- prefer real Markdown links over Obsidian wikilinks
+- keep filenames descriptive and stable
+- add important pages to the sidebar or a hub page
+- run a production build after larger imports
+
+## Import checklist
+
+Before importing a batch of notes:
+
+1. Check for duplicate H1 headings.
+2. Convert Obsidian-style internal references to public site routes.
+3. Verify image paths and attachments.
+4. Confirm that generated slugs match intended links.
+5. Add or update a hub page for the new folder.
+6. Build the site and inspect the Pagefind index.
+
+## Search quality
+
+Search works best when pages have clear titles, descriptions and headings.
+
+Avoid multiple pages with the same vague title. If two notes cover similar topics, make the title more specific.
+
+## Navigation quality
+
+The sidebar should not list every imported page at the top level.
+
+Use hub pages for large folders and reserve the main sidebar for stable entry points.
+
+## Build checks
+
+Useful commands:
+
+```sh
+npm run build
+git diff --check
+rg "\\[\\[" src dist
+```
+
+The build should pass before publishing.
+
+## Related pages
+
+- [File Library Plan](/downloads/file-library-plan/)
+- [What is ChemVault?](/getting-started/what-is-chemvault/)
+
+## Quick summary
+
+Maintenance work should protect three things:
+
+- readers can find the right page
+- links go to real routes
+- new imports do not weaken the build
