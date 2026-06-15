@@ -31,7 +31,7 @@ export default defineConfig({
         {
           icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/Mu-Eddy',
+          href: 'https://github.com/Eddy-ZM/ChemVault-Docs',
         },
       ],
       sidebar: [
@@ -45,6 +45,10 @@ export default defineConfig({
             {
               label: 'What is ChemVault?',
               slug: 'getting-started/what-is-chemvault',
+            },
+            {
+              label: 'Study Workflow',
+              slug: 'getting-started/study-workflow',
             },
           ],
         },
@@ -61,6 +65,10 @@ export default defineConfig({
                 {
                   label: 'Substitution and Elimination Map',
                   slug: 'chemistry/substitution-elimination-map',
+                },
+                {
+                  label: 'Reaction Troubleshooting',
+                  slug: 'chemistry/reaction-troubleshooting',
                 },
                 {
                   label: 'SN1 Reaction',
@@ -88,6 +96,10 @@ export default defineConfig({
                   slug: 'reagents',
                 },
                 {
+                  label: 'Reagent Selection Map',
+                  slug: 'reagents/reagent-selection-map',
+                },
+                {
                   label: 'Sodium Borohydride',
                   slug: 'reagents/nabh4',
                 },
@@ -111,6 +123,10 @@ export default defineConfig({
                 {
                   label: 'TLC Reaction Monitoring',
                   slug: 'lab-guides/tlc-monitoring',
+                },
+                {
+                  label: 'Work-up and Extraction',
+                  slug: 'lab-guides/workup-extraction',
                 },
               ],
             },

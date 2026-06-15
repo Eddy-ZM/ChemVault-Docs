@@ -346,6 +346,7 @@ main > .content-panel:first-child h1 {
 .cv-section,
 .cv-library-panel,
 .cv-workspace-card,
+.cv-launch-card,
 .cv-path-card,
 .cv-table-shell {
   box-sizing: border-box;
@@ -739,6 +740,10 @@ main > .content-panel:first-child h1 {
   padding-top: 12px;
 }
 
+.cv-launchpad {
+  padding-top: 22px;
+}
+
 .cv-section-band {
   margin-inline: calc(50% - 50vw);
   padding-inline: max(16px, calc((100vw - 1220px) / 2));
@@ -985,6 +990,68 @@ main > .content-panel:first-child h1 {
   white-space: nowrap;
 }
 
+.cv-launch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.cv-launch-card {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  min-height: 176px;
+  align-content: start;
+  border: 1px solid var(--cv-line);
+  border-radius: var(--cv-radius);
+  background:
+    linear-gradient(145deg, rgba(0, 113, 227, 0.06), transparent 48%),
+    var(--cv-surface);
+  color: var(--cv-text);
+  padding: 16px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.04);
+  transition:
+    transform var(--cv-motion-medium) var(--cv-ease-spring),
+    border-color var(--cv-motion-fast) ease,
+    box-shadow var(--cv-motion-medium) ease;
+}
+
+.cv-launch-card:hover,
+.cv-launch-card:focus-visible {
+  border-color: rgba(0, 113, 227, 0.3);
+  color: var(--cv-text);
+  box-shadow: var(--cv-shadow-blue);
+  transform: translateY(-3px);
+}
+
+.cv-launch-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 28px;
+  border: 1px solid rgba(0, 113, 227, 0.16);
+  border-radius: var(--cv-radius);
+  background: rgba(0, 113, 227, 0.08);
+  color: var(--cv-blue);
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.cv-launch-card strong {
+  color: var(--cv-text);
+  font-size: 1rem;
+  font-weight: 880;
+  line-height: 1.2;
+}
+
+.cv-launch-card small {
+  color: var(--cv-muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
 .cv-table-header {
   margin-bottom: 16px;
 }
@@ -1202,6 +1269,7 @@ main > .content-panel:first-child h1 {
 }
 
 :root[data-theme='dark'] .cv-workspace-card,
+:root[data-theme='dark'] .cv-launch-card,
 :root[data-theme='dark'] .cv-path-card,
 :root[data-theme='dark'] .cv-table-shell,
 :root[data-theme='dark'] .cv-course-stat,
@@ -1218,6 +1286,10 @@ main > .content-panel:first-child h1 {
   }
 
   .cv-path-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cv-launch-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1277,6 +1349,7 @@ main > .content-panel:first-child h1 {
   }
 
   .cv-workspace-grid,
+  .cv-launch-grid,
   .cv-path-grid,
   .cv-course-overview,
   .cv-route-grid,

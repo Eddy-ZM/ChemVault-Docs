@@ -1,0 +1,113 @@
+---
+title: Reagent Selection Map
+description: A quick map for choosing between ChemVault reagent passports by transformation type and selectivity risk.
+---
+
+Use this map when the question is not "what does this reagent do?" but "which reagent should I choose first?"
+
+The map links transformation goals to current reagent passports and chemistry decision guides.
+
+## Start from the transformation
+
+<table>
+  <thead>
+    <tr>
+      <th>Goal</th>
+      <th>First candidate</th>
+      <th>Why</th>
+      <th>Check before using</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reduce aldehyde or ketone</td>
+      <td><a href="/reagents/nabh4/">NaBH4</a></td>
+      <td>Mild hydride source for common carbonyl reductions.</td>
+      <td>Functional groups that may also react.</td>
+    </tr>
+    <tr>
+      <td>Reduce ester, acid chloride or carboxylic acid derivative</td>
+      <td><a href="/reagents/lialh4/">LiAlH4</a></td>
+      <td>Stronger hydride reagent for less reactive carbonyl derivatives.</td>
+      <td>Dry conditions, quench planning and incompatibilities.</td>
+    </tr>
+    <tr>
+      <td>Oxidise primary alcohol to aldehyde</td>
+      <td><a href="/reagents/pcc/">PCC</a></td>
+      <td>Controlled oxidation under relatively non-aqueous conditions.</td>
+      <td>Whether over-oxidation or chromium waste is a concern.</td>
+    </tr>
+    <tr>
+      <td>Choose SN1/SN2/E1/E2 pathway</td>
+      <td><a href="/chemistry/substitution-elimination-map/">Mechanism map</a></td>
+      <td>The reagent role depends on substrate, nucleophile/base and solvent.</td>
+      <td>Leaving group, sterics, heat and beta hydrogens.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Selection checks
+
+Before committing to a reagent, answer:
+
+1. What functional group must change?
+2. What functional groups must survive?
+3. Is the reagent acting by hydride transfer, oxidation, substitution or base chemistry?
+4. Is water, oxygen or acid/base sensitivity relevant?
+5. Can the work-up destroy remaining reagent without damaging product?
+
+## Selectivity risks
+
+<table>
+  <thead>
+    <tr>
+      <th>Risk</th>
+      <th>Typical source</th>
+      <th>Mitigation in notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Over-reduction</td>
+      <td>Using a strong hydride where a mild one was enough.</td>
+      <td>Compare <a href="/reagents/nabh4/">NaBH4</a> and <a href="/reagents/lialh4/">LiAlH4</a>.</td>
+    </tr>
+    <tr>
+      <td>Over-oxidation</td>
+      <td>Using aqueous strong oxidants for aldehyde targets.</td>
+      <td>Check the <a href="/reagents/pcc/">PCC</a> passport.</td>
+    </tr>
+    <tr>
+      <td>Elimination side product</td>
+      <td>Strong or bulky base with heat and beta hydrogens.</td>
+      <td>Use the <a href="/chemistry/e1-e2/">E1/E2</a> guide.</td>
+    </tr>
+    <tr>
+      <td>Rearrangement</td>
+      <td>Carbocation formation in SN1/E1 conditions.</td>
+      <td>Use the <a href="/chemistry/sn1/">SN1</a> note.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Missing passport backlog
+
+Useful next reagent passports:
+
+- DIBAL-H for partial reductions
+- LAH versus borane for carboxylic acids
+- Jones or KMnO4 oxidation
+- mCPBA epoxidation
+- NBS bromination
+
+## Related pages
+
+- [Carbonyl Reductions](/chemistry/carbonyl-reductions/)
+- [Reaction Troubleshooting](/chemistry/reaction-troubleshooting/)
+- [Work-up and Extraction Guide](/lab-guides/workup-extraction/)
+
+## Quick summary
+
+Pick reagents from the transformation and selectivity risk.
+
+Then open the individual passport before writing conditions or interpreting an exam route.

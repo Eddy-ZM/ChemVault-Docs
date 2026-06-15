@@ -8,7 +8,7 @@ template: splash
   <div className="cv-hero-copy">
     <p className="cv-eyebrow">public documentation library · chemistry notes · project manuals</p>
     <h1>ChemVault Docs</h1>
-    <p className="cv-lead">The structured knowledge base for ChemVault: reaction mechanisms, reagent passports, lab workflows, project documentation, UoM course knowledge points and file-library planning.</p>
+    <p className="cv-lead">The structured knowledge base for ChemVault: reaction mechanisms, reagent passports, lab workflows, project documentation, UoM course knowledge points and task-based study planning.</p>
     <button className="cv-search-prompt" type="button" data-cv-open-search>
       <span className="cv-search-icon" aria-hidden="true"></span>
       <span>Search docs, reagents, methods, notes...</span>
@@ -34,11 +34,12 @@ template: splash
     </div>
     <div className="cv-metric-grid">
       <div><strong>100+</strong><span>UoM notes</span></div>
-      <div><strong>12</strong><span>entry points</span></div>
-      <div><strong>8</strong><span>study paths</span></div>
+      <div><strong>16</strong><span>entry points</span></div>
+      <div><strong>11</strong><span>study paths</span></div>
       <div><strong>3</strong><span>project manuals</span></div>
     </div>
     <div className="cv-health-list">
+      <div><span>Study Workflow</span><strong>Ready</strong></div>
       <div><span>Chemistry Notes</span><strong>Indexed</strong></div>
       <div><span>Reagent Library</span><strong>Ready</strong></div>
       <div><span>Lab Guides</span><strong>Ready</strong></div>
@@ -111,6 +112,39 @@ template: splash
 
 <script src="/cv-docs.js"></script>
 
+<section className="cv-section cv-launchpad">
+  <div className="cv-section-heading">
+    <div>
+      <p className="cv-eyebrow">task launchpad</p>
+      <h2>Open the right page from the question in front of you</h2>
+    </div>
+    <p>The new launchpad connects study, reagent choice, reaction troubleshooting and lab work-up into short operational paths.</p>
+  </div>
+
+  <div className="cv-launch-grid">
+    <a className="cv-launch-card" href="/getting-started/study-workflow/">
+      <span className="cv-launch-step">01</span>
+      <strong>Build a study session</strong>
+      <small>Pick a task mode, run a 30-minute revision loop and leave a reusable answer.</small>
+    </a>
+    <a className="cv-launch-card" href="/reagents/reagent-selection-map/">
+      <span className="cv-launch-step">02</span>
+      <strong>Select a reagent</strong>
+      <small>Start from the transformation goal, then check scope, selectivity and work-up risk.</small>
+    </a>
+    <a className="cv-launch-card" href="/chemistry/reaction-troubleshooting/">
+      <span className="cv-launch-step">03</span>
+      <strong>Troubleshoot a reaction</strong>
+      <small>Classify the observation, audit the mechanism and change one variable at a time.</small>
+    </a>
+    <a className="cv-launch-card" href="/lab-guides/workup-extraction/">
+      <span className="cv-launch-step">04</span>
+      <strong>Plan work-up and extraction</strong>
+      <small>Decide product phase logic and capture enough evidence for a clean lab record.</small>
+    </a>
+  </div>
+</section>
+
 <section className="cv-section cv-section-band">
   <div className="cv-section-heading">
     <div>
@@ -122,9 +156,13 @@ template: splash
 
   <div className="cv-path-grid">
     <a className="cv-path-card" href="/getting-started/what-is-chemvault/"><strong>New to ChemVault</strong><span>4 steps</span></a>
+    <a className="cv-path-card" href="/getting-started/study-workflow/"><strong>Build a study workflow</strong><span>30 min loop</span></a>
     <a className="cv-path-card" href="/chemistry/substitution-elimination-map/"><strong>Choose SN/E pathway</strong><span>decision map</span></a>
+    <a className="cv-path-card" href="/chemistry/reaction-troubleshooting/"><strong>Troubleshoot a reaction</strong><span>evidence-led</span></a>
     <a className="cv-path-card" href="/chemistry/carbonyl-reductions/"><strong>Choose a reducing agent</strong><span>4 reagents</span></a>
+    <a className="cv-path-card" href="/reagents/reagent-selection-map/"><strong>Select a reagent</strong><span>scope map</span></a>
     <a className="cv-path-card" href="/lab-guides/tlc-monitoring/"><strong>Monitor a reaction</strong><span>TLC guide</span></a>
+    <a className="cv-path-card" href="/lab-guides/workup-extraction/"><strong>Plan work-up</strong><span>phase logic</span></a>
     <a className="cv-path-card" href="/chemistry/e1-e2/"><strong>Decide SN/E pathways</strong><span>SN1/SN2/E1/E2</span></a>
     <a className="cv-path-card" href="/projects/chemvault-docs-maintenance/"><strong>Maintain the docs</strong><span>checklist</span></a>
     <a className="cv-path-card" href="/uom-chemistry/chem10712/"><strong>Review CHEM10712</strong><span>100 notes</span></a>
@@ -164,6 +202,24 @@ template: splash
           <td>Decision guide</td>
         </tr>
         <tr>
+          <td><a href="/getting-started/study-workflow/">Study workflow</a></td>
+          <td>Getting Started</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Launchpad</td>
+        </tr>
+        <tr>
+          <td><a href="/reagents/reagent-selection-map/">Reagent selection map</a></td>
+          <td>Reagent Library</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Decision guide</td>
+        </tr>
+        <tr>
+          <td><a href="/chemistry/reaction-troubleshooting/">Reaction troubleshooting</a></td>
+          <td>Chemistry Notes</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Diagnostic guide</td>
+        </tr>
+        <tr>
           <td><a href="/chemistry/sn2/">SN2 reaction note</a></td>
           <td>Chemistry Notes</td>
           <td><span className="cv-status-pill">Ready</span></td>
@@ -189,6 +245,12 @@ template: splash
         </tr>
         <tr>
           <td><a href="/lab-guides/tlc-monitoring/">TLC reaction monitoring</a></td>
+          <td>Lab Guides</td>
+          <td><span className="cv-status-pill">Ready</span></td>
+          <td>Workflow</td>
+        </tr>
+        <tr>
+          <td><a href="/lab-guides/workup-extraction/">Work-up and extraction guide</a></td>
           <td>Lab Guides</td>
           <td><span className="cv-status-pill">Ready</span></td>
           <td>Workflow</td>
@@ -239,8 +301,9 @@ template: splash
 
   <div className="cv-topic-grid">
     <a href="/chemistry/">Mechanisms</a>
-    <a href="/reagents/">Reagent safety</a>
-    <a href="/lab-guides/">Lab workflows</a>
+    <a href="/reagents/reagent-selection-map/">Reagent selection</a>
+    <a href="/chemistry/reaction-troubleshooting/">Troubleshooting</a>
+    <a href="/lab-guides/workup-extraction/">Work-up</a>
     <a href="/uom-chemistry/chem10712/">Biochemistry</a>
     <a href="/projects/">Project operations</a>
     <a href="/downloads/file-library-plan/">File manuals</a>
