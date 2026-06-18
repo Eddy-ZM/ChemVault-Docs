@@ -26,6 +26,56 @@ export default defineConfig({
             content: '#f5f5f7',
           },
         },
+        {
+          tag: 'meta',
+          attrs: {
+            name: 'application-name',
+            content: 'ChemVault Docs',
+          },
+        },
+        {
+          tag: 'meta',
+          attrs: {
+            property: 'og:title',
+            content: 'ChemVault Docs',
+          },
+        },
+        {
+          tag: 'meta',
+          attrs: {
+            property: 'og:description',
+            content:
+              'A commercial-grade chemistry knowledge hub for reaction decisions, reagent passports, lab workflows, project operations and CHEM10712 study paths.',
+          },
+        },
+        {
+          tag: 'meta',
+          attrs: {
+            property: 'og:type',
+            content: 'website',
+          },
+        },
+        {
+          tag: 'meta',
+          attrs: {
+            property: 'og:url',
+            content: 'https://docs.chemvault.science/',
+          },
+        },
+        {
+          tag: 'meta',
+          attrs: {
+            name: 'twitter:card',
+            content: 'summary',
+          },
+        },
+        {
+          tag: 'script',
+          attrs: {
+            src: '/cv-docs.js',
+            defer: true,
+          },
+        },
       ],
       social: [
         {
@@ -138,6 +188,10 @@ export default defineConfig({
                   slug: 'downloads',
                 },
                 {
+                  label: 'Resource Library',
+                  slug: 'downloads/resources',
+                },
+                {
                   label: 'File Library Plan',
                   slug: 'downloads/file-library-plan',
                 },
@@ -151,6 +205,18 @@ export default defineConfig({
             {
               label: 'Overview',
               slug: 'projects',
+            },
+            {
+              label: 'Commercial Overview',
+              slug: 'projects/commercial-overview',
+            },
+            {
+              label: 'Roadmap',
+              slug: 'projects/roadmap',
+            },
+            {
+              label: 'Changelog',
+              slug: 'projects/changelog',
             },
             {
               label: 'ChemVault Core',
