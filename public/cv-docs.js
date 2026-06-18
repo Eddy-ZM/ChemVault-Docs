@@ -135,11 +135,40 @@ const bindBackToTop = () => {
     button.classList.toggle('is-visible', window.scrollY > 520);
   };
 
+  const focusTop = () => {
+    const target = document.getElementById('_top') || document.body;
+    const hadTabIndex = target.hasAttribute('tabindex');
+    if (!hadTabIndex) target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+    if (!hadTabIndex) {
+      target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true });
+    }
+  };
+
   button.addEventListener('click', () => {
+    const reducedMotion = prefersReducedMotion();
     window.scrollTo({
       top: 0,
-      behavior: prefersReducedMotion() ? 'auto' : 'smooth',
+      left: 0,
+      behavior: reducedMotion ? 'auto' : 'smooth',
     });
+
+    if (reducedMotion) {
+      requestAnimationFrame(focusTop);
+      return;
+    }
+
+    const deadline = performance.now() + 1000;
+    const finishWhenSettled = () => {
+      if (window.scrollY <= 4 || performance.now() > deadline) {
+        if (window.scrollY > 4) window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+        focusTop();
+        return;
+      }
+      requestAnimationFrame(finishWhenSettled);
+    };
+
+    requestAnimationFrame(finishWhenSettled);
   });
 
   update();
@@ -150,7 +179,7 @@ const bindRevealAnimations = () => {
   if (prefersReducedMotion()) return;
 
   const revealTargets = document.querySelectorAll(
-    '.cv-docs-hero, .cv-proof-strip, .cv-section, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card',
+    '.cv-docs-hero, .cv-logic-strip, .cv-section, .cv-suite-card, .cv-system-card, .cv-feature-card, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card',
   );
 
   revealTargets.forEach((target) => {
@@ -179,7 +208,7 @@ const bindPointerGlow = () => {
   if (prefersReducedMotion()) return;
 
   const cards = document.querySelectorAll(
-    '.cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card, .cv-exam-grid a',
+    '.cv-logic-step, .cv-suite-card, .cv-system-card, .cv-feature-card, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card, .cv-exam-grid a',
   );
 
   cards.forEach((card) => {
@@ -195,6 +224,36 @@ const bindPointerGlow = () => {
     card.addEventListener('pointerleave', () => {
       card.style.removeProperty('--cv-pointer-x');
       card.style.removeProperty('--cv-pointer-y');
+    });
+  });
+};
+
+const bindPersonaSwitcher = () => {
+  const switchers = document.querySelectorAll('[data-cv-persona-switcher]');
+
+  switchers.forEach((switcher) => {
+    if (switcher.dataset.cvPersonaBound === 'true') return;
+    switcher.dataset.cvPersonaBound = 'true';
+
+    const tabs = [...switcher.querySelectorAll('[data-cv-persona-tab]')];
+    const panels = [...switcher.querySelectorAll('[data-cv-persona-panel]')];
+
+    const activate = (mode) => {
+      tabs.forEach((tab) => {
+        const active = tab.dataset.cvPersonaTab === mode;
+        tab.classList.toggle('is-active', active);
+        tab.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+
+      panels.forEach((panel) => {
+        panel.hidden = panel.dataset.cvPersonaPanel !== mode;
+      });
+    };
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        activate(tab.dataset.cvPersonaTab || 'study');
+      });
     });
   });
 };
@@ -227,6 +286,7 @@ const initChemVaultDocs = () => {
   bindBackToTop();
   bindRevealAnimations();
   bindPointerGlow();
+  bindPersonaSwitcher();
   bindKeyboardShortcuts();
 };
 

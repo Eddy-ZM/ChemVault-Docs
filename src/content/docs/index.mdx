@@ -1,21 +1,20 @@
 ---
 title: ChemVault Docs
-description: A commercial-grade chemistry knowledge hub for reaction decisions, reagent passports, lab workflows, project operations and CHEM10712 study paths.
+description: "ChemVault Knowledge OS: a commercial SaaS-style chemistry documentation system for knowledge capture, reaction decisions, lab workflows, resource publishing and product operations."
 template: splash
 ---
 
-<section className="cv-docs-hero">
+<section className="cv-docs-hero cv-saas-hero">
   <div className="cv-hero-copy">
-    <p className="cv-eyebrow">chemistry knowledge operations · docs · reagents · workflows</p>
-    <h1>ChemVault Docs</h1>
-    <p className="cv-lead">A structured operating layer for ChemVault: searchable chemistry notes, reagent passports, lab workflows, project manuals, resource planning and UoM course knowledge paths in one public documentation system.</p>
+    <h1>ChemVault Knowledge OS</h1>
+    <p className="cv-lead">ChemVault Docs is the SaaS-style operating surface for chemistry knowledge: searchable notes, reagent passports, lab workflows, resource releases and project operations arranged as one maintainable system.</p>
     <button className="cv-search-prompt" type="button" data-cv-open-search>
       <span className="cv-search-icon" aria-hidden="true"></span>
-      <span>Search docs, reagents, methods, notes...</span>
+      <span>Search mechanisms, reagents, workflows, releases...</span>
       <kbd>Ctrl K</kbd>
     </button>
     <div className="cv-action-row">
-      <a className="cv-button cv-button-primary" href="/projects/commercial-overview/">
+      <a className="cv-button cv-button-primary" href="/projects/saas-operating-model/">
         <span className="cv-button-icon cv-button-icon-book" aria-hidden="true"></span>
         <span className="cv-button-label">Open command center</span>
       </a>
@@ -23,277 +22,231 @@ template: splash
         <span className="cv-button-icon cv-button-icon-folder" aria-hidden="true"></span>
         <span className="cv-button-label">Browse library</span>
       </a>
-      <a className="cv-button cv-button-secondary" href="/projects/roadmap/">
+      <a className="cv-button cv-button-secondary" href="/projects/feature-matrix/">
         <span className="cv-button-icon cv-button-icon-map" aria-hidden="true"></span>
-        <span className="cv-button-label">View roadmap</span>
+      <span className="cv-button-label">Feature matrix</span>
       </a>
     </div>
   </div>
 
-  <aside className="cv-library-panel" aria-label="Library overview">
+  <aside className="cv-saas-panel" aria-label="ChemVault SaaS command center preview">
     <div className="cv-panel-toolbar">
       <span className="cv-status-dot" aria-hidden="true"></span>
-      <span>Docs index</span>
-      <code>Starlight</code>
+      <span>Knowledge OS</span>
+      <code>Live</code>
     </div>
-    <div className="cv-metric-grid">
-      <div><strong>100+</strong><span>UoM notes</span></div>
-      <div><strong>20</strong><span>entry points</span></div>
-      <div><strong>14</strong><span>guided paths</span></div>
-      <div><strong>6</strong><span>ops pages</span></div>
+    <div className="cv-panel-tabs" aria-label="Command center modules">
+      <span className="is-active">Library</span>
+      <span>Workflows</span>
+      <span>Releases</span>
     </div>
-    <div className="cv-health-list">
-      <div><span>Commercial Overview</span><strong>Live</strong></div>
-      <div><span>Study Workflow</span><strong>Ready</strong></div>
-      <div><span>Reagent Library</span><strong>Ready</strong></div>
-      <div><span>Lab Guides</span><strong>Ready</strong></div>
-      <div><span>Resource Library</span><strong>Planned</strong></div>
-      <div><span>Roadmap and Changelog</span><strong>Live</strong></div>
+    <div className="cv-dashboard-kpis">
+      <div><strong>100+</strong><span>indexed notes</span></div>
+      <div><strong>23</strong><span>active records</span></div>
+      <div><strong>8</strong><span>workspaces</span></div>
+    </div>
+    <div className="cv-dashboard-list">
+      <div className="cv-dashboard-row">
+        <span>Reaction decision layer</span>
+        <strong>Ready</strong>
+      </div>
+      <div className="cv-dashboard-row">
+        <span>Resource release pipeline</span>
+        <strong>Planned</strong>
+      </div>
+      <div className="cv-dashboard-row">
+        <span>Roadmap and changelog</span>
+        <strong>Live</strong>
+      </div>
+    </div>
+    <div className="cv-dashboard-pipeline" aria-label="Content pipeline readiness">
+      <div><span>Capture</span><i style={{"--cv-fill": "92%"}}></i></div>
+      <div><span>Structure</span><i style={{"--cv-fill": "82%"}}></i></div>
+      <div><span>Publish</span><i style={{"--cv-fill": "54%"}}></i></div>
     </div>
   </aside>
 </section>
 
-<section className="cv-proof-strip" aria-label="ChemVault Docs proof points">
-  <div className="cv-proof-item">
-    <strong>Authority</strong>
-    <span>Structured chemistry routes, reagent context and course knowledge paths.</span>
-  </div>
-  <div className="cv-proof-item">
-    <strong>Utility</strong>
-    <span>Search, active-record filtering, decision maps and practical lab workflows.</span>
-  </div>
-  <div className="cv-proof-item">
-    <strong>Operations</strong>
-    <span>Roadmap, changelog, release states and docs maintenance rules.</span>
-  </div>
-  <div className="cv-proof-item">
-    <strong>Growth</strong>
-    <span>Resource library foundations for future sheets, templates and revision packs.</span>
-  </div>
+<section className="cv-logic-strip" aria-label="ChemVault operating logic">
+  <a className="cv-logic-step" href="/getting-started/workspace-map/">
+    <span>01</span>
+    <strong>Capture</strong>
+    <small>Notes, lab patterns, reagent facts and project decisions enter one route map.</small>
+  </a>
+  <a className="cv-logic-step" href="/projects/saas-operating-model/">
+    <span>02</span>
+    <strong>Structure</strong>
+    <small>Every page gets a workspace, status, owner context and next useful action.</small>
+  </a>
+  <a className="cv-logic-step" href="/reagents/reagent-selection-map/">
+    <span>03</span>
+    <strong>Decide</strong>
+    <small>Decision maps turn scattered knowledge into reagent and workflow choices.</small>
+  </a>
+  <a className="cv-logic-step" href="/downloads/resources/">
+    <span>04</span>
+    <strong>Publish</strong>
+    <small>Resources, release states and changelog entries make public output accountable.</small>
+  </a>
 </section>
 
-<section className="cv-section cv-audience-section">
+<section className="cv-section cv-suite-section" id="library">
   <div className="cv-section-heading">
     <div>
-      <p className="cv-eyebrow">built for repeated use</p>
-      <h2>Three audience lanes, one documentation system</h2>
+      <p className="cv-eyebrow">product suites</p>
+      <h2>A SaaS information architecture for chemistry work</h2>
     </div>
-    <p>The commercial direction is not just a sharper homepage. It turns ChemVault Docs into a repeatable system for learning, lab execution and product operations.</p>
+    <p>The site now separates display content by product logic: knowledge base, decision workflows, lab operations, learning paths, resource publishing and product governance.</p>
   </div>
 
-  <div className="cv-audience-grid">
-    <article className="cv-audience-card">
-      <span className="cv-card-icon cv-card-icon-course" aria-hidden="true"></span>
-      <strong>Study and exam preparation</strong>
-      <p>Start from revision tasks, course maps and answer-pattern pages instead of isolated notes.</p>
-      <div className="cv-audience-links">
-        <a href="/getting-started/study-workflow/">Study workflow</a>
-        <a href="/uom-chemistry/chem10712/">CHEM10712 index</a>
-      </div>
-    </article>
-    <article className="cv-audience-card">
-      <span className="cv-card-icon cv-card-icon-lab" aria-hidden="true"></span>
-      <strong>Lab work and reaction decisions</strong>
-      <p>Move from mechanism choice to reagent scope, troubleshooting, TLC and work-up planning.</p>
-      <div className="cv-audience-links">
-        <a href="/reagents/reagent-selection-map/">Reagent map</a>
-        <a href="/lab-guides/workup-extraction/">Work-up guide</a>
-      </div>
-    </article>
-    <article className="cv-audience-card">
-      <span className="cv-card-icon cv-card-icon-project" aria-hidden="true"></span>
-      <strong>Product and content operations</strong>
-      <p>Keep public documentation accountable with roadmap notes, release records and maintenance rules.</p>
-      <div className="cv-audience-links">
-        <a href="/projects/roadmap/">Roadmap</a>
-        <a href="/projects/changelog/">Changelog</a>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section className="cv-section cv-section-tight" id="library">
-  <div className="cv-section-heading">
-    <div>
-      <p className="cv-eyebrow">explore by entry point</p>
-      <h2>One library for notes, manuals and research operations</h2>
-    </div>
-    <p>ChemVault Docs now behaves like a documentation hub: each entry point has a clear route, maintenance purpose and reading path.</p>
-  </div>
-
-  <div className="cv-workspace-grid">
-    <a className="cv-workspace-card" href="/chemistry/">
+  <div className="cv-suite-grid">
+    <a className="cv-suite-card" href="/chemistry/">
       <span className="cv-card-icon cv-card-icon-notes" aria-hidden="true"></span>
-      <strong>Chemistry Notes</strong>
-      <small>Mechanism hub for SN1, SN2, E1/E2 and carbonyl reduction decisions.</small>
-      <em>Open</em>
+      <strong>Knowledge Base</strong>
+      <p>Core mechanisms, reaction maps and concept notes for structured study and reuse.</p>
+      <em>7 routes</em>
     </a>
-    <a className="cv-workspace-card" href="/reagents/">
+    <a className="cv-suite-card" href="/reagents/">
       <span className="cv-card-icon cv-card-icon-reagent" aria-hidden="true"></span>
-      <strong>Reagent Library</strong>
-      <small>NaBH4, LiAlH4 and PCC passports with scope, traps and decision context.</small>
-      <em>Open</em>
+      <strong>Decision Workflows</strong>
+      <p>Reagent passports and selection maps that help users choose a route.</p>
+      <em>5 routes</em>
     </a>
-    <a className="cv-workspace-card" href="/lab-guides/">
+    <a className="cv-suite-card" href="/lab-guides/">
       <span className="cv-card-icon cv-card-icon-lab" aria-hidden="true"></span>
-      <strong>Lab Guides</strong>
-      <small>TLC monitoring, Rf interpretation, work-up planning and record templates.</small>
-      <em>Open</em>
+      <strong>Lab Operations</strong>
+      <p>TLC, work-up and evidence-first lab workflows designed for repeated execution.</p>
+      <em>3 routes</em>
     </a>
-    <a className="cv-workspace-card cv-workspace-card-featured" href="/downloads/resources/">
-      <span className="cv-card-icon cv-card-icon-file" aria-hidden="true"></span>
-      <strong>Resource Library</strong>
-      <small>Future sheets, templates, revision packs, metadata and release-state rules.</small>
-      <em>Open</em>
-    </a>
-    <a className="cv-workspace-card" href="/projects/commercial-overview/">
-      <span className="cv-card-icon cv-card-icon-project" aria-hidden="true"></span>
-      <strong>Commercial Overview</strong>
-      <small>Positioning, operating model, quality gates and next commercial moves.</small>
-      <em>Open</em>
-    </a>
-    <a className="cv-workspace-card" href="/projects/roadmap/">
-      <span className="cv-card-icon cv-card-icon-map" aria-hidden="true"></span>
-      <strong>Roadmap</strong>
-      <small>Now, next and later tracks for content, resources and product operations.</small>
-      <em>Open</em>
-    </a>
-    <a className="cv-workspace-card cv-workspace-card-featured" href="/uom-chemistry/chem10712/">
+    <a className="cv-suite-card" href="/uom-chemistry/chem10712/">
       <span className="cv-card-icon cv-card-icon-course" aria-hidden="true"></span>
-      <strong>UoM Chemistry</strong>
-      <small>CHEM10712 knowledge points, lecture summaries and exam patterns.</small>
-      <em>Open</em>
+      <strong>Learning Paths</strong>
+      <p>CHEM10712 knowledge points, revision modes and exam-pattern navigation.</p>
+      <em>100+ notes</em>
     </a>
-    <a className="cv-workspace-card" href="/uom-chemistry/chem10712_knowledge_points/00-课程总图为什么这些知识点连在一起/">
+    <a className="cv-suite-card cv-suite-card-featured" href="/downloads/resources/">
       <span className="cv-card-icon cv-card-icon-file" aria-hidden="true"></span>
-      <strong>Course Map</strong>
-      <small>The high-level CHEM10712 map that connects molecules, enzymes, genes and engineering.</small>
-      <em>Open</em>
+      <strong>Resource Hub</strong>
+      <p>Download candidates, release states, file metadata and future public assets.</p>
+      <em>release pipeline</em>
+    </a>
+    <a className="cv-suite-card" href="/projects/">
+      <span className="cv-card-icon cv-card-icon-project" aria-hidden="true"></span>
+      <strong>Product Operations</strong>
+      <p>Commercial overview, SaaS operating model, roadmap, changelog and maintenance.</p>
+      <em>8 manuals</em>
     </a>
   </div>
 </section>
 
-<section className="cv-section cv-command-section">
+<section className="cv-section cv-persona-section">
   <div className="cv-section-heading">
     <div>
-      <p className="cv-eyebrow">commercial command center</p>
-      <h2>Turn documentation into a product surface</h2>
+      <p className="cv-eyebrow">workflow switcher</p>
+      <h2>Same knowledge base, different operating mode</h2>
     </div>
-    <p>The new operating layer makes the site feel maintained: direction, release history, resources and project manuals are visible from the first visit.</p>
+    <p>Each user mode has a clear first action, route sequence and output. The page no longer asks users to interpret the folder tree before they can start.</p>
   </div>
 
-  <div className="cv-command-grid">
-    <a className="cv-command-card cv-command-card-primary" href="/projects/commercial-overview/">
-      <span>01</span>
-      <strong>Commercial Overview</strong>
-      <small>Define the audience, positioning, operating model and quality gates.</small>
-    </a>
-    <a className="cv-command-card" href="/projects/roadmap/">
-      <span>02</span>
-      <strong>Roadmap</strong>
-      <small>Show what exists now, what comes next and what is intentionally later.</small>
-    </a>
-    <a className="cv-command-card" href="/projects/changelog/">
-      <span>03</span>
-      <strong>Changelog</strong>
-      <small>Record important public-facing changes to navigation, content and interactions.</small>
-    </a>
-    <a className="cv-command-card" href="/downloads/resources/">
-      <span>04</span>
-      <strong>Resource Library</strong>
-      <small>Prepare downloadable templates, reagent sheets and revision packs with metadata.</small>
-    </a>
-  </div>
-</section>
-
-<section className="cv-section cv-launchpad">
-  <div className="cv-section-heading">
-    <div>
-      <p className="cv-eyebrow">task launchpad</p>
-      <h2>Open the right page from the question in front of you</h2>
+  <div className="cv-persona-switcher" data-cv-persona-switcher>
+    <div className="cv-persona-tabs" role="tablist" aria-label="ChemVault workflow modes">
+      <button className="is-active" type="button" role="tab" aria-selected="true" data-cv-persona-tab="study">Study</button>
+      <button type="button" role="tab" aria-selected="false" data-cv-persona-tab="lab">Lab</button>
+      <button type="button" role="tab" aria-selected="false" data-cv-persona-tab="ops">Ops</button>
     </div>
-    <p>The launchpad connects study, reagent choice, reaction troubleshooting and lab work-up into short operational paths.</p>
-  </div>
-
-  <div className="cv-launch-grid">
-    <a className="cv-launch-card" href="/getting-started/study-workflow/">
-      <span className="cv-launch-step">01</span>
-      <strong>Build a study session</strong>
-      <small>Pick a task mode, run a 30-minute revision loop and leave a reusable answer.</small>
-    </a>
-    <a className="cv-launch-card" href="/reagents/reagent-selection-map/">
-      <span className="cv-launch-step">02</span>
-      <strong>Select a reagent</strong>
-      <small>Start from the transformation goal, then check scope, selectivity and work-up risk.</small>
-    </a>
-    <a className="cv-launch-card" href="/chemistry/reaction-troubleshooting/">
-      <span className="cv-launch-step">03</span>
-      <strong>Troubleshoot a reaction</strong>
-      <small>Classify the observation, audit the mechanism and change one variable at a time.</small>
-    </a>
-    <a className="cv-launch-card" href="/lab-guides/workup-extraction/">
-      <span className="cv-launch-step">04</span>
-      <strong>Plan work-up and extraction</strong>
-      <small>Decide product phase logic and capture enough evidence for a clean lab record.</small>
-    </a>
+    <div className="cv-persona-panel" data-cv-persona-panel="study">
+      <div>
+        <strong>Build a revision loop</strong>
+        <p>Start from the workspace map, open a course path, then end with an answer pattern or concept summary.</p>
+      </div>
+      <ol>
+        <li><a href="/getting-started/workspace-map/">Choose a workspace</a></li>
+        <li><a href="/uom-chemistry/chem10712/">Open CHEM10712</a></li>
+        <li><a href="/getting-started/study-workflow/">Run the study workflow</a></li>
+      </ol>
+    </div>
+    <div className="cv-persona-panel" data-cv-persona-panel="lab" hidden>
+      <div>
+        <strong>Prepare a lab decision</strong>
+        <p>Move from transformation goal to reagent scope, monitoring plan and work-up logic.</p>
+      </div>
+      <ol>
+        <li><a href="/chemistry/substitution-elimination-map/">Classify the pathway</a></li>
+        <li><a href="/reagents/reagent-selection-map/">Select a reagent</a></li>
+        <li><a href="/lab-guides/workup-extraction/">Plan the work-up</a></li>
+      </ol>
+    </div>
+    <div className="cv-persona-panel" data-cv-persona-panel="ops" hidden>
+      <div>
+        <strong>Ship a maintained public resource</strong>
+        <p>Use release states, roadmap context and changelog entries before a resource becomes public.</p>
+      </div>
+      <ol>
+        <li><a href="/projects/saas-operating-model/">Check the operating model</a></li>
+        <li><a href="/downloads/resources/">Prepare the resource</a></li>
+        <li><a href="/projects/changelog/">Record the change</a></li>
+      </ol>
+    </div>
   </div>
 </section>
 
 <section className="cv-section cv-section-band">
   <div className="cv-section-heading">
     <div>
-      <p className="cv-eyebrow">operating model</p>
-      <h2>Capture, validate, publish and maintain</h2>
+      <p className="cv-eyebrow">system layers</p>
+      <h2>Advanced SaaS does not mean more clutter</h2>
     </div>
-    <p>A commercial documentation system needs visible maintenance logic. These operating steps make future content additions predictable.</p>
+    <p>The interface is organized around layers with clear jobs: library, decisions, operations and distribution. Each layer has a route, status and next action.</p>
   </div>
 
-  <div className="cv-ops-grid">
-    <article className="cv-ops-card">
-      <strong>Capture</strong>
-      <p>Turn notes, lab patterns and project decisions into routeable documentation pages.</p>
+  <div className="cv-system-grid">
+    <article className="cv-system-card">
+      <span>Layer 1</span>
+      <strong>Library graph</strong>
+      <p>Pages are grouped by workspace and linked from user tasks, not just folder names.</p>
     </article>
-    <article className="cv-ops-card">
-      <strong>Validate</strong>
-      <p>Check titles, audience, route purpose, internal links, release state and build output.</p>
+    <article className="cv-system-card">
+      <span>Layer 2</span>
+      <strong>Decision engine</strong>
+      <p>Maps and troubleshooting pages convert knowledge into choices and trade-offs.</p>
     </article>
-    <article className="cv-ops-card">
-      <strong>Publish</strong>
-      <p>Expose useful pages through the homepage, sidebar, resource library and changelog.</p>
+    <article className="cv-system-card">
+      <span>Layer 3</span>
+      <strong>Release operations</strong>
+      <p>Resources move through draft, candidate, released and archived states.</p>
+    </article>
+    <article className="cv-system-card">
+      <span>Layer 4</span>
+      <strong>Product governance</strong>
+      <p>Roadmap, changelog and feature matrix keep the commercial surface credible.</p>
     </article>
   </div>
 </section>
 
-<section className="cv-section">
+<section className="cv-section cv-feature-section">
   <div className="cv-section-heading">
     <div>
-      <p className="cv-eyebrow">suggested reading paths</p>
-      <h2>Start from the task, not the folder tree</h2>
+      <p className="cv-eyebrow">feature matrix</p>
+      <h2>What makes the docs feel like a product</h2>
     </div>
-    <p>The library is organized for repeated use: learn a concept, check a reagent, prepare a lab, document a project or inspect the product roadmap.</p>
+    <p>The advanced SaaS layer is built from practical documentation features that already have routes or a clear release path.</p>
   </div>
 
-  <div className="cv-path-grid">
-    <a className="cv-path-card" href="/getting-started/what-is-chemvault/"><strong>New to ChemVault</strong><span>4 steps</span></a>
-    <a className="cv-path-card" href="/projects/commercial-overview/"><strong>Understand the operating model</strong><span>overview</span></a>
-    <a className="cv-path-card" href="/getting-started/study-workflow/"><strong>Build a study workflow</strong><span>30 min loop</span></a>
-    <a className="cv-path-card" href="/chemistry/substitution-elimination-map/"><strong>Choose SN/E pathway</strong><span>decision map</span></a>
-    <a className="cv-path-card" href="/chemistry/reaction-troubleshooting/"><strong>Troubleshoot a reaction</strong><span>evidence-led</span></a>
-    <a className="cv-path-card" href="/chemistry/carbonyl-reductions/"><strong>Choose a reducing agent</strong><span>4 reagents</span></a>
-    <a className="cv-path-card" href="/reagents/reagent-selection-map/"><strong>Select a reagent</strong><span>scope map</span></a>
-    <a className="cv-path-card" href="/lab-guides/tlc-monitoring/"><strong>Monitor a reaction</strong><span>TLC guide</span></a>
-    <a className="cv-path-card" href="/lab-guides/workup-extraction/"><strong>Plan work-up</strong><span>phase logic</span></a>
-    <a className="cv-path-card" href="/projects/roadmap/"><strong>Check the roadmap</strong><span>now/next</span></a>
-    <a className="cv-path-card" href="/downloads/resources/"><strong>Prepare a resource</strong><span>release states</span></a>
-    <a className="cv-path-card" href="/uom-chemistry/chem10712/"><strong>Review CHEM10712</strong><span>100 notes</span></a>
+  <div className="cv-feature-grid">
+    <a className="cv-feature-card" href="/projects/feature-matrix/"><strong>Capability map</strong><span>Search, filters, workflows, resources and governance in one matrix.</span></a>
+    <a className="cv-feature-card" href="/getting-started/workspace-map/"><strong>Workspace map</strong><span>A logical map of what users should open first and why.</span></a>
+    <a className="cv-feature-card" href="/projects/roadmap/"><strong>Roadmap</strong><span>Now, next and later tracks for public product direction.</span></a>
+    <a className="cv-feature-card" href="/projects/changelog/"><strong>Changelog</strong><span>Visible release history for major docs and content changes.</span></a>
+    <a className="cv-feature-card" href="/downloads/resources/"><strong>Release states</strong><span>Draft, candidate, released and archived status for file publishing.</span></a>
+    <a className="cv-feature-card" href="/projects/chemvault-docs-maintenance/"><strong>Maintenance loop</strong><span>Build, link, search and sidebar checks before public changes ship.</span></a>
   </div>
 </section>
 
 <section className="cv-section cv-library-table-section" id="active-library-records">
   <div className="cv-table-header">
     <div>
-      <p className="cv-eyebrow">recently indexed</p>
-      <h2>Active library records</h2>
+      <p className="cv-eyebrow">active records</p>
+      <h2>Indexed product surface</h2>
     </div>
     <a href="https://chemvault.science" target="_blank" rel="noreferrer">Open research portal</a>
   </div>
@@ -314,7 +267,7 @@ template: splash
         <button type="button" data-cv-record-filter="Project Docs">Projects</button>
         <button type="button" data-cv-record-filter="UoM Chemistry">UoM</button>
       </div>
-      <p data-cv-record-count>20 records</p>
+      <p data-cv-record-count>23 records</p>
     </div>
     <table className="cv-record-table" data-cv-record-table>
       <thead>
@@ -326,6 +279,24 @@ template: splash
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td><a href="/projects/saas-operating-model/">SaaS operating model</a></td>
+          <td>Project Docs</td>
+          <td><span className="cv-status-pill">Live</span></td>
+          <td>System model</td>
+        </tr>
+        <tr>
+          <td><a href="/projects/feature-matrix/">Feature matrix</a></td>
+          <td>Project Docs</td>
+          <td><span className="cv-status-pill">Live</span></td>
+          <td>Capability map</td>
+        </tr>
+        <tr>
+          <td><a href="/getting-started/workspace-map/">Workspace map</a></td>
+          <td>Getting Started</td>
+          <td><span className="cv-status-pill">Live</span></td>
+          <td>Navigation model</td>
+        </tr>
         <tr>
           <td><a href="/projects/commercial-overview/">Commercial overview</a></td>
           <td>Project Docs</td>
@@ -458,20 +429,21 @@ template: splash
 <section className="cv-section cv-topic-section">
   <div className="cv-section-heading">
     <div>
-      <p className="cv-eyebrow">popular topics</p>
-      <h2>Tags that should become first-class docs</h2>
+      <p className="cv-eyebrow">navigation tags</p>
+      <h2>Every tag points to a product surface</h2>
     </div>
-    <p>These topic lanes point to live pages that can grow into larger manuals, resources and operating playbooks.</p>
+    <p>Topic tags now support the SaaS logic: model, map, decide, operate, release and maintain.</p>
   </div>
 
   <div className="cv-topic-grid">
+    <a href="/getting-started/workspace-map/">Workspace map</a>
+    <a href="/projects/saas-operating-model/">SaaS model</a>
+    <a href="/projects/feature-matrix/">Feature matrix</a>
     <a href="/chemistry/">Mechanisms</a>
     <a href="/reagents/reagent-selection-map/">Reagent selection</a>
     <a href="/chemistry/reaction-troubleshooting/">Troubleshooting</a>
     <a href="/lab-guides/workup-extraction/">Work-up</a>
     <a href="/downloads/resources/">Resources</a>
-    <a href="/projects/commercial-overview/">Commercial model</a>
-    <a href="/projects/roadmap/">Roadmap</a>
     <a href="/projects/changelog/">Changelog</a>
     <a href="/uom-chemistry/chem10712/">Biochemistry</a>
   </div>

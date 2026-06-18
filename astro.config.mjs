@@ -10,7 +10,7 @@ export default defineConfig({
     starlight({
       title: 'ChemVault Docs',
       description:
-        'The ChemVault documentation library for chemistry notes, reagent passports, lab guides, project docs and file resources.',
+        'ChemVault Knowledge OS: a commercial SaaS-style chemistry documentation system for notes, reagent decisions, lab workflows, resources and product operations.',
       logo: {
         src: './src/assets/chemvault-logo-mark.png',
         alt: 'ChemVault',
@@ -45,7 +45,7 @@ export default defineConfig({
           attrs: {
             property: 'og:description',
             content:
-              'A commercial-grade chemistry knowledge hub for reaction decisions, reagent passports, lab workflows, project operations and CHEM10712 study paths.',
+              'ChemVault Knowledge OS: a commercial SaaS-style chemistry documentation system for notes, reagent decisions, lab workflows, resources and product operations.',
           },
         },
         {
@@ -99,6 +99,10 @@ export default defineConfig({
             {
               label: 'Study Workflow',
               slug: 'getting-started/study-workflow',
+            },
+            {
+              label: 'Workspace Map',
+              slug: 'getting-started/workspace-map',
             },
           ],
         },
@@ -209,6 +213,14 @@ export default defineConfig({
             {
               label: 'Commercial Overview',
               slug: 'projects/commercial-overview',
+            },
+            {
+              label: 'SaaS Operating Model',
+              slug: 'projects/saas-operating-model',
+            },
+            {
+              label: 'Feature Matrix',
+              slug: 'projects/feature-matrix',
             },
             {
               label: 'Roadmap',
