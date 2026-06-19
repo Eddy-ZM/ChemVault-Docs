@@ -8,6 +8,7 @@ template: splash
   <div className="cv-hero-copy">
     <nav className="cv-marketing-nav" aria-label="ChemVault page navigation">
       <a href="#product">Product</a>
+      <a href="#solutions">Solutions</a>
       <a href="#platform">Platform</a>
       <a href="#security">Security</a>
       <a href="#pricing">Pricing</a>
@@ -159,6 +160,55 @@ template: splash
   </article>
 </section>
 
+<section className="cv-section cv-solutions-section" id="solutions">
+  <div className="cv-section-heading">
+    <div>
+      <h2>Built for the teams that move chemistry work forward</h2>
+    </div>
+    <p>ChemVault gives every stakeholder a practical view of the work they need to run, govern and report without forcing teams into another disconnected process.</p>
+  </div>
+
+  <div className="cv-solution-grid">
+    <article className="cv-solution-card cv-solution-card-wide">
+      <div>
+        <span>R&D operations</span>
+        <strong>Keep project work, methods and approvals in one operating lane.</strong>
+      </div>
+      <ul className="cv-solution-list">
+        <li><span>Intake</span><strong>12 requests triaged</strong></li>
+        <li><span>Execution</span><strong>7 workflows in progress</strong></li>
+        <li><span>Release</span><strong>4 outputs ready</strong></li>
+      </ul>
+    </article>
+    <article className="cv-solution-card cv-solution-card-wide">
+      <div>
+        <span>Lab leadership</span>
+        <strong>See ownership, risk and readiness without asking for status decks.</strong>
+      </div>
+      <div className="cv-solution-bars" aria-hidden="true">
+        <i style="--cv-fill: 82%"></i>
+        <i style="--cv-fill: 64%"></i>
+        <i style="--cv-fill: 91%"></i>
+      </div>
+    </article>
+    <article className="cv-solution-card">
+      <span>Compliance teams</span>
+      <strong>Review access, change history and release records from one controlled surface.</strong>
+      <p>Approval evidence stays connected to the work rather than hidden across inboxes.</p>
+    </article>
+    <article className="cv-solution-card">
+      <span>Program managers</span>
+      <strong>Coordinate cross-team chemistry work without losing the operational thread.</strong>
+      <p>Owners, deadlines, dependencies and bottlenecks stay visible through delivery.</p>
+    </article>
+    <article className="cv-solution-card">
+      <span>External partners</span>
+      <strong>Share scoped workspaces with precise roles and review boundaries.</strong>
+      <p>Partner collaboration can be permissioned without exposing the whole operation.</p>
+    </article>
+  </div>
+</section>
+
 <section className="cv-section cv-platform-section" id="platform">
   <div className="cv-section-heading">
     <div>
@@ -193,6 +243,32 @@ template: splash
       <strong>Operational visibility</strong>
       <p>Give leaders a live view into workflow health, approval bottlenecks and asset readiness.</p>
     </article>
+  </div>
+</section>
+
+<section className="cv-section cv-integration-section">
+  <div className="cv-section-heading">
+    <div>
+      <h2>Fits the systems chemistry teams already use</h2>
+    </div>
+    <p>Connect identity, intake, assets, reporting and governed exports around one operating layer that can sit beside the chemistry systems already in place.</p>
+  </div>
+
+  <div className="cv-integration-shell">
+    <div className="cv-integration-map" aria-label="ChemVault integration map">
+      <strong>ChemVault</strong>
+      <span>SSO</span>
+      <span>Email intake</span>
+      <span>Cloud storage</span>
+      <span>ELN/LIMS handoff</span>
+      <span>BI export</span>
+      <span>Audit archive</span>
+    </div>
+    <div className="cv-integration-panel">
+      <div><span>01</span><strong>Capture inbound work</strong><p>Turn email requests, internal asks and partner updates into tracked workflows.</p></div>
+      <div><span>02</span><strong>Attach the operational record</strong><p>Keep methods, reports, comments, owners and approvals connected to the same workspace.</p></div>
+      <div><span>03</span><strong>Export clean evidence</strong><p>Give managers and compliance teams structured records for reviews, audits and operating meetings.</p></div>
+    </div>
   </div>
 </section>
 
@@ -241,6 +317,43 @@ template: splash
   </div>
 </section>
 
+<section className="cv-section cv-comparison-section" id="compare">
+  <div className="cv-section-heading">
+    <div>
+      <h2>Replace scattered chemistry operations with a controlled workspace</h2>
+    </div>
+    <p>Show buyers exactly what changes when chemistry work moves from folders and inboxes into an accountable operating surface.</p>
+  </div>
+
+  <div className="cv-comparison-table" role="table" aria-label="ChemVault operating comparison">
+    <div className="cv-comparison-row cv-comparison-head" role="row">
+      <span role="columnheader">Operating area</span>
+      <span role="columnheader">Shared files and inboxes</span>
+      <span role="columnheader">ChemVault workspace</span>
+    </div>
+    <div className="cv-comparison-row" role="row">
+      <strong role="cell">Intake</strong>
+      <span role="cell">Requests arrive without consistent owners, scope or priority.</span>
+      <span role="cell">Every request starts with an owner, status and attached context.</span>
+    </div>
+    <div className="cv-comparison-row" role="row">
+      <strong role="cell">Approvals</strong>
+      <span role="cell">Decisions live in email threads and are hard to trace later.</span>
+      <span role="cell">Role-aware approvals create a clear review and release history.</span>
+    </div>
+    <div className="cv-comparison-row" role="row">
+      <strong role="cell">Assets</strong>
+      <span role="cell">Methods, reports and templates drift across folders.</span>
+      <span role="cell">Controlled records stay connected to the workflow they support.</span>
+    </div>
+    <div className="cv-comparison-row" role="row">
+      <strong role="cell">Visibility</strong>
+      <span role="cell">Leaders depend on manual updates and retrospective status decks.</span>
+      <span role="cell">Live dashboards show bottlenecks, readiness and operational risk.</span>
+    </div>
+  </div>
+</section>
+
 <section className="cv-section cv-security-band" id="security">
   <div>
     <h2>Security and compliance by design</h2>
@@ -285,9 +398,9 @@ template: splash
 <section className="cv-section cv-pricing-section" id="pricing" data-cv-billing>
   <div className="cv-section-heading">
     <div>
-      <h2>Simple, transparent pricing</h2>
+      <h2>Commercial plans for teams at different operating stages</h2>
     </div>
-    <p>Use these plans as commercial presentation tiers. They are display-only and do not connect to checkout.</p>
+    <p>Start with a focused team rollout, standardize cross-team operations, then add enterprise governance when the workspace becomes business-critical.</p>
   </div>
 
   <div className="cv-billing-toggle">
@@ -298,7 +411,7 @@ template: splash
   <div className="cv-pricing-grid">
     <article className="cv-price-card">
       <strong>Team</strong>
-      <p>For small teams getting started.</p>
+      <p>For a focused chemistry team moving work out of scattered files.</p>
       <div><span data-cv-price data-monthly="$1,200" data-annual="$12,000">$1,200</span><small>/mo</small></div>
       <ul>
         <li>Up to 10 users</li>
@@ -310,7 +423,7 @@ template: splash
     </article>
     <article className="cv-price-card cv-price-card-featured">
       <strong>Business</strong>
-      <p>For growing teams with advanced needs.</p>
+      <p>For growing teams standardizing workflows, approvals and visibility.</p>
       <div><span data-cv-price data-monthly="$2,400" data-annual="$24,000">$2,400</span><small>/mo</small></div>
       <ul>
         <li>Up to 25 users</li>
@@ -322,7 +435,7 @@ template: splash
     </article>
     <article className="cv-price-card">
       <strong>Enterprise</strong>
-      <p>For larger organizations with complex requirements.</p>
+      <p>For organizations with advanced governance and deployment needs.</p>
       <div><span>Custom</span></div>
       <ul>
         <li>Unlimited users</li>
@@ -333,12 +446,18 @@ template: splash
       <a href="#contact">Contact sales</a>
     </article>
   </div>
+
+  <div className="cv-pricing-compare" aria-label="Plan comparison highlights">
+    <span>All plans include workflow tracking, controlled assets and role-based access.</span>
+    <span>Business adds advanced permissions, analytics and custom workflow configuration.</span>
+    <span>Enterprise adds SSO, SCIM, data residency options and dedicated support.</span>
+  </div>
 </section>
 
 <section className="cv-section cv-contact-section" id="contact">
   <div>
-    <h2>Make ChemVault look and feel ready for buyers</h2>
-    <p>This site is now focused on commercial SaaS presentation: product value, interface clarity, security posture, pricing structure and a clear demo action.</p>
+    <h2>Bring chemistry operations into a commercial-grade workspace</h2>
+    <p>Request a ChemVault walkthrough focused on your workflows, approval model, assets, security requirements and rollout path.</p>
   </div>
   <a className="cv-button cv-button-primary" href="mailto:hello@chemvault.science">Contact ChemVault</a>
 </section>

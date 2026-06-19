@@ -179,7 +179,7 @@ const bindRevealAnimations = () => {
   if (prefersReducedMotion()) return;
 
   const revealTargets = document.querySelectorAll(
-    '.cv-docs-hero, .cv-logic-strip, .cv-section, .cv-suite-card, .cv-system-card, .cv-feature-card, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card, .cv-commercial-strip article, .cv-journey-line article, .cv-price-card',
+    '.cv-docs-hero, .cv-logic-strip, .cv-section, .cv-suite-card, .cv-system-card, .cv-feature-card, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card, .cv-commercial-strip article, .cv-solution-card, .cv-integration-map, .cv-integration-panel div, .cv-journey-line article, .cv-price-card, .cv-pricing-compare span',
   );
 
   revealTargets.forEach((target) => {
@@ -208,7 +208,7 @@ const bindPointerGlow = () => {
   if (prefersReducedMotion()) return;
 
   const cards = document.querySelectorAll(
-    '.cv-logic-step, .cv-suite-card, .cv-system-card, .cv-feature-card, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card, .cv-exam-grid a, .cv-commercial-strip article, .cv-price-card',
+    '.cv-logic-step, .cv-suite-card, .cv-system-card, .cv-feature-card, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card, .cv-exam-grid a, .cv-commercial-strip article, .cv-solution-card, .cv-integration-map, .cv-integration-panel div, .cv-price-card',
   );
 
   cards.forEach((card) => {
