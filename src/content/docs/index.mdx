@@ -8,7 +8,7 @@ template: splash
   <div className="cv-hero-copy">
     <nav className="cv-marketing-nav" aria-label="ChemVault page navigation">
       <a href="#product">Product</a>
-      <a href="#features">Features</a>
+      <a href="#platform">Platform</a>
       <a href="#security">Security</a>
       <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
@@ -42,6 +42,8 @@ template: splash
       <button type="button" data-cv-demo-tab="workflows" aria-selected="false">Workflows</button>
       <button type="button" data-cv-demo-tab="access" aria-selected="false">Access</button>
       <button type="button" data-cv-demo-tab="assets" aria-selected="false">Assets</button>
+      <button type="button" data-cv-demo-tab="reports" aria-selected="false">Reports</button>
+      <button type="button" data-cv-demo-tab="governance" aria-selected="false">Governance</button>
     </div>
 
     <div className="cv-product-main">
@@ -114,6 +116,22 @@ template: splash
           <div><strong>Templates</strong><span>86 approved files</span></div>
         </div>
       </div>
+
+      <div className="cv-demo-panel" data-cv-demo-panel="reports" hidden>
+        <div className="cv-report-board">
+          <div><strong>Approval cycle time</strong><span>4.6 days average</span><i style="--cv-fill: 74%"></i></div>
+          <div><strong>Open workflow risk</strong><span>3 high-priority items</span><i style="--cv-fill: 42%"></i></div>
+          <div><strong>Asset readiness</strong><span>87% release-ready</span><i style="--cv-fill: 87%"></i></div>
+        </div>
+      </div>
+
+      <div className="cv-demo-panel" data-cv-demo-panel="governance" hidden>
+        <div className="cv-governance-list">
+          <div><strong>Access reviews</strong><span>Quarterly certification with owner sign-off</span></div>
+          <div><strong>Change approvals</strong><span>Role-aware routing before publication</span></div>
+          <div><strong>Audit exports</strong><span>Version history, comments and release records</span></div>
+        </div>
+      </div>
     </div>
   </aside>
 </section>
@@ -139,6 +157,71 @@ template: splash
     <strong>Data-driven insight</strong>
     <p>Give managers visibility into workflow health, approvals, bottlenecks and asset readiness.</p>
   </article>
+</section>
+
+<section className="cv-section cv-platform-section" id="platform">
+  <div className="cv-section-heading">
+    <div>
+      <h2>A platform built for chemistry operations</h2>
+    </div>
+    <p>Move the operating system for chemistry work out of scattered inboxes and static files into a governed workspace teams can run every day.</p>
+  </div>
+
+  <div className="cv-platform-grid">
+    <article className="cv-platform-card">
+      <span className="cv-platform-icon cv-platform-icon-workflow" aria-hidden="true"></span>
+      <strong>Controlled workflows</strong>
+      <p>Standardize repeated chemistry processes with owners, statuses, handoffs and review checkpoints.</p>
+    </article>
+    <article className="cv-platform-card">
+      <span className="cv-platform-icon cv-platform-icon-assets" aria-hidden="true"></span>
+      <strong>Assets and inventory</strong>
+      <p>Keep methods, templates, reports and supporting records in one controlled operational context.</p>
+    </article>
+    <article className="cv-platform-card">
+      <span className="cv-platform-icon cv-platform-icon-approval" aria-hidden="true"></span>
+      <strong>Approvals and changes</strong>
+      <p>Route decisions through role-aware approvals with a clear history of who changed what and why.</p>
+    </article>
+    <article className="cv-platform-card">
+      <span className="cv-platform-icon cv-platform-icon-access" aria-hidden="true"></span>
+      <strong>Role-based access</strong>
+      <p>Apply least-privilege permissions across scientists, managers, admins and external partners.</p>
+    </article>
+    <article className="cv-platform-card">
+      <span className="cv-platform-icon cv-platform-icon-visibility" aria-hidden="true"></span>
+      <strong>Operational visibility</strong>
+      <p>Give leaders a live view into workflow health, approval bottlenecks and asset readiness.</p>
+    </article>
+  </div>
+</section>
+
+<section className="cv-section cv-command-section">
+  <div className="cv-command-copy">
+    <h2>Give every team the same operating picture</h2>
+    <p>ChemVault turns chemistry work into an accountable operating layer: intake, assignment, review, release and reporting stay connected.</p>
+    <ul>
+      <li>Prioritize requests by owner, status and risk.</li>
+      <li>See bottlenecks before they become project delays.</li>
+      <li>Keep approvals, assets and reports attached to the work.</li>
+    </ul>
+  </div>
+  <div className="cv-command-screen" aria-label="ChemVault command center preview">
+    <div className="cv-command-toolbar">
+      <strong>Command center</strong>
+      <span>Live operations</span>
+    </div>
+    <div className="cv-command-metrics">
+      <div><strong>91%</strong><span>on-track work</span></div>
+      <div><strong>12</strong><span>blocked items</span></div>
+      <div><strong>4.6d</strong><span>approval cycle</span></div>
+    </div>
+    <div className="cv-command-table">
+      <div><strong>Scale-up campaign</strong><span>In progress</span><em>Owner Riley Carson</em><i style="--cv-fill: 72%"></i></div>
+      <div><strong>Analytical method transfer</strong><span>Review</span><em>Owner Jordan Lee</em><i style="--cv-fill: 48%"></i></div>
+      <div><strong>Stability study release</strong><span>Complete</span><em>Owner Morgan Patel</em><i style="--cv-fill: 100%"></i></div>
+    </div>
+  </div>
 </section>
 
 <section className="cv-section cv-journey-section">
@@ -170,6 +253,33 @@ template: splash
     <li>Role-based access</li>
     <li>Audit trails and versioning</li>
   </ul>
+</section>
+
+<section className="cv-section cv-enterprise-section">
+  <div className="cv-section-heading">
+    <div>
+      <h2>Designed for enterprise rollout</h2>
+    </div>
+    <p>Make the buying story credible with clear onboarding, governance and administration surfaces before teams scale the workspace.</p>
+  </div>
+
+  <div className="cv-enterprise-grid">
+    <article className="cv-enterprise-card">
+      <span>01</span>
+      <strong>Map operating model</strong>
+      <p>Define workflow types, roles, release states and reporting views around how the team already works.</p>
+    </article>
+    <article className="cv-enterprise-card">
+      <span>02</span>
+      <strong>Configure governance</strong>
+      <p>Set access templates, approval routes, email intake and audit export requirements before launch.</p>
+    </article>
+    <article className="cv-enterprise-card">
+      <span>03</span>
+      <strong>Scale team adoption</strong>
+      <p>Roll out by workspace, invite owners and monitor usage with clear operational readiness metrics.</p>
+    </article>
+  </div>
 </section>
 
 <section className="cv-section cv-pricing-section" id="pricing" data-cv-billing>
