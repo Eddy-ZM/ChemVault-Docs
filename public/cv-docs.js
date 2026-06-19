@@ -179,7 +179,7 @@ const bindRevealAnimations = () => {
   if (prefersReducedMotion()) return;
 
   const revealTargets = document.querySelectorAll(
-    '.cv-docs-hero, .cv-logic-strip, .cv-section, .cv-suite-card, .cv-system-card, .cv-feature-card, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card',
+    '.cv-docs-hero, .cv-logic-strip, .cv-section, .cv-suite-card, .cv-system-card, .cv-feature-card, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card, .cv-commercial-strip article, .cv-journey-line article, .cv-price-card',
   );
 
   revealTargets.forEach((target) => {
@@ -208,7 +208,7 @@ const bindPointerGlow = () => {
   if (prefersReducedMotion()) return;
 
   const cards = document.querySelectorAll(
-    '.cv-logic-step, .cv-suite-card, .cv-system-card, .cv-feature-card, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card, .cv-exam-grid a',
+    '.cv-logic-step, .cv-suite-card, .cv-system-card, .cv-feature-card, .cv-workspace-card, .cv-audience-card, .cv-command-card, .cv-launch-card, .cv-ops-card, .cv-path-card, .cv-route-card, .cv-exam-grid a, .cv-commercial-strip article, .cv-price-card',
   );
 
   cards.forEach((card) => {
@@ -258,6 +258,68 @@ const bindPersonaSwitcher = () => {
   });
 };
 
+const bindProductDemo = () => {
+  const demos = document.querySelectorAll('[data-cv-product-demo]');
+
+  demos.forEach((demo) => {
+    if (demo.dataset.cvDemoBound === 'true') return;
+    demo.dataset.cvDemoBound = 'true';
+
+    const tabs = [...demo.querySelectorAll('[data-cv-demo-tab]')];
+    const panels = [...demo.querySelectorAll('[data-cv-demo-panel]')];
+
+    const activate = (mode) => {
+      tabs.forEach((tab) => {
+        const active = tab.dataset.cvDemoTab === mode;
+        tab.classList.toggle('is-active', active);
+        tab.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+
+      panels.forEach((panel) => {
+        panel.hidden = panel.dataset.cvDemoPanel !== mode;
+      });
+    };
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        activate(tab.dataset.cvDemoTab || 'overview');
+      });
+    });
+  });
+};
+
+const bindBillingToggle = () => {
+  const billingBlocks = document.querySelectorAll('[data-cv-billing]');
+
+  billingBlocks.forEach((block) => {
+    if (block.dataset.cvBillingBound === 'true') return;
+    block.dataset.cvBillingBound = 'true';
+
+    const toggle = block.querySelector('[data-cv-billing-toggle]');
+    const prices = [...block.querySelectorAll('[data-cv-price]')];
+    const suffixes = [...block.querySelectorAll('.cv-price-card small')];
+    let annual = false;
+
+    const update = () => {
+      prices.forEach((price) => {
+        price.textContent = annual ? price.dataset.annual : price.dataset.monthly;
+      });
+      suffixes.forEach((suffix) => {
+        suffix.textContent = annual ? '/yr' : '/mo';
+      });
+      toggle?.setAttribute('aria-pressed', annual ? 'true' : 'false');
+      if (toggle) toggle.textContent = annual ? 'Monthly pricing' : 'Annual pricing';
+    };
+
+    toggle?.addEventListener('click', () => {
+      annual = !annual;
+      update();
+    });
+
+    update();
+  });
+};
+
 const bindKeyboardShortcuts = () => {
   if (document.body.dataset.cvShortcutBound === 'true') return;
   document.body.dataset.cvShortcutBound = 'true';
@@ -287,6 +349,8 @@ const initChemVaultDocs = () => {
   bindRevealAnimations();
   bindPointerGlow();
   bindPersonaSwitcher();
+  bindProductDemo();
+  bindBillingToggle();
   bindKeyboardShortcuts();
 };
 

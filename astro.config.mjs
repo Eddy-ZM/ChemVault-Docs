@@ -8,9 +8,9 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      title: 'ChemVault Docs',
+      title: 'ChemVault',
       description:
-        'ChemVault Knowledge OS: a commercial SaaS-style chemistry documentation system for notes, reagent decisions, lab workflows, resources and product operations.',
+        'ChemVault is a commercial SaaS workspace for chemistry operations, workflows, approvals, assets, access control and team visibility.',
       logo: {
         src: './src/assets/chemvault-logo-mark.png',
         alt: 'ChemVault',
@@ -30,14 +30,14 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             name: 'application-name',
-            content: 'ChemVault Docs',
+            content: 'ChemVault',
           },
         },
         {
           tag: 'meta',
           attrs: {
             property: 'og:title',
-            content: 'ChemVault Docs',
+            content: 'ChemVault',
           },
         },
         {
@@ -45,7 +45,7 @@ export default defineConfig({
           attrs: {
             property: 'og:description',
             content:
-              'ChemVault Knowledge OS: a commercial SaaS-style chemistry documentation system for notes, reagent decisions, lab workflows, resources and product operations.',
+              'A commercial SaaS workspace for controlled chemistry operations, workflows, approvals, assets and team visibility.',
           },
         },
         {
@@ -86,132 +86,14 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: 'Docs Home',
+          label: 'Home',
           link: '/',
         },
         {
-          label: 'Getting Started',
+          label: 'Commercial Site',
           items: [
             {
-              label: 'What is ChemVault?',
-              slug: 'getting-started/what-is-chemvault',
-            },
-            {
-              label: 'Study Workflow',
-              slug: 'getting-started/study-workflow',
-            },
-            {
-              label: 'Workspace Map',
-              slug: 'getting-started/workspace-map',
-            },
-          ],
-        },
-        {
-          label: 'Knowledge Library',
-          items: [
-            {
-              label: 'Chemistry Notes',
-              items: [
-                {
-                  label: 'Overview',
-                  slug: 'chemistry',
-                },
-                {
-                  label: 'Substitution and Elimination Map',
-                  slug: 'chemistry/substitution-elimination-map',
-                },
-                {
-                  label: 'Reaction Troubleshooting',
-                  slug: 'chemistry/reaction-troubleshooting',
-                },
-                {
-                  label: 'SN1 Reaction',
-                  slug: 'chemistry/sn1',
-                },
-                {
-                  label: 'SN2 Reaction',
-                  slug: 'chemistry/sn2',
-                },
-                {
-                  label: 'E1 and E2 Elimination',
-                  slug: 'chemistry/e1-e2',
-                },
-                {
-                  label: 'Carbonyl Reductions',
-                  slug: 'chemistry/carbonyl-reductions',
-                },
-              ],
-            },
-            {
-              label: 'Reagent Passports',
-              items: [
-                {
-                  label: 'Overview',
-                  slug: 'reagents',
-                },
-                {
-                  label: 'Reagent Selection Map',
-                  slug: 'reagents/reagent-selection-map',
-                },
-                {
-                  label: 'Sodium Borohydride',
-                  slug: 'reagents/nabh4',
-                },
-                {
-                  label: 'Lithium Aluminium Hydride',
-                  slug: 'reagents/lialh4',
-                },
-                {
-                  label: 'PCC',
-                  slug: 'reagents/pcc',
-                },
-              ],
-            },
-            {
-              label: 'Lab Guides',
-              items: [
-                {
-                  label: 'Overview',
-                  slug: 'lab-guides',
-                },
-                {
-                  label: 'TLC Reaction Monitoring',
-                  slug: 'lab-guides/tlc-monitoring',
-                },
-                {
-                  label: 'Work-up and Extraction',
-                  slug: 'lab-guides/workup-extraction',
-                },
-              ],
-            },
-            {
-              label: 'File Library',
-              items: [
-                {
-                  label: 'Overview',
-                  slug: 'downloads',
-                },
-                {
-                  label: 'Resource Library',
-                  slug: 'downloads/resources',
-                },
-                {
-                  label: 'File Library Plan',
-                  slug: 'downloads/file-library-plan',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          label: 'Project Manuals',
-          items: [
-            {
-              label: 'Overview',
-              slug: 'projects',
-            },
-            {
-              label: 'Commercial Overview',
+              label: 'Product Overview',
               slug: 'projects/commercial-overview',
             },
             {
@@ -230,48 +112,10 @@ export default defineConfig({
               label: 'Changelog',
               slug: 'projects/changelog',
             },
-            {
-              label: 'ChemVault Core',
-              slug: 'projects/chemvault-core',
-            },
-            {
-              label: 'ChemVault Mail',
-              slug: 'projects/chemvault-mail',
-            },
-            {
-              label: 'Docs Maintenance',
-              slug: 'projects/chemvault-docs-maintenance',
-            },
           ],
         },
         {
-          label: 'UoM Chemistry',
-          collapsed: true,
-          items: [
-            {
-              label: 'CHEM10712 Knowledge Index',
-              slug: 'uom-chemistry/chem10712',
-            },
-            {
-              label: 'CHEM10712 Slides Knowledge Notes',
-              slug: 'uom-chemistry/chem10712/chem10712_slides_knowledge_notes_zh',
-            },
-            {
-              label: 'CHEM10712 Knowledge Points',
-              collapsed: true,
-              items: [
-                {
-                  autogenerate: {
-                    directory: 'uom-chemistry/chem10712_knowledge_points',
-                    collapsed: true,
-                  },
-                },
-              ],
-            },
-          ],
-        },
-        {
-          label: 'ChemVault Portal',
+          label: 'Launch App',
           link: 'https://chemvault.science',
           attrs: {
             target: '_blank',
