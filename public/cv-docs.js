@@ -1,6 +1,15 @@
 const prefersReducedMotion = () =>
   window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+const runStateAnimation = (element, className, duration = 300) => {
+  if (!element || prefersReducedMotion()) return;
+
+  element.classList.remove(className);
+  void element.offsetWidth;
+  element.classList.add(className);
+  window.setTimeout(() => element.classList.remove(className), duration);
+};
+
 const bindChemVaultSearch = () => {
   const pageSearchButtons = document.querySelectorAll('[data-cv-open-search]');
 
@@ -273,10 +282,13 @@ const bindProductDemo = () => {
         const active = tab.dataset.cvDemoTab === mode;
         tab.classList.toggle('is-active', active);
         tab.setAttribute('aria-selected', active ? 'true' : 'false');
+        tab.tabIndex = active ? 0 : -1;
       });
 
       panels.forEach((panel) => {
-        panel.hidden = panel.dataset.cvDemoPanel !== mode;
+        const active = panel.dataset.cvDemoPanel === mode;
+        panel.hidden = !active;
+        if (active) runStateAnimation(panel, 'is-entering', 300);
       });
     };
 
@@ -284,8 +296,136 @@ const bindProductDemo = () => {
       tab.addEventListener('click', () => {
         activate(tab.dataset.cvDemoTab || 'overview');
       });
+
+      tab.addEventListener('keydown', (event) => {
+        const currentIndex = tabs.indexOf(tab);
+        let nextIndex = currentIndex;
+
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+          nextIndex = (currentIndex + 1) % tabs.length;
+        } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+          nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+        } else if (event.key === 'Home') {
+          nextIndex = 0;
+        } else if (event.key === 'End') {
+          nextIndex = tabs.length - 1;
+        } else {
+          return;
+        }
+
+        event.preventDefault();
+        const nextTab = tabs[nextIndex];
+        activate(nextTab.dataset.cvDemoTab || 'overview');
+        nextTab.focus();
+      });
     });
   });
+};
+
+const bindRolePermissions = () => {
+  const roleSelects = document.querySelectorAll('[data-cv-role-select]');
+  const permissionSets = {
+    Scientist: ['View workflows', 'Edit assets', 'Comment on records'],
+    Manager: ['Approve changes', 'Release assets', 'View analytics'],
+    Admin: ['Manage roles', 'Configure routing', 'Export audit data'],
+  };
+
+  roleSelects.forEach((select) => {
+    if (select.dataset.cvRoleBound === 'true') return;
+    select.dataset.cvRoleBound = 'true';
+
+    const card = select.closest('.cv-access-card');
+    const permissions = [...card?.querySelectorAll('[data-cv-role-permission]') || []];
+    if (!card || permissions.length === 0) return;
+
+    const update = ({ animate = false } = {}) => {
+      const selectedPermissions = permissionSets[select.value] || permissionSets.Scientist;
+      permissions.forEach((permission, index) => {
+        const marker = document.createElement('i');
+        permission.replaceChildren(marker, document.createTextNode(` ${selectedPermissions[index]}`));
+      });
+
+      if (animate) runStateAnimation(card, 'is-role-changing', 290);
+    };
+
+    select.addEventListener('change', () => update({ animate: true }));
+    update();
+  });
+};
+
+const bindRoutingToggle = () => {
+  const toggles = document.querySelectorAll('[data-cv-routing-toggle]');
+
+  toggles.forEach((toggle) => {
+    if (toggle.dataset.cvRoutingBound === 'true') return;
+    toggle.dataset.cvRoutingBound = 'true';
+
+    const card = toggle.closest('.cv-routing-card');
+    const status = card?.querySelector('[data-cv-routing-status]');
+    const update = (enabled, { animate = false } = {}) => {
+      toggle.classList.toggle('is-on', enabled);
+      toggle.setAttribute('aria-pressed', enabled ? 'true' : 'false');
+      toggle.setAttribute('aria-label', enabled ? 'Turn email routing off' : 'Turn email routing on');
+      toggle.title = enabled ? 'Email routing is on' : 'Email routing is off';
+      card?.classList.toggle('is-routing-off', !enabled);
+      if (status) {
+        status.textContent = enabled
+          ? 'Inbound requests route to the right workspace.'
+          : 'Inbound requests stay in the current workspace.';
+      }
+      if (animate) runStateAnimation(toggle, 'is-control-pulsing', 260);
+    };
+
+    toggle.addEventListener('click', () => {
+      update(toggle.getAttribute('aria-pressed') !== 'true', { animate: true });
+    });
+
+    update(toggle.getAttribute('aria-pressed') === 'true');
+  });
+};
+
+const bindMarketingNavigation = () => {
+  const navigation = document.querySelector('.cv-marketing-nav');
+  if (!navigation || navigation.dataset.cvNavigationBound === 'true') return;
+
+  navigation.dataset.cvNavigationBound = 'true';
+  const links = [...navigation.querySelectorAll('a[href^="#"]')];
+  const sections = links
+    .map((link) => {
+      const id = link.getAttribute('href')?.slice(1);
+      const section = id ? document.getElementById(id) : null;
+      return section ? { link, section } : null;
+    })
+    .filter(Boolean);
+
+  const setActive = (activeLink) => {
+    links.forEach((link) => {
+      const active = link === activeLink;
+      if (active) {
+        link.setAttribute('aria-current', 'true');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  };
+
+  const update = () => {
+    const threshold = window.innerHeight * 0.38;
+    const active = sections.reduce((current, item) => {
+      const top = item.section.getBoundingClientRect().top;
+      if (top <= threshold) return item;
+      return current;
+    }, sections[0]);
+    if (active) setActive(active.link);
+  };
+
+  links.forEach((link) => {
+    link.addEventListener('click', () => setActive(link));
+  });
+
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
 };
 
 const bindBillingToggle = () => {
@@ -303,6 +443,7 @@ const bindBillingToggle = () => {
     const update = () => {
       prices.forEach((price) => {
         price.textContent = annual ? price.dataset.annual : price.dataset.monthly;
+        runStateAnimation(price.closest('.cv-price-card'), 'is-price-changing', 300);
       });
       suffixes.forEach((suffix) => {
         suffix.textContent = annual ? '/yr' : '/mo';
@@ -350,6 +491,9 @@ const initChemVaultDocs = () => {
   bindPointerGlow();
   bindPersonaSwitcher();
   bindProductDemo();
+  bindRolePermissions();
+  bindRoutingToggle();
+  bindMarketingNavigation();
   bindBillingToggle();
   bindKeyboardShortcuts();
 };

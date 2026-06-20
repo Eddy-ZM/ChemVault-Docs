@@ -37,14 +37,14 @@ template: splash
   </div>
 
   <aside className="cv-product-frame" id="product" data-cv-product-demo aria-label="ChemVault product preview">
-    <div className="cv-product-sidebar">
+    <div className="cv-product-sidebar" role="tablist" aria-label="ChemVault product views">
       <strong>ChemVault</strong>
-      <button className="is-active" type="button" data-cv-demo-tab="overview" aria-selected="true">Overview</button>
-      <button type="button" data-cv-demo-tab="workflows" aria-selected="false">Workflows</button>
-      <button type="button" data-cv-demo-tab="access" aria-selected="false">Access</button>
-      <button type="button" data-cv-demo-tab="assets" aria-selected="false">Assets</button>
-      <button type="button" data-cv-demo-tab="reports" aria-selected="false">Reports</button>
-      <button type="button" data-cv-demo-tab="governance" aria-selected="false">Governance</button>
+      <button className="is-active" id="cv-demo-tab-overview" type="button" role="tab" data-cv-demo-tab="overview" aria-controls="cv-demo-panel-overview" aria-selected="true">Overview</button>
+      <button id="cv-demo-tab-workflows" type="button" role="tab" data-cv-demo-tab="workflows" aria-controls="cv-demo-panel-workflows" aria-selected="false" tabIndex="-1">Workflows</button>
+      <button id="cv-demo-tab-access" type="button" role="tab" data-cv-demo-tab="access" aria-controls="cv-demo-panel-access" aria-selected="false" tabIndex="-1">Access</button>
+      <button id="cv-demo-tab-assets" type="button" role="tab" data-cv-demo-tab="assets" aria-controls="cv-demo-panel-assets" aria-selected="false" tabIndex="-1">Assets</button>
+      <button id="cv-demo-tab-reports" type="button" role="tab" data-cv-demo-tab="reports" aria-controls="cv-demo-panel-reports" aria-selected="false" tabIndex="-1">Reports</button>
+      <button id="cv-demo-tab-governance" type="button" role="tab" data-cv-demo-tab="governance" aria-controls="cv-demo-panel-governance" aria-selected="false" tabIndex="-1">Governance</button>
     </div>
 
     <div className="cv-product-main">
@@ -53,7 +53,7 @@ template: splash
         <span>AK</span>
       </div>
 
-      <div className="cv-demo-panel" data-cv-demo-panel="overview">
+      <div className="cv-demo-panel" id="cv-demo-panel-overview" role="tabpanel" aria-labelledby="cv-demo-tab-overview" data-cv-demo-panel="overview">
         <div className="cv-product-kpis">
           <div><strong>24</strong><span>active workflows</span></div>
           <div><strong>18</strong><span>pending approvals</span></div>
@@ -79,22 +79,22 @@ template: splash
           </article>
           <article className="cv-access-card">
             <strong>Role and permissions</strong>
-            <label>Role <select aria-label="Role"><option>Scientist</option><option>Manager</option><option>Admin</option></select></label>
-            <span><i></i> View workflows</span>
-            <span><i></i> Edit assets</span>
-            <span><i></i> Approve changes</span>
+            <label>Role <select aria-label="Role" data-cv-role-select><option>Scientist</option><option>Manager</option><option>Admin</option></select></label>
+            <span data-cv-role-permission><i></i> View workflows</span>
+            <span data-cv-role-permission><i></i> Edit assets</span>
+            <span data-cv-role-permission><i></i> Comment on records</span>
           </article>
           <article className="cv-routing-card">
             <div>
               <strong>Email routing</strong>
-              <span>Route inbound requests into the right workspace.</span>
+              <span data-cv-routing-status aria-live="polite">Inbound requests route to the right workspace.</span>
             </div>
-            <span className="cv-toggle is-on" aria-label="Email routing on"></span>
+            <button className="cv-toggle is-on" type="button" data-cv-routing-toggle aria-pressed="true" aria-label="Turn email routing off"></button>
           </article>
         </div>
       </div>
 
-      <div className="cv-demo-panel" data-cv-demo-panel="workflows" hidden>
+      <div className="cv-demo-panel" id="cv-demo-panel-workflows" role="tabpanel" aria-labelledby="cv-demo-tab-workflows" data-cv-demo-panel="workflows" hidden>
         <div className="cv-workflow-table">
           <div><strong>Scale-up campaign</strong><span>In progress</span><em>Owner: Riley Carson</em></div>
           <div><strong>Analytical method transfer</strong><span>Review</span><em>Owner: Jordan Lee</em></div>
@@ -102,7 +102,7 @@ template: splash
         </div>
       </div>
 
-      <div className="cv-demo-panel" data-cv-demo-panel="access" hidden>
+      <div className="cv-demo-panel" id="cv-demo-panel-access" role="tabpanel" aria-labelledby="cv-demo-tab-access" data-cv-demo-panel="access" hidden>
         <div className="cv-access-matrix">
           <div><strong>Scientist</strong><span>Workflows, assets, comments</span></div>
           <div><strong>Manager</strong><span>Approvals, releases, analytics</span></div>
@@ -110,7 +110,7 @@ template: splash
         </div>
       </div>
 
-      <div className="cv-demo-panel" data-cv-demo-panel="assets" hidden>
+      <div className="cv-demo-panel" id="cv-demo-panel-assets" role="tabpanel" aria-labelledby="cv-demo-tab-assets" data-cv-demo-panel="assets" hidden>
         <div className="cv-asset-rail">
           <div><strong>Methods</strong><span>324 versioned assets</span></div>
           <div><strong>Reports</strong><span>612 controlled records</span></div>
@@ -118,7 +118,7 @@ template: splash
         </div>
       </div>
 
-      <div className="cv-demo-panel" data-cv-demo-panel="reports" hidden>
+      <div className="cv-demo-panel" id="cv-demo-panel-reports" role="tabpanel" aria-labelledby="cv-demo-tab-reports" data-cv-demo-panel="reports" hidden>
         <div className="cv-report-board">
           <div><strong>Approval cycle time</strong><span>4.6 days average</span><i style="--cv-fill: 74%"></i></div>
           <div><strong>Open workflow risk</strong><span>3 high-priority items</span><i style="--cv-fill: 42%"></i></div>
@@ -126,7 +126,7 @@ template: splash
         </div>
       </div>
 
-      <div className="cv-demo-panel" data-cv-demo-panel="governance" hidden>
+      <div className="cv-demo-panel" id="cv-demo-panel-governance" role="tabpanel" aria-labelledby="cv-demo-tab-governance" data-cv-demo-panel="governance" hidden>
         <div className="cv-governance-list">
           <div><strong>Access reviews</strong><span>Quarterly certification with owner sign-off</span></div>
           <div><strong>Change approvals</strong><span>Role-aware routing before publication</span></div>

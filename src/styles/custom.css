@@ -94,6 +94,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background:
     linear-gradient(135deg, rgba(0, 113, 227, 0.045), transparent 34rem),
@@ -644,6 +648,8 @@ main > .content-panel:first-child h1 {
 }
 
 .cv-button {
+  position: relative;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -667,6 +673,20 @@ main > .content-panel:first-child h1 {
   transform: translateY(-1px);
 }
 
+.cv-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.cv-button:focus-visible,
+.cv-marketing-nav a:focus-visible,
+.cv-product-sidebar button:focus-visible,
+.cv-billing-toggle button:focus-visible,
+.cv-toggle:focus-visible,
+.cv-access-card select:focus-visible {
+  outline: 3px solid rgba(0, 113, 227, 0.28);
+  outline-offset: 3px;
+}
+
 .cv-button-primary {
   border-color: transparent;
   background: var(--cv-blue);
@@ -679,6 +699,31 @@ main > .content-panel:first-child h1 {
   color: #ffffff;
   background: var(--cv-blue-2);
   box-shadow: 0 14px 34px rgba(0, 113, 227, 0.24);
+}
+
+.cv-button-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 34%, rgba(255, 255, 255, 0.3) 50%, transparent 66%);
+  background-position: -170% 0;
+  background-size: 220% 100%;
+  opacity: 0;
+  transition:
+    opacity var(--cv-motion-fast) ease,
+    background-position 420ms var(--cv-ease-out);
+}
+
+.cv-button-primary > * {
+  position: relative;
+  z-index: 1;
+}
+
+.cv-button-primary:hover::after,
+.cv-button-primary:focus-visible::after {
+  background-position: 170% 0;
+  opacity: 1;
 }
 
 .cv-button-secondary {
@@ -2538,14 +2583,43 @@ body:has(.cv-marketing-hero) .cv-reveal {
 }
 
 .cv-marketing-nav a {
+  position: relative;
   color: var(--cv-muted);
   font-size: 0.88rem;
   font-weight: 850;
+  transition:
+    color var(--cv-motion-fast) ease,
+    transform var(--cv-motion-fast) var(--cv-ease-spring);
 }
 
 .cv-marketing-nav a:hover,
-.cv-marketing-nav a:focus-visible {
+.cv-marketing-nav a:focus-visible,
+.cv-marketing-nav a[aria-current='true'] {
   color: var(--cv-blue);
+}
+
+.cv-marketing-nav a:hover {
+  transform: translateY(-1px);
+}
+
+.cv-marketing-nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  left: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--cv-motion-fast) var(--cv-ease-out);
+}
+
+.cv-marketing-nav a:hover::after,
+.cv-marketing-nav a:focus-visible::after,
+.cv-marketing-nav a[aria-current='true']::after {
+  transform: scaleX(1);
 }
 
 .cv-marketing-hero {
@@ -2661,6 +2735,7 @@ body:has(.cv-marketing-hero) .cv-reveal {
 }
 
 .cv-product-sidebar button {
+  position: relative;
   min-height: 36px;
   border: 1px solid transparent;
   border-radius: var(--cv-radius);
@@ -2670,6 +2745,12 @@ body:has(.cv-marketing-hero) .cv-reveal {
   text-align: left;
   font-size: 0.76rem;
   font-weight: 850;
+  cursor: pointer;
+  transition:
+    transform var(--cv-motion-fast) var(--cv-ease-spring),
+    border-color var(--cv-motion-fast) ease,
+    background var(--cv-motion-fast) ease,
+    color var(--cv-motion-fast) ease;
 }
 
 .cv-product-sidebar button:hover,
@@ -2678,6 +2759,10 @@ body:has(.cv-marketing-hero) .cv-reveal {
   border-color: rgba(0, 113, 227, 0.18);
   background: rgba(0, 113, 227, 0.09);
   color: var(--cv-blue);
+}
+
+.cv-product-sidebar button:active {
+  transform: scale(0.97);
 }
 
 .cv-product-main {
@@ -2711,6 +2796,21 @@ body:has(.cv-marketing-hero) .cv-reveal {
 
 .cv-demo-panel[hidden] {
   display: none;
+}
+
+.cv-demo-panel.is-entering {
+  animation: cv-demo-panel-in 280ms var(--cv-ease-out) both;
+}
+
+@keyframes cv-demo-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .cv-product-kpis {
@@ -2847,6 +2947,35 @@ body:has(.cv-marketing-hero) .cv-reveal {
   vertical-align: -1px;
 }
 
+.cv-access-card span {
+  transition:
+    color var(--cv-motion-fast) ease,
+    transform var(--cv-motion-fast) var(--cv-ease-spring);
+}
+
+.cv-access-card.is-role-changing span {
+  animation: cv-permission-in 240ms var(--cv-ease-out) both;
+}
+
+.cv-access-card.is-role-changing span:nth-of-type(2) {
+  animation-delay: 45ms;
+}
+
+.cv-access-card.is-role-changing span:nth-of-type(3) {
+  animation-delay: 90ms;
+}
+
+@keyframes cv-permission-in {
+  from {
+    opacity: 0.35;
+    transform: translateX(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .cv-routing-card {
   display: flex;
   align-items: center;
@@ -2859,8 +2988,15 @@ body:has(.cv-marketing-hero) .cv-reveal {
   width: 48px;
   height: 28px;
   flex: 0 0 auto;
+  border: 0;
   border-radius: 999px;
   background: var(--sl-color-gray-5);
+  padding: 0;
+  cursor: pointer;
+  transition:
+    transform var(--cv-motion-fast) var(--cv-ease-spring),
+    background var(--cv-motion-medium) ease,
+    box-shadow var(--cv-motion-medium) ease;
 }
 
 .cv-toggle::after {
@@ -2873,6 +3009,7 @@ body:has(.cv-marketing-hero) .cv-reveal {
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  transition: transform var(--cv-motion-medium) var(--cv-ease-spring);
 }
 
 .cv-toggle.is-on {
@@ -2881,6 +3018,29 @@ body:has(.cv-marketing-hero) .cv-reveal {
 
 .cv-toggle.is-on::after {
   transform: translateX(20px);
+}
+
+.cv-toggle:hover {
+  box-shadow: 0 0 0 5px rgba(0, 113, 227, 0.1);
+  transform: translateY(-1px);
+}
+
+.cv-toggle:active {
+  transform: scale(0.94);
+}
+
+.cv-toggle.is-control-pulsing {
+  animation: cv-control-pulse 260ms var(--cv-ease-spring) both;
+}
+
+@keyframes cv-control-pulse {
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.cv-routing-card.is-routing-off {
+  border-color: rgba(0, 0, 0, 0.16);
 }
 
 .cv-workflow-table,
@@ -3736,6 +3896,23 @@ body:has(.cv-marketing-hero) .cv-reveal {
   color: var(--cv-blue);
   padding: 0 14px;
   font-weight: 900;
+  cursor: pointer;
+  transition:
+    transform var(--cv-motion-fast) var(--cv-ease-spring),
+    border-color var(--cv-motion-fast) ease,
+    background var(--cv-motion-fast) ease,
+    color var(--cv-motion-fast) ease,
+    box-shadow var(--cv-motion-fast) ease;
+}
+
+.cv-billing-toggle button:hover {
+  border-color: rgba(0, 113, 227, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 113, 227, 0.1);
+  transform: translateY(-1px);
+}
+
+.cv-billing-toggle button:active {
+  transform: scale(0.97);
 }
 
 .cv-billing-toggle button[aria-pressed='true'] {
@@ -3772,6 +3949,22 @@ body:has(.cv-marketing-hero) .cv-reveal {
   font-size: 2rem;
   font-weight: 900;
   line-height: 1;
+}
+
+.cv-price-card.is-price-changing div span,
+.cv-price-card.is-price-changing small {
+  animation: cv-price-in 260ms var(--cv-ease-out) both;
+}
+
+@keyframes cv-price-in {
+  from {
+    opacity: 0.2;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .cv-price-card small {
