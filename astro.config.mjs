@@ -15,10 +15,42 @@ export default defineConfig({
         src: './src/assets/chemvault-logo-mark.png',
         alt: 'ChemVault',
       },
-      favicon: '/favicon.svg',
+      favicon: '/favicon.ico',
       customCss: ['./src/styles/custom.css'],
       lastUpdated: true,
       head: [
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'icon',
+            href: '/favicon.ico',
+            sizes: 'any',
+          },
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'icon',
+            href: '/assets/chemvault-icon-192.png',
+            type: 'image/png',
+            sizes: '192x192',
+          },
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'icon',
+            href: '/assets/favicon.svg',
+            type: 'image/svg+xml',
+          },
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'apple-touch-icon',
+            href: '/assets/chemvault-apple-touch-icon.png',
+          },
+        },
         {
           tag: 'meta',
           attrs: {
