@@ -1,37 +1,31 @@
 # ChemVault Docs
 
-ChemVault Docs is the public documentation and knowledge library for the ChemVault ecosystem. It is built with Astro and Starlight and currently hosts chemistry notes, reagent references, project manuals, and CHEM10712 course knowledge points.
+ChemVault Docs is the public website and product documentation hub for ChemVault, a commercial workspace for chemistry operations, workflows, approvals, controlled assets, access management and team visibility.
 
-## Local Development
+## Website
 
-```sh
-npm install
-npm run dev
-```
+The ChemVault website presents the product, commercial positioning and documentation entry points for chemistry teams.
 
-The dev server defaults to `http://localhost:4321/`.
+- Product overview for controlled chemistry operations.
+- Interactive product preview covering operations, workflows, access, assets, reports and governance.
+- Buyer-facing sections for use cases, platform capabilities, security, pricing and contact.
+- Documentation hub for project notes, chemistry references, reagent information, laboratory guides and course knowledge archives.
+- Search, navigation, scroll progress and responsive reading experience for long-form documentation.
+- Public contact path for demo requests and commercial enquiries.
 
-## Production Checks
+## ChemVault App
 
-```sh
-npm run build
-npm run preview
-```
+The ChemVault app is linked from the website as the operational workspace for teams that need to manage chemistry work in one place.
 
-`npm run build` generates the static site in `dist/` and builds the Pagefind search index used by Starlight.
-
-## Content Layout
-
-- `src/content/docs/index.mdx` - custom Docs homepage.
-- `src/content/docs/getting-started/` - ChemVault ecosystem overview.
-- `src/content/docs/chemistry/` - chemistry concept notes.
-- `src/content/docs/reagents/` - reagent passports.
-- `src/content/docs/projects/` - ChemVault project manuals.
-- `src/content/docs/UoM Chemistry/` - course notes imported into Starlight routes.
-
-## Theme
-
-The ChemVault visual layer lives in `src/styles/custom.css` and is loaded through `astro.config.mjs`.
+- Operations dashboard for active workflows, approvals, tracked assets and team status.
+- Workflow tracking with owners, statuses, handoffs, review checkpoints and completion states.
+- Approval and change control for role-aware review, release and decision records.
+- Asset control for methods, templates, reports and supporting operational records.
+- Role-based access for scientists, managers, administrators and external partners.
+- Email routing for turning inbound requests into trackable operational work.
+- Analytics and reporting for workflow health, approval bottlenecks, asset readiness and operating risk.
+- Governance support for access reviews, audit exports, version history and controlled release records.
+- Enterprise rollout support for SSO, SCIM, data residency options and dedicated support on advanced plans.
 
 ## License
 
