@@ -1,0 +1,103 @@
+---
+title: 术语表
+description: ChemVault 网站和 App 中常见的化学、产品、权限、API 和文件术语解释。
+---
+
+# 术语表
+
+## 产品和账号
+
+| 术语 | 说明 |
+| --- | --- |
+| ChemVault | 化学知识、科研文件、数据提取、邮箱、通知和分子可视化产品集合。 |
+| User Center | 统一账号、资料、安全、权限和服务访问中心。 |
+| Workspace | 团队或个人工作的容器，可包含项目、文件、成员和权限。 |
+| Project | 具体研究任务或数据提取任务的容器。 |
+| Service Access | 某个用户是否能访问特定 ChemVault 产品。 |
+| Page Access | 某个用户是否能访问特定页面或管理区。 |
+| Direct Permission | 对单个用户直接授予的权限。 |
+| RBAC | Role-Based Access Control，基于角色的访问控制。 |
+| SSO | Single Sign-On，统一登录。 |
+| SCIM | System for Cross-domain Identity Management，企业用户同步协议。 |
+| Audit Log | 审计日志，用于记录用户、服务和管理员操作。 |
+
+## 化学知识
+
+| 术语 | 说明 |
+| --- | --- |
+| Compound | 化合物记录，可包含名称、结构、公式、标识符和相关研究上下文。 |
+| Reagent | 试剂，通常描述用途、scope、条件、限制和安全上下文。 |
+| Mechanism Atlas | 反应机制图谱，用图关系呈现底物假设、速率线索、立体化学和失败模式。 |
+| Method | 方法或实验流程，强调 protocol、evidence standard 和 reproducibility。 |
+| Dossier | 结构化研究档案，用于集中展示主题、证据和结论。 |
+| Spectroscopy Evidence | 谱学证据，包括 NMR、IR、MS、UV-vis 等结构证明信息。 |
+| Public Record Index | 公开记录索引，用于浏览和检索公开数据。 |
+
+## 分子结构
+
+| 术语 | 说明 |
+| --- | --- |
+| SMILES | Simplified Molecular Input Line Entry System，分子结构线性表示。 |
+| InChI | IUPAC International Chemical Identifier，化学结构标准标识。 |
+| InChIKey | InChI 的短哈希形式，便于检索。 |
+| PubChem CID | PubChem Compound ID，PubChem 化合物编号。 |
+| PDB ID | Protein Data Bank 四位结构编号。 |
+| RCSB PDB | Protein Data Bank 的主要结构数据入口之一。 |
+| Molfile | 常见二维或三维分子结构文件格式。 |
+| SDF | Structure Data File，可包含多个结构和属性。 |
+| XYZ | 简单三维坐标格式。 |
+| CIF | Crystallographic Information File，晶体学信息文件。 |
+| LogP | 分配系数指标，常用于估计疏水性。 |
+| TPSA | Topological Polar Surface Area，拓扑极性表面积。 |
+| HBD / HBA | Hydrogen Bond Donor / Acceptor，氢键供体和受体。 |
+
+## Extract 和数据审核
+
+| 术语 | 说明 |
+| --- | --- |
+| Scientific Extraction | 从论文、报告、表格或仪器文件中提取结构化科学数据。 |
+| Chunk | 文档解析后的片段，用于减少上下文噪声并控制 AI 输入范围。 |
+| AI Extraction | 使用 AI 从选定 chunks 中生成候选科学记录。 |
+| Evidence-backed Record | 带有来源文档、页码、章节、引用和置信度的记录。 |
+| Normalization | 将单位、名称、字段或格式整理成一致结构。 |
+| Confidence | 系统对候选结果可信度的估计，不等同于人工确认。 |
+| Review Status | 审核状态，例如 pending、needs_review、approved、rejected。 |
+| Dataset | 一组经过批准、可复用的结构化数据。 |
+| Export | 将数据导出为 CSV、JSON 或 XLSX。 |
+
+## Files
+
+| 术语 | 说明 |
+| --- | --- |
+| R2 | Cloudflare R2，对象存储，适合保存文件对象。 |
+| D1 | Cloudflare D1，关系型数据库，适合保存索引和元数据。 |
+| Inspector | 文件详情面板，用于查看 metadata、preview、activity 和操作按钮。 |
+| Review Flow | Files 中的文件状态流，包含 Intake、Indexed、Review、Released。 |
+| Vault Insights | 文件库分析视图，展示存储分布、标签集中度和运行状态。 |
+| Share Link | 文件分享链接，可能是私有或公开只读预览。 |
+
+## Mail
+
+| 术语 | 说明 |
+| --- | --- |
+| IMAP | 邮件读取协议，用于第三方客户端收取邮件。 |
+| SMTP | 邮件发送协议，用于第三方客户端发送邮件。 |
+| App Password | 给邮件客户端使用的独立密码，通常只显示一次，可撤销。 |
+| Alias | 邮箱别名或不同用途地址。 |
+| Draft | 草稿，未发送邮件。 |
+| Starred | 星标邮件，用于标记重要邮件。 |
+
+## Notifications 和集成
+
+| 术语 | 说明 |
+| --- | --- |
+| Web Push | 浏览器系统通知。 |
+| Notification Preference | 通知偏好，控制站内通知和系统通知。 |
+| Broadcast | 管理员向指定受众发送的广播通知。 |
+| User Segment | 用户分群，用于定向广播或产品更新。 |
+| Product Update | 发布说明、功能改进、维护通知或平台变化。 |
+| API Key | 调用 API 的凭据，应按最小权限创建并安全保存。 |
+| Scope | API Key 的权限范围。 |
+| Webhook | 系统向外部地址发送事件通知。 |
+| HMAC | Hash-based Message Authentication Code，用于 webhook 签名验证。 |
+| Rate Limit | 请求频率限制，超出后会返回 429 或 rate limit 错误。 |

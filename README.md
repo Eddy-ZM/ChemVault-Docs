@@ -1,31 +1,19 @@
 # ChemVault Docs
 
-ChemVault Docs is the public website and product documentation hub for ChemVault, a commercial workspace for chemistry operations, workflows, approvals, controlled assets, access management and team visibility.
+ChemVault Docs is the public manual and tutorial hub for the ChemVault ecosystem. It explains the ChemVault websites, apps, accounts, files, email, notifications, molecule tools and AI scientific data extraction workflows from a user-facing perspective.
 
-## Website
+## Manual Scope
 
-The ChemVault website presents the product, commercial positioning and documentation entry points for chemistry teams.
+- Product map for ChemVault public sites, protected apps and Apple apps.
+- Getting-started routes for students, researchers, administrators and developers.
+- Tutorials for ChemVault Website, Extract, Files, Mail, User Center, Notifications and Molecule Studio.
+- Cross-product workflows for files, AI extraction, review, notifications, email and exports.
+- Glossary for chemistry, account, API, webhook, file, review and molecule terminology.
+- Related links for production websites and app entry points.
 
-- Product overview for controlled chemistry operations.
-- Interactive product preview covering operations, workflows, access, assets, reports and governance.
-- Buyer-facing sections for use cases, platform capabilities, security, pricing and contact.
-- Documentation hub for project notes, chemistry references, reagent information, laboratory guides and course knowledge archives.
-- Search, navigation, scroll progress and responsive reading experience for long-form documentation.
-- Public contact path for demo requests and commercial enquiries.
+## Content Rule
 
-## ChemVault App
-
-The ChemVault app is linked from the website as the operational workspace for teams that need to manage chemistry work in one place.
-
-- Operations dashboard for active workflows, approvals, tracked assets and team status.
-- Workflow tracking with owners, statuses, handoffs, review checkpoints and completion states.
-- Approval and change control for role-aware review, release and decision records.
-- Asset control for methods, templates, reports and supporting operational records.
-- Role-based access for scientists, managers, administrators and external partners.
-- Email routing for turning inbound requests into trackable operational work.
-- Analytics and reporting for workflow health, approval bottlenecks, asset readiness and operating risk.
-- Governance support for access reviews, audit exports, version history and controlled release records.
-- Enterprise rollout support for SSO, SCIM, data residency options and dedicated support on advanced plans.
+This repository describes website and app behavior, user workflows, terminology and links. It intentionally avoids backend implementation, code architecture, deployment instructions and internal design details.
 
 ## License
 

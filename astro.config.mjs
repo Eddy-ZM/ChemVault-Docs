@@ -122,7 +122,72 @@ export default defineConfig({
           link: '/',
         },
         {
-          label: 'Commercial Site',
+          label: '使用手册',
+          items: [
+            {
+              label: '总览',
+              slug: 'manual',
+            },
+            {
+              label: '产品地图',
+              slug: 'manual/product-map',
+            },
+            {
+              label: '快速开始',
+              slug: 'manual/getting-started',
+            },
+            {
+              label: '主站与中文站',
+              slug: 'manual/chemvault-website',
+            },
+            {
+              label: '知识记录',
+              slug: 'manual/knowledge-records',
+            },
+            {
+              label: 'Extract',
+              slug: 'manual/extract',
+            },
+            {
+              label: 'Files',
+              slug: 'manual/files',
+            },
+            {
+              label: 'Mail',
+              slug: 'manual/mail',
+            },
+            {
+              label: 'User Center',
+              slug: 'manual/user-center',
+            },
+            {
+              label: 'Notifications',
+              slug: 'manual/notifications',
+            },
+            {
+              label: 'Molecule Studio',
+              slug: 'manual/molecule-studio',
+            },
+            {
+              label: 'Apple App',
+              slug: 'manual/apple-apps',
+            },
+            {
+              label: '跨产品工作流',
+              slug: 'manual/workflows',
+            },
+            {
+              label: '术语表',
+              slug: 'manual/glossary',
+            },
+            {
+              label: '相关链接',
+              slug: 'manual/links',
+            },
+          ],
+        },
+        {
+          label: '产品说明归档',
           items: [
             {
               label: 'Product Overview',
@@ -147,8 +212,49 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Launch App',
+          label: '化学参考',
+          items: [
+            {
+              label: 'Chemistry Notes',
+              slug: 'chemistry',
+            },
+            {
+              label: 'Reagent Passports',
+              slug: 'reagents',
+            },
+            {
+              label: 'Lab Guides',
+              slug: 'lab-guides',
+            },
+            {
+              label: 'Downloads',
+              slug: 'downloads',
+            },
+            {
+              label: 'CHEM10712',
+              slug: 'uom-chemistry/chem10712',
+            },
+          ],
+        },
+        {
+          label: 'Launch ChemVault',
           link: 'https://chemvault.science',
+          attrs: {
+            target: '_blank',
+            rel: 'noreferrer',
+          },
+        },
+        {
+          label: 'Launch Extract',
+          link: 'https://app.chemvault.science',
+          attrs: {
+            target: '_blank',
+            rel: 'noreferrer',
+          },
+        },
+        {
+          label: 'User Center',
+          link: 'https://user.chemvault.science',
           attrs: {
             target: '_blank',
             rel: 'noreferrer',

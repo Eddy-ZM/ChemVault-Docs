@@ -1,0 +1,146 @@
+---
+title: User Center 教程
+description: ChemVault 统一账号、资料、安全、计划、服务访问、权限和管理员控制台说明。
+---
+
+# User Center 教程
+
+ChemVault User Center 是账号和权限中心。它统一管理 ChemVault 产品的登录状态、研究资料、安全设置、计划状态、服务访问和管理员控制台。
+
+## 入口
+
+- [https://user.chemvault.science](https://user.chemvault.science)
+
+## 普通用户功能
+
+### Dashboard
+
+Dashboard 显示当前用户、角色、机构、研究方向、加入时间、使用量和产品访问状态。
+
+常见指标：
+
+- AI extraction credits used
+- Storage used
+- API requests this month
+- Product access
+
+### Profile
+
+Profile 用于维护研究身份。
+
+可维护内容包括：
+
+- name
+- avatar
+- institution
+- field of interest
+- bio
+- service state
+
+### Security
+
+Security 用于账号保护。
+
+常见功能：
+
+- Change password
+- Current devices
+- Connected accounts
+- Bind Apple Account
+- Bind Google、GitHub、Microsoft
+- Delete account
+
+建议：
+
+- 不要共享主账号密码。
+- 第三方登录绑定后，应定期检查 connected accounts。
+- 删除账号前确认 Mail、Files、Extract 中的重要数据已经处理。
+
+### Plan
+
+Plan 页面展示订阅准备状态、当前计划和后续付费计划入口。当前页面可能显示 Pro Plan、Team Plan 等 coming soon 状态。
+
+### Connected Services
+
+Connected Services 展示 ChemVault 产品访问状态。
+
+典型服务：
+
+- Extract
+- Files
+- Molecule
+- Notifications
+- Mail
+
+服务状态常见值：
+
+- Active
+- Coming soon
+- Not connected
+
+## 管理员功能
+
+### Admin Dashboard
+
+Admin Dashboard 是身份控制面板，展示：
+
+- total users
+- active users
+- admins / supers
+- mail accounts
+- control areas
+- recent audit logs
+
+### User Management
+
+用于创建、搜索、筛选、查看、删除或管理用户。
+
+管理员可进入单个用户详情页查看：
+
+- Identity
+- Mail account
+- Usage
+- Direct permissions
+- Service access
+- Page access
+- Audit log
+
+### Permission Center
+
+Permission Center 管理权限定义和说明。权限应使用清晰分类，不要把业务含义隐藏在模糊名称里。
+
+### Direct Permissions
+
+Direct Permissions 用于给特定用户授予或撤销权限。它适合例外授权，不应替代常规角色策略。
+
+### Service Access
+
+Service Access 用于控制用户是否能访问某个 ChemVault 产品。服务访问和具体页面权限是两层概念：有服务访问不代表所有页面都可用。
+
+### Page Access
+
+Page Access 用于跨系统页面级授权，适合限制管理页、敏感页面或阶段性功能。
+
+### Mail Admin
+
+Mail 管理入口用于分配邮箱、编辑邮箱、软删除邮箱，并处理 Mail 系统和 User Center 之间的同步。
+
+### Mail Sync
+
+Mail Sync 用于管理员同步 Mail super/admin 状态和 JSON 导入结果。
+
+## 权限管理建议
+
+- 使用最小权限原则。
+- 先授予服务访问，再授予必要页面权限。
+- 管理员操作应可审计。
+- 对账号、邮箱、文件、提取数据和通知后台使用不同权限边界。
+- 离职、项目结束或外部合作结束时，及时撤销服务访问和分享链接。
+
+## 相关链接
+
+- [User Center](https://user.chemvault.science)
+- [Files 教程](/manual/files/)
+- [Mail 教程](/manual/mail/)
+- [Notifications 教程](/manual/notifications/)
+- [术语表](/manual/glossary/)

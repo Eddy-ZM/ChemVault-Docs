@@ -1,0 +1,135 @@
+---
+title: ChemVault Files 教程
+description: 私有研究文件库、上传、文件夹、标签、权限、分享、Review Flow 和 Vault Insights 使用说明。
+---
+
+# ChemVault Files 教程
+
+ChemVault Files 是私有研究文件系统，用于管理 spectra、datasets、dossiers、methods、manuscripts 和项目材料。它连接 User Center 账号和权限，并记录文件操作。
+
+## 入口
+
+- 推荐入口：[https://files.chemvault.science](https://files.chemvault.science)
+- 登录入口：[https://user.chemvault.science/login](https://user.chemvault.science/login)
+
+如果团队仍在迁移中看到 `file.chemvault.science`，以实际登录跳转和生产配置为准。
+
+## 页面区域
+
+| 区域 | 用途 |
+| --- | --- |
+| Topbar | 搜索、上传、帮助和账户状态。 |
+| Sidebar | Library、Projects & Folders、Tags、Administration 和 Storage。 |
+| Workspace | 文件表、Review Flow、Vault Insights。 |
+| Inspector | 选中文件的 Details、Preview、Activity 和操作按钮。 |
+
+## 上传文件或文件夹
+
+1. 点击 **Upload files**。
+2. 选择 Files 或 Folder。
+3. 如果是文件夹上传，原始目录结构会被加入侧边栏。
+4. 设置上传访问权限。
+5. 拖放文件或选择文件。
+6. 等待 upload queue 完成。
+
+适合上传：
+
+- spectra
+- datasets
+- dossiers
+- manuscripts
+- reports
+- instrument outputs
+- spreadsheets
+
+## 文件浏览
+
+Files 支持两种视图：
+
+- List view：适合看名称、标签、类型、大小、修改时间和批量选择。
+- Grid view：适合快速浏览文件夹和文件卡片。
+
+常用筛选：
+
+- All files
+- Ready
+- Needs review
+- Large objects
+- Failed
+
+## 标签和文件夹
+
+推荐做法：
+
+- 用 Projects & Folders 表示项目、课程、实验、文献组或客户空间。
+- 用 Tags 表示类型和状态，例如 `NMR`、`HPLC`、`draft`、`review`、`released`。
+- 不要把敏感权限只靠文件名表达，应使用角色和访问策略。
+
+## Inspector
+
+选择文件后，右侧 Inspector 会显示：
+
+- Details：文件元数据、状态、大小、类型和索引信息。
+- Preview：文件预览。
+- Activity：文件相关操作记录。
+- Download：下载文件。
+- Share：创建或查看分享入口。
+- Delete：删除或标记删除文件。
+
+## Share
+
+Files 包含只读分享页：
+
+- private share preview
+- public share preview
+
+使用建议：
+
+- 外部分享前确认权限范围、有效期和可见内容。
+- 分享链接只适合发送给明确对象。
+- 重要文件应保留 Activity 和审核记录。
+
+## Review Flow
+
+Review Flow 把文件生命周期分成：
+
+- Intake：文件进入系统。
+- Indexed：D1 index 已记录。
+- Review：失败上传或需要检查的对象。
+- Released：可见性和访问策略确认后进入可用状态。
+
+Review checklist 包括：
+
+- checksum captured
+- access policy set
+- failed uploads isolated
+
+## Vault Insights
+
+Vault Insights 用于查看：
+
+- storage distribution
+- tag concentration
+- operational readiness
+- largest object
+- ready files
+- needs review
+
+## 权限
+
+Files 使用 User Center 登录身份，并支持角色可见性。常见角色概念包括 owner、internal domain role、research super 和 admin allowlist。
+
+管理员应定期检查：
+
+- 谁能读文件。
+- 谁能上传文件。
+- 谁能创建分享。
+- 谁能删除文件。
+- 外部域名是否只能访问明确分享内容。
+
+## 相关链接
+
+- [Files](https://files.chemvault.science)
+- [User Center](/manual/user-center/)
+- [Extract 教程](/manual/extract/)
+- [术语表](/manual/glossary/)

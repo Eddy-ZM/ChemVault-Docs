@@ -1,0 +1,170 @@
+---
+title: Molecule Studio 教程
+description: 分子搜索、SMILES 输入、二维绘制、结构文件上传、PDB 加载、三维查看和导出说明。
+---
+
+# Molecule Studio 教程
+
+ChemVault Molecule Studio 是分子结构查看、建模输入和三维可视化工具。它包含网站端 Molecule Studio 和 Apple App。
+
+## 入口
+
+- 网站端：[https://model.chemvault.science/molecule](https://model.chemvault.science/molecule)
+- 核心功能可匿名使用。
+- 登录后可进入 Profile、My Molecules、Settings 等账号空间入口。
+
+## 工作台布局
+
+网站端采用左右分区。
+
+| 区域 | 用途 |
+| --- | --- |
+| 2D Input Workspace | 搜索、输入 SMILES、绘制、上传文件或加载 PDB。 |
+| 3D Output Workspace | 查看三维结构、属性、显示模式和导出。 |
+
+## Search by Name / CID
+
+适合用名称或 PubChem CID 快速加载小分子。
+
+示例：
+
+- water
+- ethanol
+- benzene
+- caffeine
+- aspirin
+- CID `2244`
+
+加载后可查看名称、CID、分子式、分子量、SMILES、InChI 和 InChIKey。
+
+## Enter SMILES
+
+SMILES 是线性分子结构表示法。你可以粘贴或手动输入 SMILES，然后点击 Load SMILES。
+
+示例：
+
+- `O`
+- `CCO`
+- `c1ccccc1`
+- `CC(=O)OC1=CC=CC=C1C(=O)O`
+
+常用操作：
+
+- Load SMILES
+- Clear
+- Copy SMILES
+
+## Draw Molecule
+
+Draw 用于基础二维结构绘制。
+
+支持：
+
+- select
+- move
+- erase
+- clear
+- single bond
+- double bond
+- triple bond
+- aromatic bond
+- wedge bond
+- dashed bond
+- common elements
+- full periodic table
+- undo / redo
+- ring templates
+- functional group templates
+
+适合绘制基础结构、常见环和常用官能团。复杂稠环、完整立体化学或高级反应编辑建议用 Search、SMILES 或文件上传。
+
+## Upload Structure File
+
+网站端单个文件上限为 8 MB。
+
+支持格式：
+
+- `.mol`
+- `.sdf`
+- `.xyz`
+- `.pdb`
+- `.cif`
+- `.smi`
+- `.smiles`
+- `.txt`
+
+SMILES 文本文件会读取首个有效结构字符串。
+
+## Load PDB Structure
+
+PDB 模式用于加载蛋白质或核酸结构。
+
+示例：
+
+- `1CRN`
+- `4HHB`
+- `1BNA`
+
+加载后可显示 PDB 标题、实验方法和分辨率等元数据。
+
+## 3D Viewer
+
+三维查看器支持：
+
+- Ball and stick
+- Stick
+- Sphere
+- Line
+- Cartoon
+- Surface
+- Space-filling
+- 浅色、深色和透明背景
+- 显示或隐藏氢原子
+- 显示或隐藏原子标签
+- 重置视角
+- 导出 PNG 视图
+
+## Structure Details
+
+Structure Details 面板显示：
+
+- name
+- source
+- CID
+- PDB ID
+- file name
+- molecular formula
+- molecular weight
+- exact mass
+- SMILES
+- InChI
+- InChIKey
+- LogP
+- TPSA
+- hydrogen bond donors
+- hydrogen bond acceptors
+- rotatable bonds
+- ring count
+- heavy atom count
+- formal charge
+
+## 导出
+
+支持导出：
+
+- SMILES
+- Molfile
+- SDF
+- XYZ
+- PDB
+- PNG 三维视图图片
+
+## Apple App
+
+Apple App 提供 Search、SMILES、Draw、PDB、Library、Account。详情见 [Apple App 教程](/manual/apple-apps/)。
+
+## 相关链接
+
+- [Molecule Studio](https://model.chemvault.science/molecule)
+- [Apple App 教程](/manual/apple-apps/)
+- [术语表](/manual/glossary/)

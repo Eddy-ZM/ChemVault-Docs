@@ -1,0 +1,163 @@
+---
+title: ChemVault Extract 教程
+description: 科学文档上传、AI 结构化提取、人工审核、搜索、导出、API 和 Webhook 使用说明。
+---
+
+# ChemVault Extract 教程
+
+ChemVault Extract 用于把科学论文、实验报告、仪器导出、表格和文本文件转成 evidence-backed research database。它的核心原则是：AI 可以提取候选记录，但正式数据需要人工审核。
+
+## 入口
+
+- Web App：[https://app.chemvault.science](https://app.chemvault.science)
+- API Base URL：[https://api.chemvault.science](https://api.chemvault.science)
+
+## 适合处理的文件
+
+- PDF
+- DOCX
+- CSV
+- XLSX
+- TXT
+- Markdown
+
+## 核心流程
+
+1. 登录账号。
+2. 创建 workspace 或 project。
+3. 上传文档。
+4. 解析文档并生成 chunks。
+5. 估算 AI extraction 成本。
+6. 运行 AI extraction。
+7. 在 Review Workflow 中审核、修正、批准或拒绝记录。
+8. 搜索 approved records。
+9. 导出 CSV、JSON 或 XLSX。
+
+## Dashboard
+
+Dashboard 是 Extract 的操作首页。常见入口包括：
+
+- Upload document：上传单个文档。
+- Run batch extraction：批量运行提取。
+- Review records：审核候选记录。
+- Search database：检索已解析文档和已审核记录。
+- Export data：导出数据集。
+- Usage：查看使用量、计划限制和消耗状态。
+
+## Upload Documents
+
+上传时需要选择项目，并提交文件。上传后系统会创建 Document row 和 parse job。
+
+注意事项：
+
+- 不支持的文件扩展名会在存储前被拒绝。
+- 文档解析完成后才适合进行 AI extraction。
+- DOCX 支持能力可能随版本阶段变化，遇到 not implemented 提示时应换用 PDF、TXT、CSV 或 XLSX。
+
+## AI Extraction
+
+AI Extraction 会把选中的 document chunks 送入提取流程，而不是默认发送完整原始 PDF。系统优先处理 Experimental、Methods、Results、Supporting Information、tables 等科学信息密度高的片段。
+
+使用建议：
+
+- 提取前先查看 cost estimate。
+- 超出 plan limit 或 monthly usage limit 时，任务不会继续排队。
+- 不要把 AI 输出直接当作正式记录。
+
+## Review Workflow
+
+Review Workflow 是 Extract 的质量控制中心。
+
+常见状态：
+
+- `pending`：等待审核。
+- `needs_review`：需要人工判断或修正。
+- `approved`：已批准，可进入正式数据集或导出。
+- `rejected`：已拒绝，不应进入默认导出。
+
+审核时应检查：
+
+- source document
+- page number
+- section
+- evidence quote
+- confidence
+- validation warning
+- raw value 和 normalized value
+
+## Search
+
+Search 页面用于查询 documents、chunks 和 reviewed scientific records。
+
+建议：
+
+- 默认使用 approved records 作为正式检索对象。
+- 需要排查提取结果时，再查看 pending 或 needs_review 的记录。
+- 用 source、document、record type 或关键词缩小结果。
+
+## Export
+
+Export 用于把审核后的数据交给下游分析。
+
+支持格式：
+
+- CSV
+- JSON
+- XLSX
+
+导出建议：
+
+- 默认只导出 approved records。
+- 导出前确认数据集版本、项目、记录类型和字段定义。
+- 需要证据链时，保留 source quote、page、section 和 confidence 字段。
+
+## Developer API
+
+开发者可以用 API 上传文件、查询项目、运行提取、读取记录和创建导出。
+
+常见 scope：
+
+- `projects:read`
+- `projects:write`
+- `documents:read`
+- `documents:write`
+- `extractions:read`
+- `extractions:write`
+- `records:read`
+- `exports:read`
+- `exports:write`
+
+API Key 应按最小权限创建，并定期撤销不再使用的 key。
+
+## Webhooks
+
+Webhook 用于接收 Extract 的异步事件。
+
+常见事件：
+
+- `document.uploaded`
+- `document.parsed`
+- `document.parse_failed`
+- `extraction.started`
+- `extraction.completed`
+- `extraction.failed`
+- `normalization.completed`
+- `review.item_created`
+- `review.item_approved`
+- `review.item_rejected`
+- `export.completed`
+- `batch.completed`
+
+安全要求：
+
+- 每个 delivery 使用 HMAC SHA256 签名。
+- 接收端应使用 raw request body 验签。
+- 不要在 webhook payload 中传输 OpenAI API Key、密码或完整原始文件。
+
+## 相关链接
+
+- [Extract App](https://app.chemvault.science)
+- [Extract API](https://api.chemvault.science)
+- [Notifications 教程](/manual/notifications/)
+- [Files 教程](/manual/files/)
+- [术语表](/manual/glossary/)
