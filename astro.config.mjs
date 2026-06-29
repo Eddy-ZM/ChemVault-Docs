@@ -31,7 +31,7 @@ export default defineConfig({
           tag: 'link',
           attrs: {
             rel: 'icon',
-            href: '/assets/chemvault-icon-192.png',
+            href: '/assets/favicon-192.png',
             type: 'image/png',
             sizes: '192x192',
           },
