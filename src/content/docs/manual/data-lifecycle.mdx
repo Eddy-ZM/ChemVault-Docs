@@ -1,0 +1,138 @@
+---
+title: 数据生命周期教程
+description: 从原始文件、解析、AI 提取、人工审核、导出、通知到归档的 ChemVault 数据流说明。
+---
+
+ChemVault 的数据生命周期从“原始资料进入系统”开始，到“可复用数据、项目证据和沟通记录完成归档”结束。这个页面用于解释各产品如何协作，以及每个阶段应该检查什么。
+
+## 总览
+
+| 阶段 | 主要产品 | 输出 |
+| --- | --- | --- |
+| 收集资料 | Mail / 主站 / Files | 邮件、论文、报告、谱图、表格、项目材料。 |
+| 保存原始文件 | Files | 文件对象、文件夹、标签、元数据和 Activity。 |
+| 解析文档 | Extract | document、chunks、parse status。 |
+| 运行 AI 提取 | Extract | 候选 scientific records。 |
+| 人工审核 | Extract / Notifications | approved、rejected、needs_review 记录。 |
+| 导出数据 | Extract | CSV、JSON、XLSX、dataset。 |
+| 协作通知 | Notifications / Mail | 任务提醒、项目消息、正式邮件。 |
+| 归档复用 | Files / Dossiers / Docs | 文件归档、证据链、方法说明和参考链接。 |
+
+## 原始文件阶段
+
+原始文件应尽量保留完整来源。不要只保存 AI 输出或截图。
+
+建议保留：
+
+- 原始 PDF、DOCX、CSV、XLSX、TXT 或仪器导出。
+- 文件来源，例如文献、项目、邮件、课程或实验。
+- 上传人、上传时间和文件夹位置。
+- 文件标签，例如 `raw`、`NMR`、`HPLC`、`paper`、`supporting-info`。
+- 访问权限和分享范围。
+
+## 解析阶段
+
+Extract 解析文档后会形成可检索片段。解析不是数据确认，只是让系统能定位页面、章节和文本块。
+
+需要关注：
+
+- 文件格式是否被支持。
+- parse job 是否完成。
+- 解析后的 chunks 是否覆盖 Methods、Results、Supporting Information、tables 等高信息密度区域。
+- 失败文档是否需要换格式、重新上传或拆分。
+
+## AI 提取阶段
+
+AI Extraction 生成的是候选记录，不是最终事实。候选记录的价值在于提供结构化草稿和证据定位。
+
+运行前应确认：
+
+- 项目和文档选择正确。
+- cost estimate 可接受。
+- plan limit 和 monthly usage limit 未超出。
+- 提取目标与文档内容匹配。
+
+运行后应查看：
+
+- confidence。
+- evidence quote。
+- page number。
+- section。
+- raw value 和 normalized value。
+- validation warning。
+
+## 审核阶段
+
+审核是数据生命周期的质量控制点。未审核数据不应进入正式导出。
+
+审核动作：
+
+| 动作 | 含义 |
+| --- | --- |
+| approve | 记录可信，可进入正式数据集。 |
+| reject | 记录不应被使用。 |
+| correct | 字段需要人工修正后再使用。 |
+| unsure | 暂不确定，需要更多上下文或二次审核。 |
+
+审核时应优先处理：
+
+- 高价值字段，例如化合物名、条件、单位、结果、产率、浓度。
+- 低 confidence 或有 validation warning 的记录。
+- 来源页码缺失、证据引用过短或字段归一化异常的记录。
+
+## 导出阶段
+
+导出是给下游分析、共享或存档使用的交付物。
+
+默认导出范围：
+
+- approved records。
+- 明确项目或数据集。
+- 保留 source、page、section、evidence quote 和 confidence。
+
+导出前检查：
+
+| 检查项 | 说明 |
+| --- | --- |
+| 数据范围 | 是否只包含目标项目或目标文档。 |
+| 审核状态 | 是否排除了 pending、needs_review 和 rejected。 |
+| 字段定义 | 单位、名称和枚举值是否一致。 |
+| 证据链 | 是否保留可追溯字段。 |
+| 文件格式 | CSV 适合表格，JSON 适合系统集成，XLSX 适合人工查看。 |
+
+## 通知与协作阶段
+
+Notifications 应用于提醒，不应替代数据审核。
+
+适合通知的事件：
+
+- 文件上传完成或失败。
+- 文档解析完成或失败。
+- AI extraction started / completed / failed。
+- review item created / approved / rejected。
+- export completed。
+- 管理员公告或产品更新。
+
+需要正式沟通时，用 Mail 发送结果、附件或说明，并把关键文件放回 Files。
+
+## 归档阶段
+
+归档时要保证以后能复查“数据从哪里来、谁审核过、为什么可信”。
+
+推荐归档内容：
+
+- 原始文件。
+- approved dataset。
+- 导出文件。
+- 审核记录。
+- 项目消息和关键邮件。
+- Dossier 或 Methods 中的结论说明。
+- 相关公开知识记录和 Molecule Studio 导出的结构文件或图片。
+
+## 相关教程
+
+- [Files 教程](/manual/files/)
+- [Extract 教程](/manual/extract/)
+- [Notifications 教程](/manual/notifications/)
+- [Mail 教程](/manual/mail/)
+- [跨产品工作流](/manual/workflows/)

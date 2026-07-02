@@ -1,9 +1,7 @@
----
+﻿---
 title: User Center 教程
 description: ChemVault 统一账号、资料、安全、计划、服务访问、权限和管理员控制台说明。
 ---
-
-# User Center 教程
 
 ChemVault User Center 是账号和权限中心。它统一管理 ChemVault 产品的登录状态、研究资料、安全设置、计划状态、服务访问和管理员控制台。
 
@@ -78,6 +76,17 @@ Connected Services 展示 ChemVault 产品访问状态。
 - Coming soon
 - Not connected
 
+## 普通用户自检
+
+| 检查项 | 说明 |
+| --- | --- |
+| Profile | 姓名、机构、研究方向是否准确。 |
+| Security | 密码、当前设备、第三方账号绑定是否符合预期。 |
+| Plan | 当前计划和未来升级入口是否清楚。 |
+| Connected Services | 目标产品是否 Active。 |
+| Mail account | 是否能正常进入 Mail 或查看邮箱地址。 |
+| Account deletion | 删除前是否已经处理重要文件、邮件和导出数据。 |
+
 ## 管理员功能
 
 ### Admin Dashboard
@@ -129,6 +138,27 @@ Mail 管理入口用于分配邮箱、编辑邮箱、软删除邮箱，并处理
 
 Mail Sync 用于管理员同步 Mail super/admin 状态和 JSON 导入结果。
 
+## 开通新成员流程
+
+1. 确认用户已注册或由管理员创建。
+2. 检查邮箱、姓名、机构和角色信息。
+3. 在 Service Access 中开通目标产品。
+4. 如果用户负责审核或管理，补充 Page Access。
+5. 如果用户只需要短期例外权限，使用 Direct Permissions。
+6. 通知用户重新登录并访问目标产品。
+7. 在 Audit Log 中保留开通记录。
+
+## 管理员操作边界
+
+| 操作 | 建议 |
+| --- | --- |
+| 删除用户 | 先确认 Mail、Files、Extract 中的数据归属。 |
+| 授予 admin | 只给长期负责系统管理的人员。 |
+| 直接授权 | 用于例外场景，定期复查。 |
+| 批量同步 | 同步前先备份或记录变更来源。 |
+| 页面权限 | 管理页、审核页和审计页应单独控制。 |
+| 邮箱权限 | Mail admin 不应自动等同于所有系统 admin。 |
+
 ## 权限管理建议
 
 - 使用最小权限原则。
@@ -137,10 +167,20 @@ Mail Sync 用于管理员同步 Mail super/admin 状态和 JSON 导入结果。
 - 对账号、邮箱、文件、提取数据和通知后台使用不同权限边界。
 - 离职、项目结束或外部合作结束时，及时撤销服务访问和分享链接。
 
+## 相关排障
+
+- 如果用户能登录但打不开产品，检查 Service Access。
+- 如果用户能打开产品但看不到某个页面，检查 Page Access。
+- 如果用户能看到页面但操作被拒绝，检查角色、Direct Permission 或产品内权限。
+- 如果 Mail 管理状态不同步，使用 Mail Sync 并查看审计日志。
+- 如果第三方登录异常，先确认主账号登录可用，再重新绑定。
+
 ## 相关链接
 
 - [User Center](https://user.chemvault.science)
+- [角色与权限教程](/manual/roles-permissions/)
 - [Files 教程](/manual/files/)
 - [Mail 教程](/manual/mail/)
 - [Notifications 教程](/manual/notifications/)
+- [FAQ 与排障](/manual/faq-troubleshooting/)
 - [术语表](/manual/glossary/)

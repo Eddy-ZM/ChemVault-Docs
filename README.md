@@ -5,10 +5,13 @@ ChemVault Docs is the public manual and tutorial hub for the ChemVault ecosystem
 ## Manual Scope
 
 - Product map for ChemVault public sites, protected apps and Apple apps.
+- Suite content index linking `E:\CV_suite` projects, production entry points, manuals, design assets, promotional materials and maintenance-only notes.
 - Getting-started routes for students, researchers, administrators and developers.
-- Tutorials for ChemVault Website, Extract, Files, Mail, User Center, Notifications and Molecule Studio.
+- Tutorials for ChemVault Website, Extract, Files, Mail, User Center, role permissions, Notifications and Molecule Studio.
+- Data lifecycle guide from source files to parsing, AI extraction, review, export, notification and archive.
 - Cross-product workflows for files, AI extraction, review, notifications, email and exports.
 - Glossary for chemistry, account, API, webhook, file, review and molecule terminology.
+- FAQ and troubleshooting for access, permissions, uploads, extraction, mail, notifications and molecule loading.
 - Related links for production websites and app entry points.
 
 ## Content Rule

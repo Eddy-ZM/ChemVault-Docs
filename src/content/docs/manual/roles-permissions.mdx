@@ -1,0 +1,95 @@
+---
+title: 角色与权限教程
+description: ChemVault 账号、服务访问、页面权限、直接授权、管理员边界和日常权限审核说明。
+---
+
+ChemVault 的权限不是单一开关，而是由账号身份、服务访问、页面权限、角色和直接授权共同决定。理解这一层级，可以避免“能登录但打不开产品”“能打开产品但看不到管理页”“能看到文件但不能分享”等问题。
+
+## 权限层级
+
+| 层级 | 控制内容 | 典型位置 |
+| --- | --- | --- |
+| Account | 用户是否能登录，账号是否可用。 | User Center |
+| Service Access | 用户是否能进入 Extract、Files、Mail、Notifications、Molecule 等产品。 | User Center |
+| Page Access | 用户是否能打开某个管理页、审核页或敏感页面。 | User Center |
+| Role | 一组可复用权限，例如 admin、super、research、reviewer。 | User Center / Mail / Notifications |
+| Direct Permission | 针对单个用户的例外授权。 | User Management |
+| Share Scope | 单个文件或对象的分享范围。 | Files |
+| API Scope | API Key 能调用哪些接口。 | Extract / Notifications |
+
+## 常见角色
+
+| 角色 | 适合对象 | 应拥有的能力 |
+| --- | --- | --- |
+| Viewer | 只读成员、学生、外部审阅人。 | 查看公开内容、读取授权文件、接收通知。 |
+| Researcher | 研究成员、项目协作者。 | 上传文件、创建项目、运行提取、查看自己的任务。 |
+| Reviewer | 数据审核人员、课题负责人。 | 审核 Extract 结果、批准或拒绝记录、导出 approved 数据。 |
+| Mail User | 使用 ChemVault Mail 的成员。 | 收发邮件、管理自己的邮箱地址和 App Password。 |
+| Project Admin | 项目负责人。 | 管理项目成员、文件状态、审核流程和项目消息。 |
+| System Admin | 系统管理员。 | 管理用户、权限、服务访问、邮箱、通知广播和审计日志。 |
+
+## 授权顺序
+
+1. 在 User Center 确认用户账号是 active。
+2. 在 Service Access 里开通目标产品。
+3. 如果用户需要管理页或审核页，再补充 Page Access。
+4. 如果用户只需要临时例外权限，使用 Direct Permission，并记录原因。
+5. 如果是 API 或 Webhook 集成，单独创建最小 scope 的 API Key。
+6. 授权完成后，让用户重新打开目标产品确认状态。
+
+## 服务访问与页面权限的区别
+
+Service Access 解决“能否进入产品”的问题。Page Access 解决“进入产品后能否打开特定页面”的问题。
+
+例如：
+
+| 场景 | 需要什么 |
+| --- | --- |
+| 打开 Files 首页 | Files service access |
+| 在 Files 创建分享链接 | Files service access + share permission |
+| 打开 Extract 审核队列 | Extract service access + review page access |
+| 管理 Mail 用户 | Mail service access + mail admin role |
+| 发送 Notifications 广播 | Notifications service access + broadcast permission |
+| 查看审计日志 | Admin role + audit log page access |
+
+## 最小权限原则
+
+- 只授予完成当前任务所需的产品访问。
+- 管理员权限应少量、明确、可审计。
+- Direct Permission 应有到期或复查机制。
+- API Key 不应复用个人主账号权限。
+- 外部协作者优先使用受限账号或明确的文件分享范围。
+- 项目结束后撤销服务访问、分享链接、App Password 和 API Key。
+
+## 权限审核清单
+
+管理员每次发布、交接或开通新成员前，应检查：
+
+| 检查项 | 应确认 |
+| --- | --- |
+| 账号状态 | 用户是否 active，邮箱是否正确。 |
+| 服务访问 | 是否只开通需要的产品。 |
+| 管理权限 | 是否只有必要人员拥有 admin/super。 |
+| 文件分享 | 是否存在过期、无人负责或范围过大的 share。 |
+| Mail 地址 | 是否有无人使用或错误绑定的邮箱地址。 |
+| API Key | 是否有长期未使用、scope 过宽或无法追责的 key。 |
+| Webhook | 是否仍发送到有效 endpoint。 |
+| 审计日志 | 最近管理员操作是否符合预期。 |
+
+## 常见问题
+
+| 问题 | 排查方向 |
+| --- | --- |
+| 用户能登录但打不开 Files | 检查 Files service access。 |
+| 用户能打开 Extract 但看不到审核页面 | 检查 review page access 或 reviewer role。 |
+| 用户收不到项目通知 | 检查 Notifications service access、项目成员关系和通知偏好。 |
+| 用户能看邮件但不能管理邮箱 | 检查 Mail admin role。 |
+| API 调用返回 forbidden | 检查 API Key scope、key 状态和目标项目权限。 |
+
+## 相关教程
+
+- [User Center 教程](/manual/user-center/)
+- [Files 教程](/manual/files/)
+- [Extract 教程](/manual/extract/)
+- [Notifications 教程](/manual/notifications/)
+- [FAQ 与排障](/manual/faq-troubleshooting/)

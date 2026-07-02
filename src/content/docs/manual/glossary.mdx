@@ -1,9 +1,7 @@
----
+﻿---
 title: 术语表
 description: ChemVault 网站和 App 中常见的化学、产品、权限、API 和文件术语解释。
 ---
-
-# 术语表
 
 ## 产品和账号
 
@@ -20,6 +18,8 @@ description: ChemVault 网站和 App 中常见的化学、产品、权限、API 
 | SSO | Single Sign-On，统一登录。 |
 | SCIM | System for Cross-domain Identity Management，企业用户同步协议。 |
 | Audit Log | 审计日志，用于记录用户、服务和管理员操作。 |
+| Service API Key | 服务级 API Key，用于系统集成，权限应独立控制。 |
+| App Password | 给邮件客户端或特定 App 使用的独立密码，可撤销。 |
 
 ## 化学知识
 
@@ -32,6 +32,8 @@ description: ChemVault 网站和 App 中常见的化学、产品、权限、API 
 | Dossier | 结构化研究档案，用于集中展示主题、证据和结论。 |
 | Spectroscopy Evidence | 谱学证据，包括 NMR、IR、MS、UV-vis 等结构证明信息。 |
 | Public Record Index | 公开记录索引，用于浏览和检索公开数据。 |
+| Research Workbench | 多视角研究记录查看区，用于组织反应、证据和关联上下文。 |
+| Evidence Graph | 以节点和关系组织证据的视图。 |
 
 ## 分子结构
 
@@ -64,6 +66,9 @@ description: ChemVault 网站和 App 中常见的化学、产品、权限、API 
 | Review Status | 审核状态，例如 pending、needs_review、approved、rejected。 |
 | Dataset | 一组经过批准、可复用的结构化数据。 |
 | Export | 将数据导出为 CSV、JSON 或 XLSX。 |
+| Parse Job | 文档解析任务，将文件转成可检索文本和 chunks。 |
+| Cost Estimate | 提取前的用量或成本估算。 |
+| Validation Warning | 字段缺失、单位异常或证据不足等提示。 |
 
 ## Files
 
@@ -75,6 +80,8 @@ description: ChemVault 网站和 App 中常见的化学、产品、权限、API 
 | Review Flow | Files 中的文件状态流，包含 Intake、Indexed、Review、Released。 |
 | Vault Insights | 文件库分析视图，展示存储分布、标签集中度和运行状态。 |
 | Share Link | 文件分享链接，可能是私有或公开只读预览。 |
+| Activity | 文件活动记录，用于查看上传、分享、处理、失败和删除等事件。 |
+| Released | 文件访问策略确认后的可用状态。 |
 
 ## Mail
 
@@ -86,6 +93,8 @@ description: ChemVault 网站和 App 中常见的化学、产品、权限、API 
 | Alias | 邮箱别名或不同用途地址。 |
 | Draft | 草稿，未发送邮件。 |
 | Starred | 星标邮件，用于标记重要邮件。 |
+| Invite Code | 注册邀请码，用于控制可加入用户。 |
+| Mail Sync | User Center 与 Mail 管理状态之间的同步入口。 |
 
 ## Notifications 和集成
 
@@ -101,3 +110,18 @@ description: ChemVault 网站和 App 中常见的化学、产品、权限、API 
 | Webhook | 系统向外部地址发送事件通知。 |
 | HMAC | Hash-based Message Authentication Code，用于 webhook 签名验证。 |
 | Rate Limit | 请求频率限制，超出后会返回 429 或 rate limit 错误。 |
+| Delivery | Webhook 或通知的一次发送记录。 |
+
+## 状态词速查
+
+| 状态 | 常见位置 | 含义 |
+| --- | --- | --- |
+| active | User Center / service access | 账号或服务可用。 |
+| coming soon | Connected Services / Plan | 功能展示中，暂未完全开放。 |
+| pending | Extract / review | 等待处理或等待审核。 |
+| needs_review | Extract / Files | 需要人工检查。 |
+| approved | Extract | 已通过审核。 |
+| rejected | Extract | 已拒绝。 |
+| queued | Notifications / tasks | 任务排队中。 |
+| completed | Notifications / tasks | 任务完成。 |
+| failed | Files / Extract / tasks | 上传、解析或任务失败。 |

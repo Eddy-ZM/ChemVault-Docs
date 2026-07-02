@@ -1,0 +1,92 @@
+---
+title: FAQ 与排障
+description: ChemVault 登录、权限、文件上传、AI 提取、邮件、通知、分子加载和链接访问的常见问题处理。
+---
+
+本页按用户能直接观察到的现象组织排障步骤。排障时先确认账号、入口、权限和文件状态，再判断是否需要管理员介入。
+
+## 登录和访问
+
+| 现象 | 处理方式 |
+| --- | --- |
+| 能打开 User Center，但打不开某个产品 | 检查该产品的 Service Access。 |
+| 打开管理页面提示无权限 | 检查 Page Access、角色或 Direct Permission。 |
+| 生产域名返回 403 | 先确认是否已登录；如果是命令行或机器人请求，可能被访问策略拦截。 |
+| 登录后页面仍显示未登录 | 刷新页面，重新登录，检查浏览器是否阻止 cookie。 |
+| 第三方登录无法绑定 | 先确认主账号密码可用，再检查 Connected Accounts 状态。 |
+
+## Files
+
+| 现象 | 处理方式 |
+| --- | --- |
+| 上传失败 | 检查文件大小、类型、网络状态和是否有上传权限。 |
+| 文件一直 pending | 查看 upload queue 和 Activity，必要时重新上传。 |
+| 预览不可用 | 下载原文件确认内容，或使用支持的格式重新保存。 |
+| 看不到分享按钮 | 检查 share permission 或文件访问策略。 |
+| 文件夹结构不符合预期 | 上传 folder 时确认本地目录层级，必要时在 Files 内重新整理。 |
+
+## Extract
+
+| 现象 | 处理方式 |
+| --- | --- |
+| 文档不能解析 | 检查文件格式，必要时转成 PDF、TXT、CSV 或 XLSX。 |
+| 不能运行 AI Extraction | 检查 parse status、plan limit、monthly usage limit 和项目权限。 |
+| 结果字段明显不对 | 在 Review Workflow 中查看 evidence quote 和原文位置，修正或拒绝。 |
+| 搜索不到记录 | 确认记录是否 approved，或切换查看 pending / needs_review。 |
+| 导出缺少数据 | 检查导出范围、记录状态和字段选择。 |
+
+## Mail
+
+| 现象 | 处理方式 |
+| --- | --- |
+| 第三方客户端登录失败 | 使用 App Password，不要使用主账号密码。 |
+| 收不到邮件 | 检查邮箱地址、收件箱刷新、系统设置和是否被黑名单或转发规则影响。 |
+| 发信失败 | 检查 SMTP 配置、发件地址、收件人格式和发送权限。 |
+| App Password 忘记 | 撤销旧密码并创建新的 App Password。 |
+| 看不到管理功能 | 检查 Mail admin role。 |
+
+## Notifications
+
+| 现象 | 处理方式 |
+| --- | --- |
+| 收不到浏览器推送 | 检查浏览器通知权限、系统通知权限和 Notification Preference。 |
+| 站内有通知但系统不弹窗 | 浏览器可能不支持 Web Push，站内通知仍可用。 |
+| 项目消息不可见 | 检查项目成员关系和服务访问。 |
+| Webhook 没收到事件 | 检查 endpoint、签名验证、事件类型和 delivery 状态。 |
+| 广播没有发给目标用户 | 检查 User Segment 和发送范围。 |
+
+## Molecule Studio
+
+| 现象 | 处理方式 |
+| --- | --- |
+| 名称搜索不到分子 | 换用 PubChem CID、SMILES 或结构文件上传。 |
+| SMILES 无法加载 | 检查括号、环编号、芳香性写法和是否包含无效字符。 |
+| PDB 加载失败 | 确认 PDB ID 是四位编号，或稍后重试外部结构源。 |
+| 3D 视图为空 | 重新加载结构，切换显示模式，或清空后重新输入。 |
+| 上传结构文件失败 | 检查格式和 8 MB 上限。 |
+
+## Docs 和链接
+
+| 现象 | 处理方式 |
+| --- | --- |
+| 找不到某个教程 | 使用左侧导航或搜索，优先查看“使用手册”分组。 |
+| 前后页导航文字看不清 | 已在主题样式中覆盖浅色模式文字颜色。 |
+| 外部站点要求登录 | 先从 User Center 登录，再打开目标产品。 |
+| 公开站点命令行检查返回 403 | 这通常是访问策略，不代表浏览器访问一定失败。 |
+
+## 排障顺序
+
+1. 确认入口域名是否正确。
+2. 确认当前账号是否登录。
+3. 检查 Service Access。
+4. 检查 Page Access 或角色。
+5. 查看产品内状态，例如 parse status、upload queue、notification preference。
+6. 如果涉及管理员功能，查看审计日志和最近配置变更。
+7. 如果涉及 API 或 Webhook，检查 scope、签名、事件类型和 delivery 记录。
+
+## 相关教程
+
+- [快速开始](/manual/getting-started/)
+- [角色与权限教程](/manual/roles-permissions/)
+- [数据生命周期教程](/manual/data-lifecycle/)
+- [相关链接](/manual/links/)

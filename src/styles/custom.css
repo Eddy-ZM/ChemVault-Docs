@@ -359,6 +359,62 @@ main > .content-panel:first-child h1 {
   border-color: var(--cv-line);
 }
 
+.pagination-links {
+  gap: 14px;
+}
+
+.pagination-links a {
+  border: 1px solid var(--cv-line);
+  border-radius: var(--cv-radius);
+  background: var(--cv-surface);
+  color: var(--cv-muted) !important;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.05);
+  transition:
+    transform var(--cv-motion-fast) var(--cv-ease-spring),
+    border-color var(--cv-motion-fast) ease,
+    background var(--cv-motion-fast) ease,
+    color var(--cv-motion-fast) ease,
+    box-shadow var(--cv-motion-fast) ease;
+}
+
+.pagination-links a:hover,
+.pagination-links a:focus-visible {
+  border-color: rgba(0, 113, 227, 0.32);
+  background: #ffffff;
+  color: var(--cv-blue-2) !important;
+  box-shadow: var(--cv-shadow-blue);
+  transform: translateY(-1px);
+}
+
+.pagination-links a svg {
+  color: var(--cv-blue);
+}
+
+.pagination-links a .link-title {
+  color: var(--cv-text) !important;
+  font-weight: 850;
+}
+
+.pagination-links a:hover .link-title,
+.pagination-links a:focus-visible .link-title {
+  color: var(--cv-blue-2) !important;
+}
+
+:root[data-theme='dark'] .pagination-links a {
+  background: var(--cv-surface);
+  color: var(--cv-muted) !important;
+}
+
+:root[data-theme='dark'] .pagination-links a:hover,
+:root[data-theme='dark'] .pagination-links a:focus-visible {
+  background: #20242b;
+  color: #d7eaff !important;
+}
+
+:root[data-theme='dark'] .pagination-links a .link-title {
+  color: var(--cv-text) !important;
+}
+
 .sl-markdown-content:has(> .cv-docs-hero) {
   max-width: min(1220px, calc(100vw - 32px));
   margin-inline: auto;

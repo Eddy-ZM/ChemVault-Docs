@@ -1,10 +1,14 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import remarkGfm from 'remark-gfm';
 
 export default defineConfig({
   site: 'https://docs.chemvault.science',
   devToolbar: {
     enabled: false,
+  },
+  markdown: {
+    remarkPlugins: [remarkGfm],
   },
   integrations: [
     starlight({
@@ -133,6 +137,10 @@ export default defineConfig({
               slug: 'manual/product-map',
             },
             {
+              label: 'Suite 内容索引',
+              slug: 'manual/suite-content-index',
+            },
+            {
               label: '快速开始',
               slug: 'manual/getting-started',
             },
@@ -161,8 +169,16 @@ export default defineConfig({
               slug: 'manual/user-center',
             },
             {
+              label: '角色与权限',
+              slug: 'manual/roles-permissions',
+            },
+            {
               label: 'Notifications',
               slug: 'manual/notifications',
+            },
+            {
+              label: '数据生命周期',
+              slug: 'manual/data-lifecycle',
             },
             {
               label: 'Molecule Studio',
@@ -179,6 +195,10 @@ export default defineConfig({
             {
               label: '术语表',
               slug: 'manual/glossary',
+            },
+            {
+              label: 'FAQ 与排障',
+              slug: 'manual/faq-troubleshooting',
             },
             {
               label: '相关链接',

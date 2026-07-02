@@ -1,9 +1,7 @@
----
+﻿---
 title: Molecule Studio 教程
 description: 分子搜索、SMILES 输入、二维绘制、结构文件上传、PDB 加载、三维查看和导出说明。
 ---
-
-# Molecule Studio 教程
 
 ChemVault Molecule Studio 是分子结构查看、建模输入和三维可视化工具。它包含网站端 Molecule Studio 和 Apple App。
 
@@ -36,6 +34,16 @@ ChemVault Molecule Studio 是分子结构查看、建模输入和三维可视化
 - CID `2244`
 
 加载后可查看名称、CID、分子式、分子量、SMILES、InChI 和 InChIKey。
+
+## 选择输入方式
+
+| 输入方式 | 适合场景 |
+| --- | --- |
+| Search | 已知常见名称或 PubChem CID。 |
+| SMILES | 已有结构字符串，需要快速生成三维视图。 |
+| Draw | 需要画简单结构、环或官能团。 |
+| Upload | 已有 `.mol`、`.sdf`、`.xyz`、`.pdb`、`.cif` 等结构文件。 |
+| PDB | 需要查看蛋白、核酸或复合物结构。 |
 
 ## Enter SMILES
 
@@ -124,6 +132,17 @@ PDB 模式用于加载蛋白质或核酸结构。
 - 重置视角
 - 导出 PNG 视图
 
+## 显示模式选择
+
+| 模式 | 适合用途 |
+| --- | --- |
+| Ball and stick | 教学、报告和一般结构查看。 |
+| Stick | 查看键连关系和骨架。 |
+| Sphere / Space-filling | 观察体积、空间占据和表面拥挤。 |
+| Line | 大结构快速查看。 |
+| Cartoon | 蛋白或核酸二级结构。 |
+| Surface | 大分子表面形状和结合区域。 |
+
 ## Structure Details
 
 Structure Details 面板显示：
@@ -159,6 +178,14 @@ Structure Details 面板显示：
 - PDB
 - PNG 三维视图图片
 
+## 常见错误处理
+
+- 名称搜索不到时，改用 PubChem CID 或 SMILES。
+- SMILES 加载失败时，检查括号、环编号、芳香性和非法字符。
+- PDB 加载失败时，确认 ID 是四位编号。
+- 三维视图为空时，清空后重新加载结构，并切换显示模式。
+- 上传文件失败时，检查格式和 8 MB 限制。
+
 ## Apple App
 
 Apple App 提供 Search、SMILES、Draw、PDB、Library、Account。详情见 [Apple App 教程](/manual/apple-apps/)。
@@ -167,4 +194,5 @@ Apple App 提供 Search、SMILES、Draw、PDB、Library、Account。详情见 [A
 
 - [Molecule Studio](https://model.chemvault.science/molecule)
 - [Apple App 教程](/manual/apple-apps/)
+- [FAQ 与排障](/manual/faq-troubleshooting/)
 - [术语表](/manual/glossary/)
