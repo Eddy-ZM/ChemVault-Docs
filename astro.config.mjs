@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { unified } from '@astrojs/markdown-remark';
 import remarkGfm from 'remark-gfm';
 
 export default defineConfig({
@@ -8,7 +9,7 @@ export default defineConfig({
     enabled: false,
   },
   markdown: {
-    remarkPlugins: [remarkGfm],
+    processor: unified({ remarkPlugins: [remarkGfm] }),
   },
   integrations: [
     starlight({
@@ -22,6 +23,7 @@ export default defineConfig({
       favicon: '/favicon.ico',
       customCss: ['./src/styles/custom.css'],
       lastUpdated: true,
+      disable404Route: true,
       head: [
         {
           tag: 'link',
