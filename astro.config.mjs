@@ -115,13 +115,6 @@ export default defineConfig({
           },
         },
       ],
-      social: [
-        {
-          icon: 'github',
-          label: 'GitHub',
-          href: 'https://github.com/Eddy-ZM/ChemVault-Docs',
-        },
-      ],
       sidebar: [
         {
           label: 'Home',
@@ -139,8 +132,12 @@ export default defineConfig({
               slug: 'manual/product-map',
             },
             {
-              label: 'Suite 内容索引',
+              label: '公开产品索引',
               slug: 'manual/suite-content-index',
+            },
+            {
+              label: '集成契约',
+              slug: 'manual/integration-contracts',
             },
             {
               label: '快速开始',
@@ -155,8 +152,8 @@ export default defineConfig({
               slug: 'manual/knowledge-records',
             },
             {
-              label: 'Extract',
-              slug: 'manual/extract',
+              label: 'Lab',
+              slug: 'manual/lab',
             },
             {
               label: 'Files',
@@ -189,6 +186,10 @@ export default defineConfig({
             {
               label: 'Apple App',
               slug: 'manual/apple-apps',
+            },
+            {
+              label: 'Download Center',
+              slug: 'manual/download-center',
             },
             {
               label: '跨产品工作流',
@@ -267,8 +268,8 @@ export default defineConfig({
           },
         },
         {
-          label: 'Launch Extract',
-          link: 'https://app.chemvault.science',
+          label: 'Launch Lab',
+          link: 'https://lab.chemvault.science',
           attrs: {
             target: '_blank',
             rel: 'noreferrer',
@@ -277,6 +278,14 @@ export default defineConfig({
         {
           label: 'User Center',
           link: 'https://user.chemvault.science',
+          attrs: {
+            target: '_blank',
+            rel: 'noreferrer',
+          },
+        },
+        {
+          label: 'Download Center',
+          link: 'https://download.chemvault.science',
           attrs: {
             target: '_blank',
             rel: 'noreferrer',

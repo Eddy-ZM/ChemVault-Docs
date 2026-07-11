@@ -1,28 +1,19 @@
 # ChemVault Docs
 
-ChemVault Docs is the public manual and tutorial hub for the ChemVault ecosystem. It explains the ChemVault websites, apps, accounts, files, email, notifications, molecule tools and AI scientific data extraction workflows from a user-facing perspective.
+ChemVault Docs is the public manual and tutorial hub for the ChemVault ecosystem. It explains user-visible websites, apps, accounts, files, laboratory analysis, email, notifications, molecule tools, downloads, privacy, and security reporting.
 
-## Manual Scope
+## Manual scope
 
-- Product map for ChemVault public sites, protected apps and Apple apps.
-- Suite content index linking `E:\CV_suite` projects, production entry points, manuals, design assets, promotional materials and maintenance-only notes.
-- Getting-started routes for students, researchers, administrators and developers.
-- Tutorials for ChemVault Website, Extract, Files, Mail, User Center, role permissions, Notifications and Molecule Studio.
-- Data lifecycle guide from source files to parsing, AI extraction, review, export, notification and archive.
-- Cross-product workflows for files, AI extraction, review, notifications, email and exports.
-- Glossary for chemistry, account, API, webhook, file, review and molecule terminology.
-- FAQ and troubleshooting for access, permissions, uploads, extraction, mail, notifications and molecule loading.
-- Related links for production websites and app entry points.
+- Public product map and supported production entry points.
+- Getting-started paths for students, researchers, administrators, and developers.
+- Tutorials for ChemVault Lab, Files, Mail, User Center, Notifications, Molecule Studio, Apple apps, and Download Center.
+- Cross-product workflow from Files import through Lab analysis, result review, notification, and export.
+- Account export/deletion, permissions, troubleshooting, glossary, and safe-download guidance.
 
-## Content Rule
+## Publishing rule
 
-This repository describes website and app behavior, user workflows, terminology and links. It intentionally avoids backend implementation, code architecture, deployment instructions and internal design details.
+Public documentation describes supported product behavior and public links only. It must not expose local workstation paths, repository topology, credentials, private signing material, internal deployment instructions, user records, or unpublished business configuration. Historical products may be documented only as migration notices with a canonical replacement.
 
 ## License
 
-This repository is source-available but not open source. Public visibility is
-for review and reference only; no rights are granted to use, copy, modify,
-distribute, host, deploy, or create derivative works without prior written
-permission from Ziwen Mu or the repository owner.
-
-See [LICENSE](./LICENSE). All rights reserved.
+This repository is source-available but not open source. See [LICENSE](./LICENSE). All rights reserved.

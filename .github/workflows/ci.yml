@@ -1,0 +1,33 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main, test]
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  docs-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate documentation
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          files = [p for p in Path('.').rglob('*') if p.is_file() and '.git' not in p.parts]
+          assert files, 'Documentation repository is empty'
+          for path in files:
+              if path.suffix.lower() in {'.md', '.html', '.json', '.yml', '.yaml'}:
+                  text = path.read_text(encoding='utf-8')
+                  assert '<<<<<<< ' not in text and '>>>>>>> ' not in text, f'unresolved merge marker: {path}'
+                  assert text.strip(), f'empty documentation file: {path}'
+          PY
+      - run: npm run build

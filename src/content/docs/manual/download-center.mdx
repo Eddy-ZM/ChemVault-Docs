@@ -1,0 +1,113 @@
+---
+title: ChemVault Download Center 教程
+description: 安装包、TestFlight、Beta、Release notes、签名校验和安全下载来源说明。
+---
+
+ChemVault Download Center 是 ChemVault installable apps、测试版本和发布包的统一入口。它只负责下载和安装引导，不替代各产品的功能教程。
+
+## 入口
+
+- Download Center：[https://download.chemvault.science](https://download.chemvault.science)
+- 安装帮助：[https://download.chemvault.science/help](https://download.chemvault.science/help)
+- 产品手册入口：[产品地图](/manual/product-map/)
+
+## 什么时候使用 Download Center
+
+| 场景 | 应该怎么做 |
+| --- | --- |
+| 想安装桌面 App | 打开对应产品详情页，选择 Windows、macOS 或其他平台包。 |
+| 想加入 iOS 测试 | 查找 TestFlight 渠道，确认邀请是否已经开放。 |
+| 想确认当前版本 | 查看产品卡片上的 version、updated date 和 release notes。 |
+| 不确定下载是否安全 | 回到 Download Center 原始域名，重新从产品详情页进入。 |
+| 安装包还没开放 | 看到 Coming Soon、Beta 或 Internal 状态时，等待正式渠道发布。 |
+
+## 页面区域
+
+| 区域 | 用途 |
+| --- | --- |
+| Apps | 所有可下载或计划发布的 ChemVault 客户端。 |
+| Platform filters | 按 Windows、macOS、iOS、TestFlight、Beta 等渠道筛选。 |
+| Product card | 显示产品名、版本、状态、平台和详情入口。 |
+| Product detail | 查看安装包、安装说明、已知问题、安全说明和 release notes。 |
+| Help | 汇总 Windows、macOS、iOS TestFlight 和浏览器警告处理方式。 |
+| Changelog | 按产品列出最近更新和发布说明。 |
+
+## 产品状态解释
+
+| 状态 | 含义 | 用户动作 |
+| --- | --- | --- |
+| Stable | 面向普通用户的稳定版本。 | 可按产品说明安装。 |
+| Beta | 测试版本，功能、签名或更新频率可能变化。 | 只在理解风险后安装。 |
+| Internal Testing | 内部测试或受邀测试阶段。 | 等待邀请或管理员确认。 |
+| Internal / Protected | 受保护的内部包或受控发布。 | 不要转发或公开分享。 |
+| Coming Soon | 页面已经预留，但下载包尚未发布。 | 等待后续 release notes。 |
+
+## 安装包类型
+
+| 类型 | 常见平台 | 说明 |
+| --- | --- | --- |
+| EXE | Windows | 常见 Windows 安装程序或单文件安装入口。 |
+| MSI | Windows | 更适合组织、实验室或受管理设备批量部署。 |
+| DMG | macOS | 常见 macOS 磁盘镜像安装包。 |
+| PKG | macOS | macOS 安装程序包，适合更正式的安装流程。 |
+| TestFlight | iOS / iPadOS | Apple 官方测试渠道，测试版本可能过期。 |
+| GitHub Release | 多平台 | 发布资产渠道；只有在 ChemVault 页面明确列出并指向可信包时才使用。 |
+
+## 安全下载检查
+
+安装前建议按顺序确认：
+
+1. 浏览器地址是 `download.chemvault.science`。
+2. 产品名称和要安装的 App 一致。
+3. 平台类型正确，例如 Windows 不应下载 macOS 包。
+4. 版本号和 release notes 能解释本次更新。
+5. Beta、Internal 或 Coming Soon 状态符合你的预期。
+6. 如果系统提示未知发布者，先确认包来自官方页面；不确定时等待签名包。
+7. 不从聊天记录、网盘转发文件、镜像站或未知链接安装 ChemVault 软件。
+
+## TestFlight 使用说明
+
+TestFlight 是 Apple 的官方 App 测试渠道。使用时注意：
+
+- 需要先安装 TestFlight App。
+- 测试邀请可能有名额限制。
+- 测试版本可能过期或频繁更新。
+- iOS 测试包不等于 App Store 正式发布。
+- 遇到无法加入测试时，先确认链接是否仍有效。
+
+## Release notes 怎么看
+
+Release notes 用来判断“这个版本改了什么、是否值得安装”。阅读时重点看：
+
+- 是否是新包、修复包还是占位包。
+- 是否提到签名、安装器、平台支持或重大限制。
+- 是否和当前产品状态一致。
+- 是否存在 known issues。
+- 是否需要先阅读对应产品教程。
+
+## 和各产品教程的关系
+
+| 下载项 | 安装后继续阅读 |
+| --- | --- |
+| ChemVault Main App | [主站与中文站](/manual/chemvault-website/)、[Apple App](/manual/apple-apps/) |
+| ChemVault Mail | [Mail 教程](/manual/mail/) |
+| ChemVault Files Client | [Files 教程](/manual/files/) |
+| ChemVault Account Client | [User Center 教程](/manual/user-center/) |
+| ChemVault Notifications Client | [Notifications 教程](/manual/notifications/) |
+| ChemVault Molecular Model | [Molecule Studio 教程](/manual/molecule-studio/) |
+| ChemVault Extract | [Extract 教程](/manual/extract/) |
+| ChemVault Docs Reader | [使用手册总览](/manual/) |
+
+## 常见问题
+
+| 现象 | 处理方式 |
+| --- | --- |
+| 点击下载后没有文件 | 该链接可能仍是 Coming Soon 占位，查看产品状态和 release notes。 |
+| Windows 出现未知发布者提示 | Beta 阶段可能发生。确认来源仍是官方页面；不确定时不要继续。 |
+| macOS 阻止打开 | 先确认包来源和签名状态，不要为了未知来源包随意降低系统安全设置。 |
+| TestFlight 链接不可用 | 可能名额已满、邀请过期或测试尚未开放。 |
+| 不知道该装哪个产品 | 先看 [产品地图](/manual/product-map/) 和 [相关链接](/manual/links/)。 |
+
+## 维护边界
+
+Download Center 面向用户解释安装和渠道，不应展示私有发布凭据、签名私钥、GitHub token、Cloudflare token、CI 配置或内部构建脚本。维护者只需要在公开页面保留用户能理解的版本、状态、渠道、安全提示和相关教程链接。

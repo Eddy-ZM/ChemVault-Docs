@@ -74,6 +74,16 @@ description: ChemVault 登录、权限、文件上传、AI 提取、邮件、通
 | 外部站点要求登录 | 先从 User Center 登录，再打开目标产品。 |
 | 公开站点命令行检查返回 403 | 这通常是访问策略，不代表浏览器访问一定失败。 |
 
+## Download Center
+
+| 现象 | 处理方式 |
+| --- | --- |
+| 详情页显示 Coming Soon | 下载包尚未发布，等待 release notes 或正式渠道更新。 |
+| 找不到适合平台的安装包 | 先用平台筛选，再查看 [Download Center 教程](/manual/download-center/) 中的安装包类型说明。 |
+| Windows 提示未知发布者 | 确认下载来源是 `download.chemvault.science`，不确定时等待签名安装包。 |
+| TestFlight 链接不可用 | 测试可能未开放、名额已满或邀请过期。 |
+| GitHub Release 链接让人困惑 | 只使用 Download Center 明确列出的 release asset，不从转发链接安装。 |
+
 ## 排障顺序
 
 1. 确认入口域名是否正确。
@@ -81,12 +91,14 @@ description: ChemVault 登录、权限、文件上传、AI 提取、邮件、通
 3. 检查 Service Access。
 4. 检查 Page Access 或角色。
 5. 查看产品内状态，例如 parse status、upload queue、notification preference。
-6. 如果涉及管理员功能，查看审计日志和最近配置变更。
-7. 如果涉及 API 或 Webhook，检查 scope、签名、事件类型和 delivery 记录。
+6. 如果涉及下载安装，查看 Download Center 的 version、release notes、status 和 known issues。
+7. 如果涉及管理员功能，查看审计日志和最近配置变更。
+8. 如果涉及 API 或 Webhook，检查 scope、签名、事件类型和 delivery 记录。
 
 ## 相关教程
 
 - [快速开始](/manual/getting-started/)
 - [角色与权限教程](/manual/roles-permissions/)
 - [数据生命周期教程](/manual/data-lifecycle/)
+- [Download Center 教程](/manual/download-center/)
 - [相关链接](/manual/links/)

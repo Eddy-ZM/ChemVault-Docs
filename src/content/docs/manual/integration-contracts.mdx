@@ -1,0 +1,20 @@
+---
+title: 集成契约
+description: ChemVault 产品之间稳定、可版本化的数据交换约定。
+---
+
+ChemVault 的跨产品连接使用显式版本的契约，避免 Files、Lab 与 Notifications 各自解释同一份数据。
+
+## 事件信封 v1
+
+Files 与 Lab 发出的事件统一包含版本、事件 ID、事件类型、来源、主题、发生时间、用户引用和业务数据。Notifications 按事件 ID 去重，并只接受受信任的 ChemVault HTTPS 深链接。
+
+- [查看 JSON Schema](/contracts/chemvault-event-v1.schema.json)
+- 当前版本：`1.0`
+- 兼容策略：新增可选字段不改变主版本；删除字段、改变类型或语义时发布新主版本
+
+## 公开记录索引 v1
+
+主站和中文站共享公开记录索引字段约定与契约测试。记录键由 `type` 与 `id` 共同构成，链接必须是 HTTPS，搜索文本和展示字段必须保持可用。
+
+契约升级必须同时通过两个站点的生成测试，防止中英文站点静默漂移。
