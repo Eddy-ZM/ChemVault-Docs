@@ -1,5 +1,33 @@
 /* ChemVault Docs theme aligned with the main ChemVault research portal. */
 
+@font-face {
+  font-family: "CV Inter";
+  src: url("/fonts/inter-400.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CV Inter";
+  src: url("/fonts/inter-600.ttf") format("truetype");
+  font-weight: 600 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CV Newsreader";
+  src: url("/fonts/newsreader-400.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CV Newsreader";
+  src: url("/fonts/newsreader-500.ttf") format("truetype");
+  font-weight: 500 700;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
   --cv-bg: #f5f5f7;

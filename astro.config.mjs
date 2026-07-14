@@ -21,7 +21,7 @@ export default defineConfig({
         alt: 'ChemVault',
       },
       favicon: '/favicon.ico',
-      customCss: ['./src/styles/custom.css'],
+      customCss: ['./src/styles/custom.css', './src/styles/exhibition-theme.css'],
       lastUpdated: true,
       disable404Route: true,
       head: [
@@ -61,7 +61,7 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             name: 'theme-color',
-            content: '#f5f5f7',
+            content: '#07111f',
           },
         },
         {
