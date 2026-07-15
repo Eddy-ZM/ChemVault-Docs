@@ -4510,3 +4510,36 @@ body:has(.cv-marketing-hero) .cv-reveal {
     transform: none !important;
   }
 }
+
+:where(.site-title, .sl-link-button, .pagination-links a, .social-icons a, .right-sidebar a, .sidebar-content a, button, input[type="search"], .sl-anchor-link, a[aria-label^="Section titled"], a[href="#_top"]) {
+  min-width: 44px !important;
+  min-height: 44px !important;
+}
+
+:where(.site-title, .sl-link-button, .pagination-links a, .social-icons a, .right-sidebar a, .sidebar-content a, .sl-anchor-link, a[aria-label^="Section titled"], a[href="#_top"]) {
+  display: inline-flex;
+  align-items: center;
+}
+
+:where(.site-title, .sl-link-button, .pagination-links a, .social-icons a, .right-sidebar a, .sidebar-content a, button, input[type="search"], .sl-anchor-link, a[aria-label^="Section titled"], a[href="#_top"]) {
+  min-width: 46px !important;
+  min-height: 46px !important;
+}
+
+:where(.sl-markdown-content li > a, .sl-markdown-content p > a, .sl-markdown-content td a) {
+  min-width: 46px !important;
+  min-height: 46px !important;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+:where(.sl-anchor-link, a[aria-label^="Section titled"]) {
+  inline-size: 46px !important;
+  block-size: 46px !important;
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  min-height: 46px !important;
+  justify-content: center;
+}
