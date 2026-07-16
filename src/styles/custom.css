@@ -132,6 +132,15 @@ body {
     var(--cv-bg);
 }
 
+.sidebar-pane summary,
+.right-sidebar summary,
+starlight-sidebar summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding-block: 0.45rem;
+}
+
 .cv-scroll-progress {
   position: fixed;
   top: 0;
